@@ -29,7 +29,6 @@
   position: absolute;
   top: 0;
   right: 0;
-  padding: 2vh;
   font-size: 4vh;
 }
 
@@ -68,6 +67,7 @@ section{
   color: white;
 }
 section>div:first-child{
+  position: relative;
   padding: 8vh;
   min-height: 84%;
 }
@@ -84,7 +84,22 @@ section hr{
   width: 50px;
   float: left;
 }
+section .explore{
+  position: absolute;
+  bottom: 8vh;
+  width: 16vh;
+  height: 16vh;
+  font-size: 3vh;
+
+  background: white;
+  border-radius: 100%;
+}
 
 p{
   width: 100%;
+}
+
+nav .button{
+  width: 8vh;
+  height: 8vh;
 }

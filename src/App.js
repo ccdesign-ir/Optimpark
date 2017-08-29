@@ -30,6 +30,7 @@ class App extends Component {
             spots without losing balance and getting scratched.
             </p>
             <hr/>
+            <button className="button explore">Explore</button>
           </div>
         </section>
         <section id="customization ">
@@ -41,6 +42,7 @@ class App extends Component {
             spots without losing balance and getting scratched.
             </p>
             <hr/>
+            <button className="button explore">Explore</button>
           </div>
         </section>
         <section id="assemblance ">
@@ -52,6 +54,7 @@ class App extends Component {
             spots without losing balance and getting scratched.
             </p>
             <hr/>
+            <button className="button explore">Explore</button>
           </div>
         </section>
         <section id="facade ">
@@ -63,6 +66,7 @@ class App extends Component {
             spots without losing balance and getting scratched.
             </p>
             <hr/>
+            <button className="button explore">Explore</button>
           </div>
         </section>
         <section id="turntable ">
@@ -74,6 +78,7 @@ class App extends Component {
             spots without losing balance and getting scratched.
             </p>
             <hr/>
+            <button className="button explore">Explore</button>
           </div>
         </section>
         <section id="scale ">
@@ -85,7 +90,7 @@ class App extends Component {
             spots without losing balance and getting scratched.
             </p>
             <hr/>
-
+            <button className="button explore">Explore</button>
           </div>
         </section>
 
