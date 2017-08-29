@@ -11,14 +11,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+}
 .popup ul{
   display: flex;
   flex-direction: column;
   list-style: none;
   padding: 10px;
   margin: 0;
+}
+.popup .close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2vh;
+  font-size: 4vh;
 }
 
 .collapsed{
@@ -34,6 +46,10 @@
   display: flex;
   justify-content: space-between;
 }
+.menu .button{
+  color: white;
+  font-size: 2vh;
+}
 
 .logo{
   width: 8vh;
@@ -43,4 +59,32 @@
 }
 .logo img{
   width: 70%;
+}
+
+section{
+  background-image: url(./assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+}
+section>div:first-child{
+  padding: 8vh;
+  min-height: 84%;
+}
+section>div:first-child h1:first-child{
+  color: black;
+}
+section>div:first-child.even{
+  background: rgba(26, 71, 186, 0.8);
+}
+section>div:first-child.odd{
+  background: rgba(30, 36, 51, 0.8);
+}
+section hr{
+  width: 50px;
+  float: left;
+}
+
+p{
+  width: 100%;
 }
