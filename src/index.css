@@ -10,6 +10,7 @@ body {
   cursor: pointer;
 
   font-family: 'Oswald', sans-serif;
+  line-height: 100%;
 }
 
 a.button{
@@ -20,4 +21,15 @@ a.button:link{
 }
 a.button:visited{
   color: white;
+}
+
+.desktop{
+  display: none;
+  position: absolute;
+}
+
+@media screen and (min-width: 768px){
+  .desktop{
+    display: initial;
+  }
 }

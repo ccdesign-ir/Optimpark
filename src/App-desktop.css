@@ -1,0 +1,9 @@
+@media screen and (min-width: 768px){
+    /* @supports(display: grid){ */
+section>div:first-child{
+    position: relative;
+    padding: 0;
+    min-height: 0;
+}
+    /* } */
+}

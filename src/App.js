@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './App-desktop.css';
 import 'font-awesome/css/font-awesome.css';
+import Scrollchor from 'react-scrollchor';
 //1080*1920
 class App extends Component {
   constructor(props) {
@@ -31,9 +33,10 @@ class App extends Component {
             </p>
             <hr/>
             <button className="button explore">Explore</button>
+            <div className="desktop right"></div>
           </div>
         </section>
-        <section id="customization ">
+        <section id="customization">
           <div className="even">
             <h1>Easy to assemble</h1>
             <h1>Easy to assemble</h1>
@@ -45,7 +48,7 @@ class App extends Component {
             <button className="button explore">Explore</button>
           </div>
         </section>
-        <section id="assemblance ">
+        <section id="assemblance">
           <div className="odd">
             <h1>Easy to assemble</h1>
             <h1>Easy to assemble</h1>
@@ -57,7 +60,7 @@ class App extends Component {
             <button className="button explore">Explore</button>
           </div>
         </section>
-        <section id="facade ">
+        <section id="facade">
           <div className="even">
             <h1>Easy to assemble</h1>
             <h1>Easy to assemble</h1>
@@ -69,7 +72,7 @@ class App extends Component {
             <button className="button explore">Explore</button>
           </div>
         </section>
-        <section id="turntable ">
+        <section id="turntable">
           <div className="odd">
             <h1>Easy to assemble</h1>
             <h1>Easy to assemble</h1>
@@ -81,7 +84,7 @@ class App extends Component {
             <button className="button explore">Explore</button>
           </div>
         </section>
-        <section id="scale ">
+        <section id="scale">
           <div className="even">
             <h1>Easy to assemble</h1>
             <h1>Easy to assemble</h1>
@@ -104,15 +107,15 @@ class App extends Component {
           <div className={cssPopup}>
             <button className="button close" onClick={this.toggleMenu.bind(this)}><i className="fa fa-times"></i></button>
             <ul>
-              <li>Optimpark</li>
-              <li>Customization</li>
-              <li>Assemblance</li>
-              <li>Facade</li>
-              <li>Turntable</li>
-              <li>Scale</li>
+              <li><Scrollchor beforeAnimate={this.toggleMenu.bind(this)} to="#optimpark" className="item">Optimpark</Scrollchor></li>
+              <li><Scrollchor beforeAnimate={this.toggleMenu.bind(this)} to="#customization" className="item">Customization</Scrollchor></li>
+              <li><Scrollchor beforeAnimate={this.toggleMenu.bind(this)} to="#assemblance" className="item">Assemblance</Scrollchor></li>
+              <li><Scrollchor beforeAnimate={this.toggleMenu.bind(this)} to="#facade" className="item">Facade</Scrollchor></li>
+              <li><Scrollchor beforeAnimate={this.toggleMenu.bind(this)} to="#turntable" className="item">Turntable</Scrollchor></li>
+              <li><Scrollchor beforeAnimate={this.toggleMenu.bind(this)} to="#scale" className="item">Scale</Scrollchor></li>
               <li><hr /></li>
-              <li>About us</li>
-              <li>Contact us</li>
+              <li><a href="about.html" className="item">About us</a></li>
+              <li><a href="contact.html" className="item">Contact us</a></li>
             </ul>
           </div>
         </nav>

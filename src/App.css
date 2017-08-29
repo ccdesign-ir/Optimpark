@@ -24,6 +24,14 @@
   list-style: none;
   padding: 10px;
   margin: 0;
+  font-size:7vmin;
+}
+.popup .item{
+  text-decoration: none;
+  color: black;
+}
+.popup .item:visited{
+  color: black;
 }
 .popup .close{
   position: absolute;
