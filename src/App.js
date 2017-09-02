@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import './App-desktop.css';
 import 'font-awesome/css/font-awesome.css';
-import Scrollchor from 'react-scrollchor';
+import { HashLink as Link } from 'react-router-hash-link';
 //1080*1920
 class App extends Component {
   constructor(props) {
@@ -13,89 +13,134 @@ class App extends Component {
     };
   }
 
-  toggleMenu() {
-    this.setState({ ...this.state, menuCollapsed: !this.state.menuCollapsed });
+  toggleMenu(sectionName) {
+    this.setState({ ...this.state, menuCollapsed: !this.state.menuCollapsed});
+  }
+
+  getHash(){
+    switch (this.props.location.hash) {
+      case "#optimpark":
+        return "optimpark";
+      case "#customization":
+        return "customization";
+      case "#assemblance":
+        return "assemblance";
+      case "#facade":
+        return "facade";
+      case "#turntable":
+        return "turntable";
+      case "#scale":
+        return "scale";
+      default:
+        return "optimpark";
+    }
   }
 
   render() {
     var state = this.state;
-
+    var hash = this.getHash();
     var cssPopup = "popup".concat(state.menuCollapsed ? " collapsed" : "");
     return (
       <div className="app">
-        <section id="optimpark">
+        <section className={hash === "optimpark" ? "active":""} id="optimpark">
           <div className="odd">
-            <h1>Easy to assemble</h1>
-            <h1>Easy to assemble</h1>
-            <p>
-              Advanced spinning parking system. With this advanced technology cars are free to spin around in their
-            spots without losing balance and getting scratched.
-            </p>
-            <hr/>
-            <button className="button explore">Explore</button>
+            <div className="left">
+              <h1>Optimpark</h1>
+              <h1>Easy to assemble</h1>
+              <p>
+                Advanced spinning parking system. With this advanced technology cars are free to spin around in their
+              spots without losing balance and getting scratched.
+              </p>
+              <hr />
+            </div>
             <div className="desktop right"></div>
-          </div>
-        </section>
-        <section id="customization">
-          <div className="even">
-            <h1>Easy to assemble</h1>
-            <h1>Easy to assemble</h1>
-            <p>
-              Advanced spinning parking system. With this advanced technology cars are free to spin around in their
-            spots without losing balance and getting scratched.
-            </p>
-            <hr/>
             <button className="button explore">Explore</button>
           </div>
         </section>
-        <section id="assemblance">
+        <section className={hash === "customization" ? "active":""} id="customization">
+          <div className="even">
+            <div className="left">
+              <h1>Customization</h1>
+              <h1>Easy to assemble</h1>
+              <p>
+                Advanced spinning parking system. With this advanced technology cars are free to spin around in their
+            spots without losing balance and getting scratched.
+            </p>
+              <hr />
+            </div>
+            <div className="desktop right"></div>
+            <button className="button explore">Explore</button>
+          </div>
+        </section>
+        <section className={hash === "assemblance" ? "active":""} id="assemblance">
           <div className="odd">
-            <h1>Easy to assemble</h1>
-            <h1>Easy to assemble</h1>
-            <p>
-              Advanced spinning parking system. With this advanced technology cars are free to spin around in their
-            spots without losing balance and getting scratched.
-            </p>
-            <hr/>
+            <div className="left">
+              <h1>Assemblance</h1>
+              <h1>Easy to assemble</h1>
+              <p>
+                Advanced spinning parking system. With this advanced technology cars are free to spin around in their
+          spots without losing balance and getting scratched.
+          </p>
+              <hr />
+            </div>
+            <div className="desktop right"></div>
             <button className="button explore">Explore</button>
           </div>
         </section>
-        <section id="facade">
+        <section className={hash === "facade" ? "active":""} id="facade">
           <div className="even">
-            <h1>Easy to assemble</h1>
-            <h1>Easy to assemble</h1>
-            <p>
-              Advanced spinning parking system. With this advanced technology cars are free to spin around in their
-            spots without losing balance and getting scratched.
-            </p>
-            <hr/>
+            <div className="left">
+              <h1>Facade</h1>
+              <h1>Easy to assemble</h1>
+              <p>
+                Advanced spinning parking system. With this advanced technology cars are free to spin around in their
+          spots without losing balance and getting scratched.
+          </p>
+              <hr />
+            </div>
+            <div className="desktop right"></div>
             <button className="button explore">Explore</button>
           </div>
         </section>
-        <section id="turntable">
+        <section className={hash === "turntable" ? "active":""} id="turntable">
           <div className="odd">
-            <h1>Easy to assemble</h1>
-            <h1>Easy to assemble</h1>
-            <p>
-              Advanced spinning parking system. With this advanced technology cars are free to spin around in their
-            spots without losing balance and getting scratched.
-            </p>
-            <hr/>
+            <div className="left">
+              <h1>Turntable</h1>
+              <h1>Easy to assemble</h1>
+              <p>
+                Advanced spinning parking system. With this advanced technology cars are free to spin around in their
+          spots without losing balance and getting scratched.
+          </p>
+              <hr />
+            </div>
+            <div className="desktop right"></div>
             <button className="button explore">Explore</button>
           </div>
         </section>
-        <section id="scale">
+        <section className={hash === "scale" ? "active":""} id="scale">
           <div className="even">
-            <h1>Easy to assemble</h1>
-            <h1>Easy to assemble</h1>
-            <p>
-              Advanced spinning parking system. With this advanced technology cars are free to spin around in their
-            spots without losing balance and getting scratched.
-            </p>
-            <hr/>
+            <div className="left">
+              <h1>Scale</h1>
+              <h1>Easy to assemble</h1>
+              <p>
+                Advanced spinning parking system. With this advanced technology cars are free to spin around in their
+          spots without losing balance and getting scratched.
+          </p>
+              <hr />
+            </div>
+            <div className="desktop right"></div>
             <button className="button explore">Explore</button>
           </div>
         </section>
+
+        <ul className="desktop navigator">
+          <li className={hash === "optimpark" ? "active":""}><Link to="#optimpark" className="item">Optimpark</Link></li>
+          <li className={hash === "customization" ? "active":""}><Link to="#customization" className="item">Customization</Link></li>
+          <li className={hash === "assemblance" ? "active":""}><Link to="#assemblance" className="item">Assemblance</Link></li>
+          <li className={hash === "facade" ? "active":""}><Link to="#facade" className="item">Facade</Link></li>
+          <li className={hash === "turntable" ? "active":""}><Link to="#turntable" className="item">Turntable</Link></li>
+          <li className={hash === "scale" ? "active":""}><Link to="#scale" className="item">Scale</Link></li>
+        </ul>
 
         <nav>
           <div className="menu">
@@ -107,12 +152,12 @@ class App extends Component {
           <div className={cssPopup}>
             <button className="button close" onClick={this.toggleMenu.bind(this)}><i className="fa fa-times"></i></button>
             <ul>
-              <li><Scrollchor beforeAnimate={this.toggleMenu.bind(this)} to="#optimpark" className="item">Optimpark</Scrollchor></li>
-              <li><Scrollchor beforeAnimate={this.toggleMenu.bind(this)} to="#customization" className="item">Customization</Scrollchor></li>
-              <li><Scrollchor beforeAnimate={this.toggleMenu.bind(this)} to="#assemblance" className="item">Assemblance</Scrollchor></li>
-              <li><Scrollchor beforeAnimate={this.toggleMenu.bind(this)} to="#facade" className="item">Facade</Scrollchor></li>
-              <li><Scrollchor beforeAnimate={this.toggleMenu.bind(this)} to="#turntable" className="item">Turntable</Scrollchor></li>
-              <li><Scrollchor beforeAnimate={this.toggleMenu.bind(this)} to="#scale" className="item">Scale</Scrollchor></li>
+              <li><Link onClick={this.toggleMenu.bind(this)} to="#optimpark" className="item">Optimpark</Link></li>
+              <li><Link onClick={this.toggleMenu.bind(this)} to="#customization" className="item">Customization</Link></li>
+              <li><Link onClick={this.toggleMenu.bind(this)} to="#assemblance" className="item">Assemblance</Link></li>
+              <li><Link onClick={this.toggleMenu.bind(this)} to="#facade" className="item">Facade</Link></li>
+              <li><Link onClick={this.toggleMenu.bind(this)} to="#turntable" className="item">Turntable</Link></li>
+              <li><Link onClick={this.toggleMenu.bind(this)} to="#scale" className="item">Scale</Link></li>
               <li><hr /></li>
               <li><a href="about.html" className="item">About us</a></li>
               <li><a href="contact.html" className="item">Contact us</a></li>

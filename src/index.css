@@ -31,5 +31,6 @@ a.button:visited{
 @media screen and (min-width: 768px){
   .desktop{
     display: initial;
+    position: relative;
   }
 }
