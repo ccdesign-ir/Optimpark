@@ -120,16 +120,15 @@
 
     section>div:first-child h1:first-child{
         margin-top: 8vh;
-        display: block;
+        
         font-size: 2vw;
         line-height: 3vw;
     }
 
-    #solution>div:first-child h1:first-child,
-    #customization>div:first-child h1:first-child,
-    #facade>div:first-child h1:first-child,
-    #implementation>div:first-child h1:first-child{
-        display: flex !important;
+    #optimpark>div:first-child h1:first-child,
+    #advantages>div:first-child h1:first-child,
+    #facade>div:first-child h1:first-child{
+        display: block;
     }
 
     section>div:first-child .seperator{

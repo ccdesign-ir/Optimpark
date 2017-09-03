@@ -99,7 +99,7 @@ class App extends Component {
           <div className="even">
             <div className="left">
               <h1>
-                <span className="black">Design your</span>
+                <span className="black">Design your </span>
                 <span className="white">facade</span>
               </h1>
               <hr className="seperator" />
