@@ -28,7 +28,7 @@
         margin-left: 3vw;
     }
     section .left>p{
-        margin-right: 19vw;
+        margin-right: 11vw;
     }
     section .right{
         flex-basis: 50%;
@@ -67,6 +67,9 @@
         text-decoration: none;
         color: black;
         font-size: 1em;
+    }
+    .navigator>li{
+        margin-top: 10px;
     }
     .navigator a:link{
         color: black;

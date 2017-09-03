@@ -55,7 +55,6 @@ class App extends Component {
                 Advanced spinning parking system. With this advanced technology cars are free to spin around in their
               spots without losing balance and getting scratched.
               </p>
-
             </div>
             <div className="desktop right"></div>
             <button className="button explore upper">Explore</button>
