@@ -33,6 +33,9 @@
         flex-basis: 50%;
         padding: 6vw;
     }
+    section>div:first-child h1:first-child{
+        display: block;
+      }
     
     .app{
         display: grid;

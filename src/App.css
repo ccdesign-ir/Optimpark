@@ -82,6 +82,8 @@ section>div:first-child{
 }
 section>div:first-child h1:first-child{
   color: black;
+  display: flex;
+  flex-direction: column;
 }
 section>div:first-child.even{
   background: rgba(30, 36, 51, 0.8);
