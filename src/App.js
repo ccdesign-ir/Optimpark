@@ -5,6 +5,7 @@ import './App-desktop.css';
 import 'font-awesome/css/font-awesome.css';
 import { HashLink as Link } from 'react-router-hash-link';
 //1080*1920
+//2560*1440
 class App extends Component {
   constructor(props) {
     super(props);
@@ -45,16 +46,18 @@ class App extends Component {
         <section className={hash === "optimpark" ? "active":""} id="optimpark">
           <div className="odd">
             <div className="left">
-              <h1>Optimpark</h1>
-              <h1>Easy to assemble</h1>
+              <h1>
+                <span className="black">Less space, </span>
+                <span className="white">More sapce.</span>
+              </h1>
+              <hr className="seperator" />
               <p>
                 Advanced spinning parking system. With this advanced technology cars are free to spin around in their
               spots without losing balance and getting scratched.
               </p>
-              <hr />
             </div>
             <div className="desktop right"></div>
-            <button className="button explore">Explore</button>
+            <button className="button explore upper">Explore</button>
           </div>
         </section>
         <section className={hash === "customization" ? "active":""} id="customization">
@@ -134,12 +137,12 @@ class App extends Component {
         </section>
 
         <ul className="desktop navigator">
-          <li className={hash === "optimpark" ? "active":""}><Link to="#optimpark" className="item">Optimpark</Link></li>
-          <li className={hash === "customization" ? "active":""}><Link to="#customization" className="item">Customization</Link></li>
-          <li className={hash === "assemblance" ? "active":""}><Link to="#assemblance" className="item">Assemblance</Link></li>
-          <li className={hash === "facade" ? "active":""}><Link to="#facade" className="item">Facade</Link></li>
-          <li className={hash === "turntable" ? "active":""}><Link to="#turntable" className="item">Turntable</Link></li>
-          <li className={hash === "scale" ? "active":""}><Link to="#scale" className="item">Scale</Link></li>
+          <li className={hash === "optimpark" ? "upper active":"upper"}><Link to="#optimpark" className="item">Optimpark</Link></li>
+          <li className={hash === "customization" ? "upper active":"upper"}><Link to="#customization" className="item">Customization</Link></li>
+          <li className={hash === "assemblance" ? "upper active":"upper"}><Link to="#assemblance" className="item">Assemblance</Link></li>
+          <li className={hash === "facade" ? "upper active":"upper"}><Link to="#facade" className="item">Facade</Link></li>
+          <li className={hash === "turntable" ? "upper active":"upper"}><Link to="#turntable" className="item">Turntable</Link></li>
+          <li className={hash === "scale" ? "upper active":"upper"}><Link to="#scale" className="item">Scale</Link></li>
         </ul>
 
         <nav>
@@ -147,7 +150,7 @@ class App extends Component {
             <div className="logo">
               <img src={logo} alt="Logo" />
             </div>
-            <button className="button" onClick={this.toggleMenu.bind(this)}>Menu <i className="fa fa-bars"></i></button>
+            <button className="button upper" onClick={this.toggleMenu.bind(this)}>Menu <i className="fa fa-bars"></i></button>
           </div>
           <div className={cssPopup}>
             <button className="button close" onClick={this.toggleMenu.bind(this)}><i className="fa fa-times"></i></button>

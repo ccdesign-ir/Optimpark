@@ -20,12 +20,18 @@
     }
     section .left{
         flex-basis: 50%;
-        padding: 8vh;
+        padding: 6vw;
         background: rgba(26, 71, 186, 0.8);
+    }
+    section .left>*{
+        margin-left: 3vw;
+    }
+    section .left>p{
+        margin-right: 19vw;
     }
     section .right{
         flex-basis: 50%;
-        padding: 8vh;
+        padding: 6vw;
     }
     
     .app{
@@ -66,7 +72,7 @@
     .navigator a::before{
         content: "";
         display: inline-block;
-        width: 50px;
+        width: 2vw;
         border: 1px solid black;
         border-bottom: 0;
         transform: translateY(-5px);
@@ -88,6 +94,29 @@
     nav{
         grid-column: 1/3;
         grid-row: 1/2;
+    }
+    nav .button{
+        width: initial;
+        height: initial;
+    }
+
+    .menu .button{
+        padding: 3vw;
+    }
+
+    section>div:first-child h1:first-child{
+        margin-top: 8vh;
+    }
+
+    section>div:first-child .seperator{
+        margin-top: 6vh;
+        margin-bottom: 8.5vh;
+        float: initial;
+    }
+
+    .logo{
+        width: 6vw;
+        height: 6vw;
     }
     /* } */
 }

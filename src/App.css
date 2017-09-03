@@ -59,13 +59,14 @@
 }
 
 .logo{
-  width: 8vh;
+  width: 10vh;
+  height: 10vh;
   background: rgb(30, 36, 51);
   display: flex;
   justify-content: center;
 }
 .logo img{
-  width: 70%;
+  width: 45%;
 }
 
 section{
@@ -76,8 +77,8 @@ section{
 }
 section>div:first-child{
   position: relative;
-  padding: 8vh;
-  min-height: 84%;
+  padding: 10vh;
+  min-height: 80%;
 }
 section>div:first-child h1:first-child{
   color: black;
@@ -88,13 +89,13 @@ section>div:first-child.even{
 section>div:first-child.odd{
   background: rgba(30, 36, 51, 0.8);
 }
-section hr{
+section .seperator{
   width: 50px;
-  float: left;
+  margin: 0;
 }
 section .explore{
   position: absolute;
-  bottom: 8vh;
+  bottom: 10vh;
   width: 16vh;
   height: 16vh;
   font-size: 3vh;
@@ -103,11 +104,7 @@ section .explore{
   border-radius: 100%;
 }
 
-p{
-  width: 100%;
-}
-
 nav .button{
-  width: 8vh;
-  height: 8vh;
+  width: 10vh;
+  height: 10vh;
 }
