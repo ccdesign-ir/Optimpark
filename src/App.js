@@ -55,6 +55,7 @@ class App extends Component {
                 Advanced spinning parking system. With this advanced technology cars are free to spin around in their
               spots without losing balance and getting scratched.
               </p>
+
             </div>
             <div className="desktop right"></div>
             <button className="button explore upper">Explore</button>
@@ -147,12 +148,12 @@ class App extends Component {
         </section>
 
         <ul className="desktop navigator">
-          <li className={hash === "optimpark" ? "upper active" : "upper"}><Link to="#optimpark" className="item">Optimpark</Link></li>
-          <li className={hash === "customization" ? "upper active" : "upper"}><Link to="#customization" className="item">Customization</Link></li>
-          <li className={hash === "assemblance" ? "upper active" : "upper"}><Link to="#assemblance" className="item">Assemblance</Link></li>
-          <li className={hash === "facade" ? "upper active" : "upper"}><Link to="#facade" className="item">Facade</Link></li>
-          <li className={hash === "turntable" ? "upper active" : "upper"}><Link to="#turntable" className="item">Turntable</Link></li>
-          <li className={hash === "scale" ? "upper active" : "upper"}><Link to="#scale" className="item">Scale</Link></li>
+          <li className={hash === "optimpark" ? "upper active" : "upper"}><Link to="#optimpark">Optimpark</Link></li>
+          <li className={hash === "customization" ? "upper active" : "upper"}><Link to="#customization">Customization</Link></li>
+          <li className={hash === "assemblance" ? "upper active" : "upper"}><Link to="#assemblance">Assemblance</Link></li>
+          <li className={hash === "facade" ? "upper active" : "upper"}><Link to="#facade">Facade</Link></li>
+          <li className={hash === "turntable" ? "upper active" : "upper"}><Link to="#turntable">Turntable</Link></li>
+          <li className={hash === "scale" ? "upper active" : "upper"}><Link to="#scale">Scale</Link></li>
         </ul>
 
         <nav>
@@ -183,6 +184,15 @@ class App extends Component {
           <li><a href="http://twitter.com" className="button"><i className="fa fa-twitter"></i></a></li>
           <li><a href="http://telegram.com" className="button"><i className="fa fa-telegram"></i></a></li>
         </ul>
+        <div className="desktop number">
+          <span className={hash === "optimpark" ? "active" : ""}>01</span>
+          <span className={hash === "customization" ? "active" : ""}>02</span>
+          <span className={hash === "assemblance" ? "active" : ""}>03</span>
+          <span className={hash === "facade" ? "active" : ""}>04</span>
+          <span className={hash === "turntable" ? "active" : ""}>05</span>
+          <span className={hash === "scale" ? "active" : ""}>06</span>
+        </div>
+
       </div>
     );
   }
