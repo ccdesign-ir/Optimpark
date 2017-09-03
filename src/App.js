@@ -48,7 +48,7 @@ class App extends Component {
             <div className="left">
               <h1>
                 <span className="black">Less space, </span>
-                <span className="white">More sapce.</span>
+                <span className="white">More space.</span>
               </h1>
               <hr className="seperator" />
               <p>
@@ -177,6 +177,12 @@ class App extends Component {
             </ul>
           </div>
         </nav>
+        <ul className="desktop socials upper white">
+          <li>Follow us on social media</li>
+          <li><a href="http://instagram.com" className="button"><i className="fa fa-instagram"></i></a></li>
+          <li><a href="http://twitter.com" className="button"><i className="fa fa-twitter"></i></a></li>
+          <li><a href="http://telegram.com" className="button"><i className="fa fa-telegram"></i></a></li>
+        </ul>
       </div>
     );
   }
