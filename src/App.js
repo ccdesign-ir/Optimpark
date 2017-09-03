@@ -29,16 +29,16 @@ class App extends Component {
     switch (this.props.location.hash) {
       case "#optimpark":
         return "optimpark";
+      case "#solution":
+        return "solution";
       case "#customization":
         return "customization";
-      case "#assemblance":
-        return "assemblance";
       case "#facade":
         return "facade";
-      case "#turntable":
-        return "turntable";
-      case "#scale":
-        return "scale";
+      case "#implementation":
+        return "implementation";
+      case "#advantages":
+        return "advantages";
       default:
         return "optimpark";
     }
@@ -58,43 +58,37 @@ class App extends Component {
                 <span className="white">More space.</span>
               </h1>
               <hr className="seperator" />
-              <p>
-                Advanced spinning parking system. With this advanced technology cars are free to spin around in their
-              spots without losing balance and getting scratched.
-              </p>
+            </div>
+            <div className="desktop right"></div>
+            <button className="button explore upper oswald">Explore</button>
+          </div>
+        </section>
+        <section className={hash === "solution" ? "active" : ""} id="solution">
+          <div className="even">
+            <div className="left">
+              <h1>
+                <span className="black">Save your space</span>
+                <span className="white">Save your money.</span>
+              </h1>
+              <hr className="seperator" />
             </div>
             <div className="desktop right"></div>
             <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
         <section className={hash === "customization" ? "active" : ""} id="customization">
-          <div className="even">
-            <div className="left">
-              <h1>
-                <span className="black">Less space, </span>
-                <span className="white">More sapce.</span>
-              </h1>
-              <hr className="seperator" />
-              <p>
-                Advanced spinning parking system. With this advanced technology cars are free to spin around in their
-            spots without losing balance and getting scratched.
-            </p>
-            </div>
-            <div className="desktop right"></div>
-            <button className="button explore upper oswald">Explore</button>
-          </div>
-        </section>
-        <section className={hash === "assemblance" ? "active" : ""} id="assemblance">
           <div className="odd">
             <div className="left">
               <h1>
-                <span className="black">Less space, </span>
-                <span className="white">More sapce.</span>
+                <span className="black">Build your</span>
+                <span className="white">Customized parking lot.</span>
               </h1>
               <hr className="seperator" />
               <p>
-                Advanced spinning parking system. With this advanced technology cars are free to spin around in their
-          spots without losing balance and getting scratched.
+              It can be anyhting you want, anywhere you want it.
+              Based on your surrounding environment build your
+              customized parking lot with any material available
+              in the country.
           </p>
             </div>
             <div className="desktop right"></div>
@@ -105,48 +99,52 @@ class App extends Component {
           <div className="even">
             <div className="left">
               <h1>
-                <span className="black">Less space, </span>
-                <span className="white">More sapce.</span>
+                <span className="black">Design your</span>
+                <span className="white">facade</span>
               </h1>
               <hr className="seperator" />
               <p>
-                Advanced spinning parking system. With this advanced technology cars are free to spin around in their
-          spots without losing balance and getting scratched.
+              Build and implement different designs and materials for your facade.
           </p>
             </div>
             <div className="desktop right"></div>
             <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
-        <section className={hash === "turntable" ? "active" : ""} id="turntable">
+        <section className={hash === "implementation" ? "active" : ""} id="implementation">
           <div className="odd">
             <div className="left">
               <h1>
-                <span className="black">Less space, </span>
-                <span className="white">More sapce.</span>
+                <span className="black">Anywhere </span>
+                <span className="white">is your space.</span>
               </h1>
               <hr className="seperator" />
               <p>
-                Advanced spinning parking system. With this advanced technology cars are free to spin around in their
-          spots without losing balance and getting scratched.
+              The ability to build your parking lot on any surface.
+              Optimpark can be built on the ground, in the ground
+              and in the ground.
           </p>
             </div>
             <div className="desktop right"></div>
             <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
-        <section className={hash === "scale" ? "active" : ""} id="scale">
+        <section className={hash === "advantages" ? "active" : ""} id="advantages">
           <div className="even">
             <div className="left">
               <h1>
-                <span className="black">Less space, </span>
-                <span className="white">More sapce.</span>
+                <span className="black">
+                  Safety <br/>
+                  Quick instalation <br/>
+                  Turntable functionality <br/>
+                  10 years of guarantee <br/>
+                </span>
+                <span className="white">
+                  Are just a few of your <br className="desktop"/>
+                  advantages to go with us.<br/>
+                </span>
               </h1>
               <hr className="seperator" />
-              <p>
-                Advanced spinning parking system. With this advanced technology cars are free to spin around in their
-          spots without losing balance and getting scratched.
-          </p>
             </div>
             <div className="desktop right"></div>
             <button className="button explore upper oswald">Explore</button>
@@ -155,11 +153,11 @@ class App extends Component {
 
         <ul className="desktop navigator">
           <li className={hash === "optimpark" ? "upper active" : "upper"}><Link to="#optimpark">Optimpark</Link></li>
+          <li className={hash === "solution" ? "upper active" : "upper"}><Link to="#solution">Solution</Link></li>
           <li className={hash === "customization" ? "upper active" : "upper"}><Link to="#customization">Customization</Link></li>
-          <li className={hash === "assemblance" ? "upper active" : "upper"}><Link to="#assemblance">Assemblance</Link></li>
           <li className={hash === "facade" ? "upper active" : "upper"}><Link to="#facade">Facade</Link></li>
-          <li className={hash === "turntable" ? "upper active" : "upper"}><Link to="#turntable">Turntable</Link></li>
-          <li className={hash === "scale" ? "upper active" : "upper"}><Link to="#scale">Scale</Link></li>
+          <li className={hash === "implementation" ? "upper active" : "upper"}><Link to="#implementation">Implementation</Link></li>
+          <li className={hash === "advantages" ? "upper active" : "upper"}><Link to="#advantages">Advantages</Link></li>
         </ul>
 
         
@@ -170,11 +168,11 @@ class App extends Component {
         </ul>
         <div className="desktop number">
           <img className={hash === "optimpark" ? "active" : ""} src={one}/>
-          <img className={hash === "customization" ? "active" : ""} src={two}/>
-          <img className={hash === "assemblance" ? "active" : ""} src={three}/>
+          <img className={hash === "solution" ? "active" : ""} src={two}/>
+          <img className={hash === "customization" ? "active" : ""} src={three}/>
           <img className={hash === "facade" ? "active" : ""} src={four}/>
-          <img className={hash === "turntable" ? "active" : ""} src={five}/>
-          <img className={hash === "scale" ? "active" : ""} src={six}/>
+          <img className={hash === "implementation" ? "active" : ""} src={five}/>
+          <img className={hash === "advantages" ? "active" : ""} src={six}/>
         </div>
         <nav>
           <div className="menu">
@@ -187,11 +185,11 @@ class App extends Component {
             <button className="button close" onClick={this.toggleMenu.bind(this)}><i className="fa fa-times"></i></button>
             <ul>
               <li><Link onClick={this.toggleMenu.bind(this)} to="#optimpark" className="item">Optimpark</Link></li>
+              <li><Link onClick={this.toggleMenu.bind(this)} to="#solution" className="item">Solution</Link></li>
               <li><Link onClick={this.toggleMenu.bind(this)} to="#customization" className="item">Customization</Link></li>
-              <li><Link onClick={this.toggleMenu.bind(this)} to="#assemblance" className="item">Assemblance</Link></li>
               <li><Link onClick={this.toggleMenu.bind(this)} to="#facade" className="item">Facade</Link></li>
-              <li><Link onClick={this.toggleMenu.bind(this)} to="#turntable" className="item">Turntable</Link></li>
-              <li><Link onClick={this.toggleMenu.bind(this)} to="#scale" className="item">Scale</Link></li>
+              <li><Link onClick={this.toggleMenu.bind(this)} to="#implementation" className="item">Implementation</Link></li>
+              <li><Link onClick={this.toggleMenu.bind(this)} to="#advantages" className="item">Advantages</Link></li>
               <li><hr /></li>
               <li><a href="about.html" className="item">About us</a></li>
               <li><a href="contact.html" className="item">Contact us</a></li>
