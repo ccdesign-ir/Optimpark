@@ -4,7 +4,7 @@
 }
 
 .popup{
-  transition: all 1s linear;
+  transition: all 0.2s linear;
   height: 100%;
   overflow: hidden;
 
@@ -38,6 +38,7 @@
   top: 0;
   right: 0;
   font-size: 4vh;
+  width: 10vh;
 }
 
 .collapsed{
@@ -56,7 +57,7 @@
 .menu .button{
   color: white;
   font-size: 2vh;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
 }
 
 .logo{
@@ -85,7 +86,7 @@ section>div:first-child h1:first-child{
   color: black;
   display: flex;
   flex-direction: column;
-  font-size: 2vw;
+  font-size: 4vh;
 }
 section>div:first-child.even{
   background: rgba(30, 36, 51, 0.8);
@@ -103,19 +104,20 @@ section p{
 section .explore{
   position: absolute;
   bottom: 10vh;
-  width: 13vh;
-  height: 13vh;
+  width: 15vh;
+  height: 15vh;
   font-size: 13px;
   letter-spacing: 5px;
 
   background: white;
   border-radius: 100%;
+
+  line-height: 15vh;
 }
 section .left{
   font-family: 'Arvo', sans-serif;
 }
 
 nav .button{
-  width: 10vh;
   height: 10vh;
 }

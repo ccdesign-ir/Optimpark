@@ -4,6 +4,13 @@ import './App.css';
 import './App-desktop.css';
 import 'font-awesome/css/font-awesome.css';
 import { HashLink as Link } from 'react-router-hash-link';
+import one from './assets/1.svg';
+import two from './assets/2.svg';
+import three from './assets/3.svg';
+import four from './assets/4.svg';
+import five from './assets/5.svg';
+import six from './assets/6.svg';
+
 //1080*1920
 //2560*1440
 class App extends Component {
@@ -57,7 +64,7 @@ class App extends Component {
               </p>
             </div>
             <div className="desktop right"></div>
-            <button className="button explore upper">Explore</button>
+            <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
         <section className={hash === "customization" ? "active" : ""} id="customization">
@@ -74,7 +81,7 @@ class App extends Component {
             </p>
             </div>
             <div className="desktop right"></div>
-            <button className="button explore upper">Explore</button>
+            <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
         <section className={hash === "assemblance" ? "active" : ""} id="assemblance">
@@ -91,7 +98,7 @@ class App extends Component {
           </p>
             </div>
             <div className="desktop right"></div>
-            <button className="button explore upper">Explore</button>
+            <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
         <section className={hash === "facade" ? "active" : ""} id="facade">
@@ -108,7 +115,7 @@ class App extends Component {
           </p>
             </div>
             <div className="desktop right"></div>
-            <button className="button explore upper">Explore</button>
+            <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
         <section className={hash === "turntable" ? "active" : ""} id="turntable">
@@ -125,7 +132,7 @@ class App extends Component {
           </p>
             </div>
             <div className="desktop right"></div>
-            <button className="button explore upper">Explore</button>
+            <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
         <section className={hash === "scale" ? "active" : ""} id="scale">
@@ -142,7 +149,7 @@ class App extends Component {
           </p>
             </div>
             <div className="desktop right"></div>
-            <button className="button explore upper">Explore</button>
+            <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
 
@@ -155,12 +162,26 @@ class App extends Component {
           <li className={hash === "scale" ? "upper active" : "upper"}><Link to="#scale">Scale</Link></li>
         </ul>
 
+        
+        <ul className="desktop socials upper white pathway">
+          <li><a href="http://instagram.com" className="button"><i className="fa fa-instagram"></i></a></li>
+          <li><a href="http://twitter.com" className="button"><i className="fa fa-twitter"></i></a></li>
+          <li><a href="http://telegram.com" className="button"><i className="fa fa-telegram"></i></a></li>
+        </ul>
+        <div className="desktop number">
+          <img className={hash === "optimpark" ? "active" : ""} src={one}/>
+          <img className={hash === "customization" ? "active" : ""} src={two}/>
+          <img className={hash === "assemblance" ? "active" : ""} src={three}/>
+          <img className={hash === "facade" ? "active" : ""} src={four}/>
+          <img className={hash === "turntable" ? "active" : ""} src={five}/>
+          <img className={hash === "scale" ? "active" : ""} src={six}/>
+        </div>
         <nav>
           <div className="menu">
             <div className="logo">
               <img src={logo} alt="Logo" />
             </div>
-            <button className="button upper" onClick={this.toggleMenu.bind(this)}>Menu <i className="fa fa-bars"></i></button>
+            <button className="button upper pathway" onClick={this.toggleMenu.bind(this)}>Menu <i className="fa fa-bars"></i></button>
           </div>
           <div className={cssPopup}>
             <button className="button close" onClick={this.toggleMenu.bind(this)}><i className="fa fa-times"></i></button>
@@ -177,21 +198,6 @@ class App extends Component {
             </ul>
           </div>
         </nav>
-        <ul className="desktop socials upper white">
-          <li>Follow us on social media</li>
-          <li><a href="http://instagram.com" className="button"><i className="fa fa-instagram"></i></a></li>
-          <li><a href="http://twitter.com" className="button"><i className="fa fa-twitter"></i></a></li>
-          <li><a href="http://telegram.com" className="button"><i className="fa fa-telegram"></i></a></li>
-        </ul>
-        <div className="desktop number">
-          <span className={hash === "optimpark" ? "active" : ""}>01</span>
-          <span className={hash === "customization" ? "active" : ""}>02</span>
-          <span className={hash === "assemblance" ? "active" : ""}>03</span>
-          <span className={hash === "facade" ? "active" : ""}>04</span>
-          <span className={hash === "turntable" ? "active" : ""}>05</span>
-          <span className={hash === "scale" ? "active" : ""}>06</span>
-        </div>
-
       </div>
     );
   }
