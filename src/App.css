@@ -84,10 +84,10 @@ section>div:first-child h1:first-child{
   color: black;
 }
 section>div:first-child.even{
-  background: rgba(26, 71, 186, 0.8);
+  background: rgba(30, 36, 51, 0.8);
 }
 section>div:first-child.odd{
-  background: rgba(30, 36, 51, 0.8);
+  background: rgba(26, 71, 186, 0.8);
 }
 section .seperator{
   width: 50px;
@@ -102,6 +102,9 @@ section .explore{
 
   background: white;
   border-radius: 100%;
+}
+section .left{
+  font-family: 'Arvo', sans-serif;
 }
 
 nav .button{

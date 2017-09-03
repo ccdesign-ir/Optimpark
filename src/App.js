@@ -15,10 +15,10 @@ class App extends Component {
   }
 
   toggleMenu(sectionName) {
-    this.setState({ ...this.state, menuCollapsed: !this.state.menuCollapsed});
+    this.setState({ ...this.state, menuCollapsed: !this.state.menuCollapsed });
   }
 
-  getHash(){
+  getHash() {
     switch (this.props.location.hash) {
       case "#optimpark":
         return "optimpark";
@@ -43,7 +43,7 @@ class App extends Component {
     var cssPopup = "popup".concat(state.menuCollapsed ? " collapsed" : "");
     return (
       <div className="app">
-        <section className={hash === "optimpark" ? "active":""} id="optimpark">
+        <section className={hash === "optimpark" ? "active" : ""} id="optimpark">
           <div className="odd">
             <div className="left">
               <h1>
@@ -60,89 +60,99 @@ class App extends Component {
             <button className="button explore upper">Explore</button>
           </div>
         </section>
-        <section className={hash === "customization" ? "active":""} id="customization">
+        <section className={hash === "customization" ? "active" : ""} id="customization">
           <div className="even">
             <div className="left">
-              <h1>Customization</h1>
-              <h1>Easy to assemble</h1>
+              <h1>
+                <span className="black">Less space, </span>
+                <span className="white">More sapce.</span>
+              </h1>
+              <hr className="seperator" />
               <p>
                 Advanced spinning parking system. With this advanced technology cars are free to spin around in their
             spots without losing balance and getting scratched.
             </p>
-              <hr />
             </div>
             <div className="desktop right"></div>
-            <button className="button explore">Explore</button>
+            <button className="button explore upper">Explore</button>
           </div>
         </section>
-        <section className={hash === "assemblance" ? "active":""} id="assemblance">
+        <section className={hash === "assemblance" ? "active" : ""} id="assemblance">
           <div className="odd">
             <div className="left">
-              <h1>Assemblance</h1>
-              <h1>Easy to assemble</h1>
+              <h1>
+                <span className="black">Less space, </span>
+                <span className="white">More sapce.</span>
+              </h1>
+              <hr className="seperator" />
               <p>
                 Advanced spinning parking system. With this advanced technology cars are free to spin around in their
           spots without losing balance and getting scratched.
           </p>
-              <hr />
             </div>
             <div className="desktop right"></div>
-            <button className="button explore">Explore</button>
+            <button className="button explore upper">Explore</button>
           </div>
         </section>
-        <section className={hash === "facade" ? "active":""} id="facade">
+        <section className={hash === "facade" ? "active" : ""} id="facade">
           <div className="even">
             <div className="left">
-              <h1>Facade</h1>
-              <h1>Easy to assemble</h1>
+              <h1>
+                <span className="black">Less space, </span>
+                <span className="white">More sapce.</span>
+              </h1>
+              <hr className="seperator" />
               <p>
                 Advanced spinning parking system. With this advanced technology cars are free to spin around in their
           spots without losing balance and getting scratched.
           </p>
-              <hr />
             </div>
             <div className="desktop right"></div>
-            <button className="button explore">Explore</button>
+            <button className="button explore upper">Explore</button>
           </div>
         </section>
-        <section className={hash === "turntable" ? "active":""} id="turntable">
+        <section className={hash === "turntable" ? "active" : ""} id="turntable">
           <div className="odd">
             <div className="left">
-              <h1>Turntable</h1>
-              <h1>Easy to assemble</h1>
+              <h1>
+                <span className="black">Less space, </span>
+                <span className="white">More sapce.</span>
+              </h1>
+              <hr className="seperator" />
               <p>
                 Advanced spinning parking system. With this advanced technology cars are free to spin around in their
           spots without losing balance and getting scratched.
           </p>
-              <hr />
             </div>
             <div className="desktop right"></div>
-            <button className="button explore">Explore</button>
+            <button className="button explore upper">Explore</button>
           </div>
         </section>
-        <section className={hash === "scale" ? "active":""} id="scale">
+        <section className={hash === "scale" ? "active" : ""} id="scale">
           <div className="even">
             <div className="left">
-              <h1>Scale</h1>
-              <h1>Easy to assemble</h1>
+              <h1>
+                <span className="black">Less space, </span>
+                <span className="white">More sapce.</span>
+              </h1>
+              <hr className="seperator" />
               <p>
                 Advanced spinning parking system. With this advanced technology cars are free to spin around in their
           spots without losing balance and getting scratched.
           </p>
-              <hr />
             </div>
             <div className="desktop right"></div>
-            <button className="button explore">Explore</button>
+            <button className="button explore upper">Explore</button>
           </div>
         </section>
 
         <ul className="desktop navigator">
-          <li className={hash === "optimpark" ? "upper active":"upper"}><Link to="#optimpark" className="item">Optimpark</Link></li>
-          <li className={hash === "customization" ? "upper active":"upper"}><Link to="#customization" className="item">Customization</Link></li>
-          <li className={hash === "assemblance" ? "upper active":"upper"}><Link to="#assemblance" className="item">Assemblance</Link></li>
-          <li className={hash === "facade" ? "upper active":"upper"}><Link to="#facade" className="item">Facade</Link></li>
-          <li className={hash === "turntable" ? "upper active":"upper"}><Link to="#turntable" className="item">Turntable</Link></li>
-          <li className={hash === "scale" ? "upper active":"upper"}><Link to="#scale" className="item">Scale</Link></li>
+          <li className={hash === "optimpark" ? "upper active" : "upper"}><Link to="#optimpark" className="item">Optimpark</Link></li>
+          <li className={hash === "customization" ? "upper active" : "upper"}><Link to="#customization" className="item">Customization</Link></li>
+          <li className={hash === "assemblance" ? "upper active" : "upper"}><Link to="#assemblance" className="item">Assemblance</Link></li>
+          <li className={hash === "facade" ? "upper active" : "upper"}><Link to="#facade" className="item">Facade</Link></li>
+          <li className={hash === "turntable" ? "upper active" : "upper"}><Link to="#turntable" className="item">Turntable</Link></li>
+          <li className={hash === "scale" ? "upper active" : "upper"}><Link to="#scale" className="item">Scale</Link></li>
         </ul>
 
         <nav>
