@@ -19,6 +19,23 @@ class App extends Component {
     this.state = {
       menuCollapsed: true
     };
+    this.sections = ['optimpark', 'solution', 'customization', 'facade', 'implementation', 'advantages'];
+  }
+
+  componentDidMount(){
+    window.addEventListener('wheel', (event)=>{
+      var hash = this.getHash();
+      var index = this.sections.indexOf(hash);
+
+      if(event.deltaY > 0){
+        if(index > 4) return;
+        this.props.history.push("#".concat(this.sections[index+1]))
+      }
+      else{
+        if(index < 1) return;
+        this.props.history.push("#".concat(this.sections[index-1]))
+      }
+    });
   }
 
   toggleMenu(sectionName) {
@@ -167,12 +184,12 @@ class App extends Component {
           <li><a href="http://telegram.com" className="button"><i className="fa fa-telegram"></i></a></li>
         </ul>
         <div className="desktop number">
-          <img className={hash === "optimpark" ? "active" : ""} src={one}/>
-          <img className={hash === "solution" ? "active" : ""} src={two}/>
-          <img className={hash === "customization" ? "active" : ""} src={three}/>
-          <img className={hash === "facade" ? "active" : ""} src={four}/>
-          <img className={hash === "implementation" ? "active" : ""} src={five}/>
-          <img className={hash === "advantages" ? "active" : ""} src={six}/>
+          <img className={hash === "optimpark" ? "active" : ""} src={one} alt="01"/>
+          <img className={hash === "solution" ? "active" : ""} src={two} alt="02"/>
+          <img className={hash === "customization" ? "active" : ""} src={three} alt="03"/>
+          <img className={hash === "facade" ? "active" : ""} src={four} alt="04"/>
+          <img className={hash === "implementation" ? "active" : ""} src={five} alt="05"/>
+          <img className={hash === "advantages" ? "active" : ""} src={six} alt="06"/>
         </div>
         <nav>
           <div className="menu">
