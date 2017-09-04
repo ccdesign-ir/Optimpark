@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
-import './App-desktop.css';
+import './Home.css';
+import './Home-desktop.css';
 import 'font-awesome/css/font-awesome.css';
 import { HashLink as Link } from 'react-router-hash-link';
 import one from './assets/1.svg';
@@ -13,7 +13,7 @@ import six from './assets/6.svg';
 
 //1080*1920
 //2560*1440
-class App extends Component {
+class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -67,7 +67,7 @@ class App extends Component {
     var cssPopup = "popup".concat(state.menuCollapsed ? " collapsed" : "");
     return (
       <div className="app">
-        <section className={hash === "optimpark" ? "active" : ""} id="optimpark">
+        <section className={hash === "optimpark" ? "home-section active" : "home-section"} id="optimpark">
           <div className="odd">
             <div className="left">
               <h1>
@@ -80,7 +80,7 @@ class App extends Component {
             <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
-        <section className={hash === "solution" ? "active" : ""} id="solution">
+        <section className={hash === "solution" ? "home-section active" : "home-section"} id="solution">
           <div className="even">
             <div className="left">
               <h1>
@@ -93,7 +93,7 @@ class App extends Component {
             <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
-        <section className={hash === "customization" ? "active" : ""} id="customization">
+        <section className={hash === "customization" ? "home-section active" : "home-section"} id="customization">
           <div className="odd">
             <div className="left">
               <h1>
@@ -112,7 +112,7 @@ class App extends Component {
             <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
-        <section className={hash === "facade" ? "active" : ""} id="facade">
+        <section className={hash === "facade" ? "home-section active" : "home-section"} id="facade">
           <div className="even">
             <div className="left">
               <h1>
@@ -128,7 +128,7 @@ class App extends Component {
             <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
-        <section className={hash === "implementation" ? "active" : ""} id="implementation">
+        <section className={hash === "implementation" ? "home-section active" : "home-section"} id="implementation">
           <div className="odd">
             <div className="left">
               <h1>
@@ -146,7 +146,7 @@ class App extends Component {
             <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
-        <section className={hash === "advantages" ? "active" : ""} id="advantages">
+        <section className={hash === "advantages" ? "home-section active" : "home-section"} id="advantages">
           <div className="even">
             <div className="left">
               <h1>
@@ -191,7 +191,7 @@ class App extends Component {
           <img className={hash === "implementation" ? "active" : ""} src={five} alt="05"/>
           <img className={hash === "advantages" ? "active" : ""} src={six} alt="06"/>
         </div>
-        <nav>
+        <nav className="home-nav">
           <div className="menu">
             <div className="logo">
               <img src={logo} alt="Logo" />
@@ -218,4 +218,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;

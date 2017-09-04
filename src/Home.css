@@ -71,37 +71,37 @@
   width: 45%;
 }
 
-section{
+.home-section{
   background-image: url(./assets/bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   color: white;
 }
-section>div:first-child{
+.home-section>div:first-child{
   position: relative;
   padding: 10vh;
   min-height: 80%;
 }
-section>div:first-child h1:first-child{
+.home-section>div:first-child h1:first-child{
   color: black;
   display: flex;
   flex-direction: column;
   font-size: 4vh;
 }
-section>div:first-child.even{
+.home-section>div:first-child.even{
   background: rgba(30, 36, 51, 0.8);
 }
-section>div:first-child.odd{
+.home-section>div:first-child.odd{
   background: rgba(26, 71, 186, 0.8);
 }
-section .seperator{
+.home-section .seperator{
   width: 50px;
   margin: 0;
 }
-section p{
+.home-section p{
   line-height: 29px;
 }
-section .explore{
+.home-section .explore{
   position: absolute;
   bottom: 10vh;
   width: 15vh;
@@ -114,10 +114,10 @@ section .explore{
 
   line-height: 15vh;
 }
-section .left{
+.home-section .left{
   font-family: 'Arvo', sans-serif;
 }
 
-nav .button{
+.home-nav .button{
   height: 10vh;
 }
