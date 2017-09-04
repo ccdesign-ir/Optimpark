@@ -44,7 +44,7 @@
   height: 0;
 }
 
-.menu{
+.home-nav .menu{
   position: fixed;
   top: 0;
   left: 0;
@@ -53,7 +53,7 @@
   display: flex;
   justify-content: space-between;
 }
-.menu .button{
+.home-nav .menu .button{
   color: white;
   font-size: 2vh;
   letter-spacing: 1px;
