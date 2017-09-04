@@ -108,7 +108,7 @@
         border-color: white;
         width: 2.5vw;
     }
-    .navigator li:hover a::before{
+    .navigator a:hover::before{
         width: 2.5vw;
     }
 
@@ -168,6 +168,9 @@
     }
     .socials>li:last-child{
         margin-right: 0;
+    }
+    .socials a:hover{
+        color: rgb(26, 71, 186);
     }
 
     .number{
