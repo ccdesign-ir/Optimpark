@@ -65,6 +65,7 @@ class Home extends Component {
     var state = this.state;
     var hash = this.getHash();
     var cssPopup = "popup".concat(state.menuCollapsed ? " collapsed" : "");
+    var cssMenu = "button upper pathway".concat(state.menuCollapsed ? " collapsed" : "")
     return (
       <div className="app">
         <section className={hash === "optimpark" ? "home-section active" : "home-section"} id="optimpark">
@@ -196,10 +197,9 @@ class Home extends Component {
             <div className="logo">
               <img src={logo} alt="Logo" />
             </div>
-            <button className="button upper pathway" onClick={this.toggleMenu.bind(this)}>Menu <i className="fa fa-bars"></i></button>
+            <button className={cssMenu} onClick={this.toggleMenu.bind(this)}>Menu <i className="fa fa-bars"></i></button>
           </div>
           <div className={cssPopup}>
-            <button className="button close" onClick={this.toggleMenu.bind(this)}><i className="fa fa-times"></i></button>
             <ul>
               <li><Link onClick={this.toggleMenu.bind(this)} to="#optimpark" className="item">Optimpark</Link></li>
               <li><Link onClick={this.toggleMenu.bind(this)} to="#solution" className="item">Solution</Link></li>

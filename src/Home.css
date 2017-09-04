@@ -44,19 +44,28 @@
   height: 0;
 }
 
-.home-nav .menu{
+.home-nav{
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+}
+
+.home-nav .menu{
   height: 8vh;
   display: flex;
   justify-content: space-between;
 }
 .home-nav .menu .button{
-  color: white;
+  color: black;
   font-size: 2vh;
   letter-spacing: 1px;
+  z-index: 10;
+
+  transition: all 0.2s linear;
+}
+.home-nav .menu .button.collapsed{
+  color: white;
 }
 
 .logo{
