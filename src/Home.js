@@ -10,6 +10,7 @@ import three from './assets/3.svg';
 import four from './assets/4.svg';
 import five from './assets/5.svg';
 import six from './assets/6.svg';
+import line from './assets/line.svg';
 
 //1080*1920
 //2560*1440
@@ -182,7 +183,7 @@ class Home extends Component {
         <ul className="desktop socials upper white pathway">
           <li><a href="http://instagram.com" className="button"><i className="fa fa-instagram"></i></a></li>
           <li><a href="http://twitter.com" className="button"><i className="fa fa-twitter"></i></a></li>
-          <li><a href="http://telegram.com" className="button"><i className="fa fa-telegram"></i></a></li>
+          <li><a href="http://telegram.com" className="button"><i className="fa fa-paper-plane"></i></a></li>
         </ul>
         <div className="desktop number">
           <img className={hash === "optimpark" ? "active" : ""} src={one} alt="01"/>
@@ -197,7 +198,7 @@ class Home extends Component {
             <div className="logo">
               <img src={logo} alt="Logo" />
             </div>
-            <button className={cssMenu} onClick={this.toggleMenu.bind(this)}>Menu <i className="fa fa-bars"></i></button>
+            <button className={cssMenu} onClick={this.toggleMenu.bind(this)}><span>Menu </span><span className="bars"><img src={line} alt=""/><img src={line} alt=""/><img src={line} alt=""/></span></button>
           </div>
           <div className={cssPopup}>
             <ul>

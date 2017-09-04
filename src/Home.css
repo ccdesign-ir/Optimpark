@@ -62,6 +62,9 @@
   letter-spacing: 1px;
   z-index: 10;
 
+  display: flex;
+  align-items: center;
+
   transition: all 0.2s linear;
 }
 .home-nav .menu .button.collapsed{
@@ -128,4 +131,37 @@
 
 .home-nav .button{
   height: 10vh;
+}
+
+.bars{
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 3px;
+}
+.bars img{
+  width: 2vh;
+  filter: invert(1);
+  transition: all 0.2s linear;
+}
+.bars img:first-child{
+  transform: rotate(45deg) translateY(97%);
+}
+.bars img:nth-child(2){
+  transform: rotate(45deg);
+}
+.bars img:last-child{
+  transform: rotate(-45deg) translateY(103%);
+}
+.collapsed .bars img:first-child{
+  transform: translateY(65%);
+}
+.collapsed .bars img:nth-child(2){
+  transform: translateY(-3%);
+}
+.collapsed .bars img:last-child{
+  transform: translateY(-72%);
+}
+.collapsed .bars img{
+  filter: none;
+  transform: none;
 }
