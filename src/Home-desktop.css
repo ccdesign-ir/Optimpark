@@ -187,6 +187,9 @@
     .socials a:hover{
         color: rgb(26, 71, 186);
     }
+    .socials a{
+        transition: all 0.1s linear;
+    }
 
     .number{
         grid-column: 1/3;
