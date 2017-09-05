@@ -4,7 +4,7 @@
         opacity: 1;
     }
     .home-section .left-content{
-        transition: all 0.3s linear;
+        transition: all 0.2s ease-in;
 
         opacity: 0;
         transform: translateX(-100%);
@@ -12,12 +12,12 @@
     .home-section.active .left-content{
         opacity: 1;
         transform: none;
-        transition-delay: 0.3s;
+        transition-delay: 0.2s;
     }
     .home-section{
         opacity: 0;
         background: rgb(30, 36, 51);
-        transition: opacity 0.3s step-end;
+        transition: opacity 0.2s step-end;
         pointer-events: none;
     }
     .home-section>div:first-child{
@@ -38,6 +38,13 @@
         line-height: 125px;
         font-size: 15px;
         pointer-events: none;
+
+        transition: all 30ms linear;
+    }
+    .home-section .explore:hover{
+        width: 140px;
+        height: 140px;
+        line-height: 140px;
     }
     .home-section.active .explore{
         pointer-events: auto;
@@ -45,22 +52,25 @@
     .home-section .left{
         flex-basis: 50%;
         padding: 110px;
-        background: rgb(26, 71, 186);
+        background: #0054E8;
     }
     .home-section .left-content>*{
-        margin-left: 3vw;
+        margin-left: 55px;
     }
     .home-section .left-content>p{
         margin-right: 11vw;
     }
     .home-section .right{
         flex-basis: 50%;
-        padding: 110px;
         display: flex;
         align-items: center;
+        justify-content: center;
+        overflow: hidden;
     }
     .home-section .right img{
+        height: 100%;
         width: 100%;
+        object-fit: cover;
     }
     
     .app{
@@ -79,7 +89,7 @@
 
     .home-nav .menu{
         position: relative;
-        margin-right: 30px;
+        margin-right: 46px;
     }
 
     .navigator{
@@ -95,7 +105,7 @@
     }
     .navigator a{
         text-decoration: none;
-        color: black;
+        color: #1e2433;
         font-size: 13px;
         letter-spacing: 4px;
     }
@@ -103,16 +113,16 @@
         margin-top: 10px;
     }
     .navigator a:link{
-        color: black;
+        color: #1e2433;
     }
     .navigator a:visited{
-        color: black;
+        color: #1e2433;
     }
     .navigator a::before{
         content: "";
         display: inline-block;
         width: 2vw;
-        border: 1px solid black;
+        border: 1px solid #1e2433;
         border-bottom: 0;
         transform: translateY(-5px);
         margin-right: 9px;
@@ -150,10 +160,10 @@
     }
 
     .home-section>div:first-child h1:first-child{
-        margin-top: 8vh;
+        margin-top: 77px;
         
-        font-size: 2vw;
-        line-height: 3vw;
+        font-size: 40px;
+        line-height: 65px;
     }
 
     #optimpark>div:first-child h1:first-child,
@@ -186,7 +196,7 @@
         justify-content: flex-end;
         align-items: center;
 
-        padding: 0 30px 0 0;
+        padding: 0 46px 0 0;
         margin: 0;
 
         font-size: 20px;
@@ -200,7 +210,7 @@
         margin-right: 0;
     }
     .socials a:hover{
-        color: rgb(26, 71, 186);
+        color: #0054E8;
     }
     .socials a{
         transition: all 0.1s linear;
@@ -215,21 +225,27 @@
 
         color: white;
         font-size: 10em;
-        padding-right: 3vw;
+        position: relative;
     }
     .number>img{
-        display: none;
+        position: absolute;
+        bottom: 0;
+        right: 40px;
         height: 204px;
+
+        transition: all 0.2s ease-in;
+        opacity: 0;
+        transform: translateX(20%);
+        display: inline-block;
     }
     .number>img.active{
-        display: inline-block;
+        opacity: 1;
+        transform: none;
+        transition-delay: 0.2s;
     }
 
     .popup{
         right: 50vw;
-    }
-    .popup .close{
-        height: 10vh;
     }
 
     /* } */
