@@ -150,9 +150,7 @@ class Home extends Component {
                   <span className="white">facade</span>
                 </h1>
                 <hr className="seperator" />
-                <p>
-                  Build and implement different designs and materials for your facade.
-          </p>
+                <p>Implementation of different designs and materials for your facade. Considering the availability of materials in the market, you can build and implement your preferred design anywhere.</p>
               </div>
             </div>
             <div className="desktop right">
