@@ -173,9 +173,9 @@ class Home extends Component {
                 <h1>
                   <span className="black">
                     Safety <br />
-                    Quick instalation <br />
-                    Turntable functionality <br />
-                    10 years of guarantee <br />
+                    Quick set-up <br />
+                    Flexibility <br />
+                    Energy-efficient <br />
                   </span>
                   <span className="white">
                     Are just a few of your <br className="desktop" />

@@ -3,6 +3,7 @@
 }
 
 .popup{
+  font-family: 'Arvo', sans-serif;
   transition: all 0.2s linear;
   height: 100%;
   overflow: hidden;
@@ -23,7 +24,10 @@
   list-style: none;
   padding: 10px;
   margin: 0;
-  font-size:7vmin;
+  font-size: 5vh;
+}
+.popup ul>li{
+  margin: 1vh 0;
 }
 .popup .item{
   text-decoration: none;
