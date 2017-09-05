@@ -17,8 +17,8 @@
     .home-section{
         opacity: 0;
         background: rgb(30, 36, 51);
-        z-index: 0;
         transition: opacity 0.3s step-end;
+        pointer-events: none;
     }
     .home-section>div:first-child{
         padding: 0;
@@ -36,6 +36,10 @@
         height: 13vh;
 
         line-height: 13vh;
+        pointer-events: none;
+    }
+    .home-section.active .explore{
+        pointer-events: auto;
     }
     .home-section .left{
         flex-basis: 50%;
