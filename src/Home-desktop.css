@@ -1,11 +1,24 @@
 @media screen and (min-width: 768px){
     /* @supports(display: grid){ */
     .home-section.active{
-        visibility: visible;
+        opacity: 1;
+    }
+    .home-section .left-content{
+        transition: all 0.3s linear;
+
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    .home-section.active .left-content{
+        opacity: 1;
+        transform: none;
+        transition-delay: 0.3s;
     }
     .home-section{
-        visibility: hidden;
+        opacity: 0;
         background: rgb(30, 36, 51);
+        z-index: 0;
+        transition: opacity 0.3s step-end;
     }
     .home-section>div:first-child{
         padding: 0;
@@ -29,10 +42,10 @@
         padding: 6vw;
         background: rgb(26, 71, 186);
     }
-    .home-section .left>*{
+    .home-section .left-content>*{
         margin-left: 3vw;
     }
-    .home-section .left>p{
+    .home-section .left-content>p{
         margin-right: 11vw;
     }
     .home-section .right{

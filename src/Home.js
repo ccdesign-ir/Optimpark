@@ -18,24 +18,32 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuCollapsed: true
+      menuCollapsed: true,
+      isTransitioning: false
     };
     this.sections = ['optimpark', 'solution', 'customization', 'facade', 'implementation', 'advantages'];
   }
 
-  componentDidMount(){
-    window.addEventListener('wheel', (event)=>{
+  componentDidMount() {
+    window.addEventListener('wheel', (event) => {
+      if (this.state.isTransitioning) return;
       var hash = this.getHash();
       var index = this.sections.indexOf(hash);
 
-      if(event.deltaY > 0){
-        if(index > 4) return;
-        this.props.history.push("#".concat(this.sections[index+1]))
+      if (event.deltaY > 0) {
+        if (index > 4) return;
+        this.setState({...this.state, isTransitioning: true});
+        this.props.history.push("#".concat(this.sections[index + 1]))
       }
-      else{
-        if(index < 1) return;
-        this.props.history.push("#".concat(this.sections[index-1]))
+      else {
+        if (index < 1) return;
+        this.setState({...this.state, isTransitioning: true});
+        this.props.history.push("#".concat(this.sections[index - 1]))
       }
+
+      setTimeout(()=>{
+        this.setState({...this.state, isTransitioning: false});
+      }, 600);
     });
   }
 
@@ -72,11 +80,13 @@ class Home extends Component {
         <section className={hash === "optimpark" ? "home-section active" : "home-section"} id="optimpark">
           <div className="odd">
             <div className="left">
-              <h1>
-                <span className="black">Less space, </span>
-                <span className="white">More space.</span>
-              </h1>
-              <hr className="seperator" />
+              <div className="left-content">
+                <h1>
+                  <span className="black">Less space, </span>
+                  <span className="white">More space.</span>
+                </h1>
+                <hr className="seperator" />
+              </div>
             </div>
             <div className="desktop right"></div>
             <button className="button explore upper oswald">Explore</button>
@@ -85,11 +95,13 @@ class Home extends Component {
         <section className={hash === "solution" ? "home-section active" : "home-section"} id="solution">
           <div className="even">
             <div className="left">
-              <h1>
-                <span className="black">Save your space</span>
-                <span className="white">Save your money.</span>
-              </h1>
-              <hr className="seperator" />
+              <div className="left-content">
+                <h1>
+                  <span className="black">Save your space</span>
+                  <span className="white">Save your money.</span>
+                </h1>
+                <hr className="seperator" />
+              </div>
             </div>
             <div className="desktop right"></div>
             <button className="button explore upper oswald">Explore</button>
@@ -98,17 +110,19 @@ class Home extends Component {
         <section className={hash === "customization" ? "home-section active" : "home-section"} id="customization">
           <div className="odd">
             <div className="left">
-              <h1>
-                <span className="black">Build your</span>
-                <span className="white">Customized parking lot.</span>
-              </h1>
-              <hr className="seperator" />
-              <p>
-              It can be anyhting you want, anywhere you want it.
+              <div className="left-content">
+                <h1>
+                  <span className="black">Build your</span>
+                  <span className="white">Customized parking lot.</span>
+                </h1>
+                <hr className="seperator" />
+                <p>
+                  It can be anyhting you want, anywhere you want it.
               Based on your surrounding environment build your
               customized parking lot with any material available
               in the country.
           </p>
+              </div>
             </div>
             <div className="desktop right"></div>
             <button className="button explore upper oswald">Explore</button>
@@ -117,14 +131,16 @@ class Home extends Component {
         <section className={hash === "facade" ? "home-section active" : "home-section"} id="facade">
           <div className="even">
             <div className="left">
-              <h1>
-                <span className="black">Design your </span>
-                <span className="white">facade</span>
-              </h1>
-              <hr className="seperator" />
-              <p>
-              Build and implement different designs and materials for your facade.
+              <div className="left-content">
+                <h1>
+                  <span className="black">Design your </span>
+                  <span className="white">facade</span>
+                </h1>
+                <hr className="seperator" />
+                <p>
+                  Build and implement different designs and materials for your facade.
           </p>
+              </div>
             </div>
             <div className="desktop right"></div>
             <button className="button explore upper oswald">Explore</button>
@@ -133,16 +149,18 @@ class Home extends Component {
         <section className={hash === "implementation" ? "home-section active" : "home-section"} id="implementation">
           <div className="odd">
             <div className="left">
-              <h1>
-                <span className="black">Anywhere </span>
-                <span className="white">is your space.</span>
-              </h1>
-              <hr className="seperator" />
-              <p>
-              The ability to build your parking lot on any surface.
+              <div className="left-content">
+                <h1>
+                  <span className="black">Anywhere </span>
+                  <span className="white">is your space.</span>
+                </h1>
+                <hr className="seperator" />
+                <p>
+                  The ability to build your parking lot on any surface.
               Optimpark can be built on the ground, in the ground
               and in the ground.
           </p>
+              </div>
             </div>
             <div className="desktop right"></div>
             <button className="button explore upper oswald">Explore</button>
@@ -151,19 +169,21 @@ class Home extends Component {
         <section className={hash === "advantages" ? "home-section active" : "home-section"} id="advantages">
           <div className="even">
             <div className="left">
-              <h1>
-                <span className="black">
-                  Safety <br/>
-                  Quick instalation <br/>
-                  Turntable functionality <br/>
-                  10 years of guarantee <br/>
-                </span>
-                <span className="white">
-                  Are just a few of your <br className="desktop"/>
-                  advantages to go with us.<br/>
-                </span>
-              </h1>
-              <hr className="seperator" />
+              <div className="left-content">
+                <h1>
+                  <span className="black">
+                    Safety <br />
+                    Quick instalation <br />
+                    Turntable functionality <br />
+                    10 years of guarantee <br />
+                  </span>
+                  <span className="white">
+                    Are just a few of your <br className="desktop" />
+                    advantages to go with us.<br />
+                  </span>
+                </h1>
+                <hr className="seperator" />
+              </div>
             </div>
             <div className="desktop right"></div>
             <button className="button explore upper oswald">Explore</button>
@@ -179,26 +199,26 @@ class Home extends Component {
           <li className={hash === "advantages" ? "upper active" : "upper"}><Link to="#advantages">Advantages</Link></li>
         </ul>
 
-        
+
         <ul className="desktop socials upper white pathway">
           <li><a href="http://instagram.com" className="button"><i className="fa fa-instagram"></i></a></li>
           <li><a href="http://twitter.com" className="button"><i className="fa fa-twitter"></i></a></li>
           <li><a href="http://telegram.com" className="button"><i className="fa fa-paper-plane"></i></a></li>
         </ul>
         <div className="desktop number">
-          <img className={hash === "optimpark" ? "active" : ""} src={one} alt="01"/>
-          <img className={hash === "solution" ? "active" : ""} src={two} alt="02"/>
-          <img className={hash === "customization" ? "active" : ""} src={three} alt="03"/>
-          <img className={hash === "facade" ? "active" : ""} src={four} alt="04"/>
-          <img className={hash === "implementation" ? "active" : ""} src={five} alt="05"/>
-          <img className={hash === "advantages" ? "active" : ""} src={six} alt="06"/>
+          <img className={hash === "optimpark" ? "active" : ""} src={one} alt="01" />
+          <img className={hash === "solution" ? "active" : ""} src={two} alt="02" />
+          <img className={hash === "customization" ? "active" : ""} src={three} alt="03" />
+          <img className={hash === "facade" ? "active" : ""} src={four} alt="04" />
+          <img className={hash === "implementation" ? "active" : ""} src={five} alt="05" />
+          <img className={hash === "advantages" ? "active" : ""} src={six} alt="06" />
         </div>
         <nav className="home-nav">
           <div className="menu">
             <div className="logo">
               <img src={logo} alt="Logo" />
             </div>
-            <button className={cssMenu} onClick={this.toggleMenu.bind(this)}><span>Menu </span><span className="bars"><img src={line} alt=""/><img src={line} alt=""/><img src={line} alt=""/></span></button>
+            <button className={cssMenu} onClick={this.toggleMenu.bind(this)}><span>Menu </span><span className="bars"><img src={line} alt="" /><img src={line} alt="" /><img src={line} alt="" /></span></button>
           </div>
           <div className={cssPopup}>
             <ul>
