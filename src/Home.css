@@ -52,13 +52,12 @@
 }
 
 .home-nav .menu{
-  height: 8vh;
   display: flex;
   justify-content: space-between;
 }
 .home-nav .menu .button{
   color: black;
-  font-size: 2vh;
+  font-size: 20px;
   letter-spacing: 1px;
   z-index: 10;
 
@@ -139,29 +138,30 @@
   margin-left: 3px;
 }
 .bars img{
-  width: 2vh;
+  width: 20px;
   filter: invert(1);
   transition: all 0.2s linear;
+
+  transform-origin: 50% 50%;
 }
 .bars img:first-child{
-  transform: rotate(45deg) translateY(97%);
+  transform: translateY(100%) rotate(45deg);
 }
 .bars img:nth-child(2){
-  transform: rotate(45deg);
+  opacity: 0;
 }
 .bars img:last-child{
-  transform: rotate(-45deg) translateY(103%);
+  transform: translateY(-100%) rotate(-45deg);
 }
 .collapsed .bars img:first-child{
-  transform: translateY(65%);
+  transform: translateY(70%);
 }
 .collapsed .bars img:nth-child(2){
-  transform: translateY(-3%);
+  opacity: 1;
 }
 .collapsed .bars img:last-child{
-  transform: translateY(-72%);
+  transform: translateY(-70%);
 }
 .collapsed .bars img{
   filter: none;
-  transform: none;
 }

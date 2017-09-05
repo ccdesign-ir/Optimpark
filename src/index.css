@@ -11,6 +11,9 @@ body {
   box-sizing: border-box;
   line-height: 100%;
 }
+.button:focus{
+  outline: none;
+}
 
 a.button{
   text-decoration: none;

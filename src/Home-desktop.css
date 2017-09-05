@@ -123,6 +123,7 @@
 
     .home-nav .menu .button{
         padding: 3vw;
+        align-items: flex-start;
     }
 
     .home-section>div:first-child h1:first-child{
@@ -198,6 +199,10 @@
     }
     .popup .close{
         height: 10vh;
+    }
+
+    .bars{
+        transform: translateY(-20px);
     }
     /* } */
 }
