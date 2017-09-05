@@ -32,10 +32,11 @@
 
         transform: translate(-50%,-50%);
 
-        width: 13vh;
-        height: 13vh;
+        width: 125px;
+        height: 125px;
 
-        line-height: 13vh;
+        line-height: 125px;
+        font-size: 15px;
         pointer-events: none;
     }
     .home-section.active .explore{
@@ -139,8 +140,7 @@
     }
 
     .home-nav .menu .button{
-        padding: 3vw;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .home-section>div:first-child h1:first-child{
@@ -163,8 +163,11 @@
     }
 
     .logo{
-        width: 6vw;
-        height: 6vw;
+        width: 110px;
+        height: 110px;
+    }
+    .logo:hover .logotype{
+        width: 200px;
     }
 
     .socials{
@@ -175,12 +178,14 @@
 
         display: flex;
         justify-content: flex-end;
-        align-items: flex-start;
+        align-items: center;
 
-        padding: 3vw 3vw 0 0;
+        padding: 0 30px 0 0;
         margin: 0;
 
-        font-size: 2vh;
+        font-size: 20px;
+
+        height: 110px;
     }
     .socials>li{
         margin: 0 15px; 
@@ -221,8 +226,24 @@
         height: 10vh;
     }
 
-    .bars{
-        transform: translateY(-20px);
+    #optimpark .right{
+        background: #0000aa;
     }
+    #solution .right{
+        background: #3333aa;
+    }
+    #customization .right{
+        background: #6666aa;
+    }
+    #facade .right{
+        background: #9999aa;
+    }
+    #implementation .right{
+        background: #ccccaa;
+    }
+    #advantages .right{
+        background: #ffffaa;
+    }
+
     /* } */
 }
