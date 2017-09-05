@@ -10,6 +10,12 @@ import three from './assets/3.svg';
 import four from './assets/4.svg';
 import five from './assets/5.svg';
 import six from './assets/6.svg';
+import image1 from './assets/image-01.jpg';
+import image2 from './assets/image-02.jpg';
+import image3 from './assets/image-03.jpg';
+import image4 from './assets/image-04.jpg';
+import image5 from './assets/image-05.jpg';
+import image6 from './assets/image-06.jpg';
 import line from './assets/line.svg';
 import logotype from './assets/logotype.svg';
 
@@ -89,7 +95,9 @@ class Home extends Component {
                 <hr className="seperator" />
               </div>
             </div>
-            <div className="desktop right"></div>
+            <div className="desktop right">
+              <img src={image1} alt="optimpark" />
+            </div>
             <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
@@ -104,7 +112,9 @@ class Home extends Component {
                 <hr className="seperator" />
               </div>
             </div>
-            <div className="desktop right"></div>
+            <div className="desktop right">
+              <img src={image2} alt="solution" />
+            </div>
             <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
@@ -125,7 +135,9 @@ class Home extends Component {
           </p>
               </div>
             </div>
-            <div className="desktop right"></div>
+            <div className="desktop right">
+              <img src={image3} alt="customization" />
+            </div>
             <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
@@ -143,7 +155,9 @@ class Home extends Component {
           </p>
               </div>
             </div>
-            <div className="desktop right"></div>
+            <div className="desktop right">
+              <img src={image4} alt="facade" />
+            </div>
             <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
@@ -163,7 +177,9 @@ class Home extends Component {
           </p>
               </div>
             </div>
-            <div className="desktop right"></div>
+            <div className="desktop right">
+              <img src={image5} alt="implementation" />
+            </div>
             <button className="button explore upper oswald">Explore</button>
           </div>
         </section>
@@ -186,7 +202,9 @@ class Home extends Component {
                 <hr className="seperator" />
               </div>
             </div>
-            <div className="desktop right"></div>
+            <div className="desktop right">
+              <img src={image6} alt="advantages" />
+            </div>
             <button className="button explore upper oswald">Explore</button>
           </div>
         </section>

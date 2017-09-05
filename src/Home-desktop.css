@@ -44,7 +44,7 @@
     }
     .home-section .left{
         flex-basis: 50%;
-        padding: 6vw;
+        padding: 110px;
         background: rgb(26, 71, 186);
     }
     .home-section .left-content>*{
@@ -55,7 +55,12 @@
     }
     .home-section .right{
         flex-basis: 50%;
-        padding: 6vw;
+        padding: 110px;
+        display: flex;
+        align-items: center;
+    }
+    .home-section .right img{
+        width: 100%;
     }
     
     .app{
@@ -74,6 +79,7 @@
 
     .home-nav .menu{
         position: relative;
+        margin-right: 30px;
     }
 
     .navigator{
@@ -224,25 +230,6 @@
     }
     .popup .close{
         height: 10vh;
-    }
-
-    #optimpark .right{
-        background: #0000aa;
-    }
-    #solution .right{
-        background: #3333aa;
-    }
-    #customization .right{
-        background: #6666aa;
-    }
-    #facade .right{
-        background: #9999aa;
-    }
-    #implementation .right{
-        background: #ccccaa;
-    }
-    #advantages .right{
-        background: #ffffaa;
     }
 
     /* } */

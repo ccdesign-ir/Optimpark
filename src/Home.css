@@ -51,7 +51,7 @@
 .home-nav .menu{
   display: flex;
   justify-content: space-between;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 .home-nav .menu .button{
   color: black;
