@@ -19,15 +19,31 @@ class Frame extends Component {
     }
 
     toggleMenu() {
-        this.setState({ ...this.state, menuCollapsed: !this.state.menuCollapsed });
+        this.setState({ ...this.state, isMenuCollapsed: !this.state.isMenuCollapsed });
     }
 
     render() {
         var state = this.state;
-        var cssPopup = "popup".concat(state.menuCollapsed ? "" : " collapsed");
-        var cssMenu = "button upper pathway".concat(state.menuCollapsed ? "" : " collapsed")
+        var cssPopup = "popup".concat(state.isMenuCollapsed ? " collapsed" : "");
+        var cssMenu = "button upper pathway".concat(state.isMenuCollapsed ? " collapsed" : "")
         return (
             <div className="app">
+                {this.props.children}
+                <footer>
+                    <div className="footer">
+                        <div className="logo">
+                            <img src={logo} alt="Logo" />
+                            <div className="logotype">
+                                <img src={logotype} alt="Logotype" />
+                            </div>
+                        </div>
+                        <ul className="footer-socials">
+                            <li><a href="http://instagram.com" className="button"><i className="fa fa-instagram"></i></a></li>
+                            <li><a href="http://twitter.com" className="button"><i className="fa fa-twitter"></i></a></li>
+                            <li><a href="http://telegram.com" className="button"><i className="fa fa-telegram"></i></a></li>
+                        </ul>
+                    </div>
+                </footer>
                 <nav className="nav">
                     <div className="menu">
                         <div className="logo">
@@ -49,22 +65,6 @@ class Frame extends Component {
                         </ul>
                     </div>
                 </nav>
-                {this.props.children}
-                <footer>
-                    <div className="footer">
-                        <div className="logo">
-                            <img src={logo} alt="Logo" />
-                            <div className="logotype">
-                                <img src={logotype} alt="Logotype" />
-                            </div>
-                        </div>
-                        <ul className="footer-socials">
-                            <li><a href="http://instagram.com" className="button"><i className="fa fa-instagram"></i></a></li>
-                            <li><a href="http://twitter.com" className="button"><i className="fa fa-twitter"></i></a></li>
-                            <li><a href="http://telegram.com" className="button"><i className="fa fa-telegram"></i></a></li>
-                        </ul>
-                    </div>
-                </footer>
             </div>
         )
     }
