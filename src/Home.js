@@ -238,7 +238,7 @@ class Home extends Component {
                 <img src={logotype} alt="Logotype" />
               </div>
             </div>
-            <button className={cssMenu} onClick={this.toggleMenu.bind(this)}><span>Menu </span><span className="bars"><img src={line} alt="" /><img src={line} alt="" /><img src={line} alt="" /></span></button>
+            <button className={cssMenu} onClick={this.toggleMenu.bind(this)}><span className="desktop">Menu </span><span className="bars"><img src={line} alt="" /><img src={line} alt="" /><img src={line} alt="" /></span></button>
           </div>
           <div className={cssPopup}>
             <ul>
@@ -249,8 +249,8 @@ class Home extends Component {
               <li><Link onClick={this.toggleMenu.bind(this)} to="#implementation" className="item">Implementation</Link></li>
               <li><Link onClick={this.toggleMenu.bind(this)} to="#advantages" className="item">Advantages</Link></li>
               <li><hr /></li>
-              <li><Link to="/about" className="item">About us</Link></li>
-              <li><Link to="/contact" className="item">Contact us</Link></li>
+              <li><Link to="/about" onClick={this.toggleMenu.bind(this)} className="item">About us</Link></li>
+              <li><Link to="/contact" onClick={this.toggleMenu.bind(this)} className="item">Contact us</Link></li>
             </ul>
           </div>
         </nav>

@@ -6,7 +6,8 @@ class About extends Component {
     render() {
         return (
             <Frame>
-                SEGE
+                <div className="test">
+                </div>
             </Frame>
         )
     }
