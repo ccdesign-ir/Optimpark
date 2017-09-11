@@ -10,12 +10,12 @@ import three from './assets/3.svg';
 import four from './assets/4.svg';
 import five from './assets/5.svg';
 import six from './assets/6.svg';
-import image1 from './assets/image-01.jpg';
-import image2 from './assets/image-02.jpg';
-import image3 from './assets/image-03.jpg';
-import image4 from './assets/image-04.jpg';
-import image5 from './assets/image-05.jpg';
-import image6 from './assets/image-06.jpg';
+import image1 from './temp/image-01.jpg';
+import image2 from './temp/image-02.jpg';
+import image3 from './temp/image-03.jpg';
+import image4 from './temp/image-04.jpg';
+import image5 from './temp/image-05.jpg';
+import image6 from './temp/image-06.jpg';
 import line from './assets/line.svg';
 import logotype from './assets/logotype.svg';
 
@@ -50,7 +50,7 @@ class Home extends Component {
 
       setTimeout(()=>{
         this.setState({...this.state, isTransitioning: false});
-      }, 600);
+      }, 300);
     });
   }
 
@@ -249,8 +249,8 @@ class Home extends Component {
               <li><Link onClick={this.toggleMenu.bind(this)} to="#implementation" className="item">Implementation</Link></li>
               <li><Link onClick={this.toggleMenu.bind(this)} to="#advantages" className="item">Advantages</Link></li>
               <li><hr /></li>
-              <li><a href="about.html" className="item">About us</a></li>
-              <li><a href="contact.html" className="item">Contact us</a></li>
+              <li><Link to="/about" className="item">About us</Link></li>
+              <li><Link to="/contact" className="item">Contact us</Link></li>
             </ul>
           </div>
         </nav>
