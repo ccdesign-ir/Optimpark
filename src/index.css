@@ -49,10 +49,18 @@ a.button:visited{
 .pathway{
   font-family: 'Pathway Gothic One', sans-serif;
 }
+.arvo{
+  font-family: 'Arvo', sans-serif;
+}
 
 @media screen and (min-width: 768px){
   .desktop{
     display: initial;
     position: relative;
+  }
+
+  .mobile{
+    display: none;
+    position: absolute;
   }
 }
