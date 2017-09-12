@@ -14,8 +14,22 @@ class Frame extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isMenuCollapsed: true
+            isMenuCollapsed: true,
+            isNavbarCollapsed: false
         }
+    }
+
+    componentDidMount(){
+        var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        window.addEventListener('scroll', (event) => {
+            var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+            if (st > lastScrollTop){
+                if(this.state.isMenuCollapsed) this.setState({...this.state, isNavbarCollapsed: true});
+            } else {
+                if(this.state.isMenuCollapsed) this.setState({...this.state, isNavbarCollapsed: false});
+            }
+            lastScrollTop = st;
+        }, false);
     }
 
     toggleMenu() {
@@ -25,7 +39,8 @@ class Frame extends Component {
     render() {
         var state = this.state;
         var cssPopup = "popup".concat(state.isMenuCollapsed ? " collapsed" : "");
-        var cssMenu = "button upper pathway".concat(state.isMenuCollapsed ? " collapsed" : "")
+        var cssMenu = "button upper pathway".concat(state.isMenuCollapsed ? " collapsed" : "");
+        var cssNav = "menu".concat(state.isNavbarCollapsed ? " collapsed" : "");
         return (
             <div className="app">
                 {this.props.children}
@@ -45,7 +60,7 @@ class Frame extends Component {
                     </div>
                 </footer>
                 <nav className="nav">
-                    <div className="menu">
+                    <div className={cssNav}>
                         <div className="logo">
                             <img src={logo} alt="Logo" />
                         </div>

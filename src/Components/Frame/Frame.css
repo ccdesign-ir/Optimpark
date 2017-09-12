@@ -3,11 +3,19 @@
     top: 0;
     left: 0;
     right: 0;
+    
+}
+.nav.collapsed{
+    
 }
 .nav .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.2s linear;
+}
+.nav .menu.collapsed{
+    transform: translateY(-100%);
 }
 .nav .menu .button{
     color: #1e2433;
@@ -38,12 +46,9 @@
 
 footer{
     background: #0054E8;
-    position: fixed;
-
-    bottom: 0;
-    left: 0;
-    right: 0;
+    height: 60px;
 }
+
 .footer{
     display: flex;
     justify-content: space-between;

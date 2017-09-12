@@ -16,7 +16,7 @@ export default class Contact extends Component {
                         <source src={vidMobile} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <img className="mobile" src={imgMobile} alt="mobile" />
+                    <img className="mobile" width="80%" src={imgMobile} alt="mobile" />
                     <div className="contact">
                         <span>Contact us:</span>
                         <span>+98 313 468 7965</span>

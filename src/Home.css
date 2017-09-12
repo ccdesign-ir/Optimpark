@@ -37,7 +37,7 @@
   color: #1e2433;
 }
 
-.collapsed{
+.popup.collapsed, .button.collapsed{
   height: 0;
 }
 
