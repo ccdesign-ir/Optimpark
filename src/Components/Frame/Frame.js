@@ -19,14 +19,14 @@ class Frame extends Component {
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
         window.addEventListener('scroll', (event) => {
             var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-            if (st > lastScrollTop){
-                if(this.state.isMenuCollapsed) this.setState({...this.state, isNavbarCollapsed: true});
+            if (st > lastScrollTop) {
+                if (this.state.isMenuCollapsed) this.setState({ ...this.state, isNavbarCollapsed: true });
             } else {
-                if(this.state.isMenuCollapsed) this.setState({...this.state, isNavbarCollapsed: false});
+                if (this.state.isMenuCollapsed) this.setState({ ...this.state, isNavbarCollapsed: false });
             }
             lastScrollTop = st;
         }, false);
@@ -48,9 +48,9 @@ class Frame extends Component {
                     <div className="footer">
                         <div className="logo">
                             <img src={logo} alt="Logo" />
-                            <div className="logotype">
-                                <img src={logotype} alt="Logotype" />
-                            </div>
+                        </div>
+                        <div className="logotype">
+                            <img src={logotype} alt="Logotype" />
                         </div>
                         <ul className="footer-socials">
                             <li><a href="http://instagram.com" className="button"><i className="fa fa-instagram"></i></a></li>

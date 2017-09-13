@@ -5,9 +5,6 @@
     right: 0;
     
 }
-.nav.collapsed{
-    
-}
 .nav .menu{
     display: flex;
     justify-content: space-between;
@@ -51,21 +48,30 @@ footer{
 
 .footer{
     display: flex;
-    justify-content: space-between;
 }
-.footer .logo .logotype{
+.footer .logo{
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.footer .logotype{
     width: 135px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.footer .logo .logotype>img{
+.footer .logotype>img{
     width: 93px;
     right: 21px;
 }
 
 .footer-socials{
     list-style: none;
-    
+    flex-basis: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding: 0 5px 0 0;
 }
