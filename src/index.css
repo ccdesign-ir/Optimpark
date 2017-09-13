@@ -34,12 +34,25 @@ a.button:visited{
   position: absolute;
 }
 
-.white{
+.color-white{
   color: white;
 }
-.black{
+.color-primary{
   color: #1e2433;
 }
+.color-alt{
+  color: #0054E8;
+}
+.bg-white{
+  background: white;
+}
+.bg-primary{
+  background: #1e2433;
+}
+.bg-alt{
+  background: #0054E8;
+}
+
 .upper{
   text-transform: uppercase;
 }

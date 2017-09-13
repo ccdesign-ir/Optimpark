@@ -81,3 +81,14 @@ footer{
 .footer-socials li{
     margin: 0 5px;
 }
+
+@media screen and (min-width: 768px){
+    footer{
+        height: 110px;
+    }
+
+    .nav .menu .button{
+        height: 110px;
+        width: 110px;
+    }
+}

@@ -42,7 +42,7 @@ class Frame extends Component {
         var cssMenu = "button upper pathway".concat(state.isMenuCollapsed ? " collapsed" : "");
         var cssNav = "menu".concat(state.isNavbarCollapsed ? " collapsed" : "");
         return (
-            <div className="app">
+            <div className="container">
                 {this.props.children}
                 <footer>
                     <div className="footer">

@@ -89,8 +89,8 @@ class Home extends Component {
             <div className="left">
               <div className="left-content">
                 <h1>
-                  <span className="black">Less space, </span>
-                  <span className="white">More space.</span>
+                  <span className="color-primary">Less space, </span>
+                  <span className="color-white">More space.</span>
                 </h1>
                 <hr className="seperator" />
               </div>
@@ -106,8 +106,8 @@ class Home extends Component {
             <div className="left">
               <div className="left-content">
                 <h1>
-                  <span className="black">Save your space</span>
-                  <span className="white">Save your money.</span>
+                  <span className="color-primary">Save your space</span>
+                  <span className="color-white">Save your money.</span>
                 </h1>
                 <hr className="seperator" />
               </div>
@@ -123,8 +123,8 @@ class Home extends Component {
             <div className="left">
               <div className="left-content">
                 <h1>
-                  <span className="black">Build your</span>
-                  <span className="white">Customized parking lot.</span>
+                  <span className="color-primary">Build your</span>
+                  <span className="color-white">Customized parking lot.</span>
                 </h1>
                 <hr className="seperator" />
                 <p>
@@ -146,8 +146,8 @@ class Home extends Component {
             <div className="left">
               <div className="left-content">
                 <h1>
-                  <span className="black">Design your </span>
-                  <span className="white">facade</span>
+                  <span className="color-primary">Design your </span>
+                  <span className="color-white">facade</span>
                 </h1>
                 <hr className="seperator" />
                 <p>Implementation of different designs and materials for your facade. Considering the availability of materials in the market, you can build and implement your preferred design anywhere.</p>
@@ -164,8 +164,8 @@ class Home extends Component {
             <div className="left">
               <div className="left-content">
                 <h1>
-                  <span className="black">Anywhere </span>
-                  <span className="white">is your space.</span>
+                  <span className="color-primary">Anywhere </span>
+                  <span className="color-white">is your space.</span>
                 </h1>
                 <hr className="seperator" />
                 <p>
@@ -186,13 +186,13 @@ class Home extends Component {
             <div className="left">
               <div className="left-content">
                 <h1>
-                  <span className="black">
+                  <span className="color-primary">
                     Safety <br />
                     Quick set-up <br />
                     Flexibility <br />
                     Energy-efficient <br />
                   </span>
-                  <span className="white">
+                  <span className="color-white">
                     Are just a few of your <br className="desktop" />
                     advantages to go with us.<br />
                   </span>
@@ -208,16 +208,16 @@ class Home extends Component {
         </section>
 
         <ul className="desktop navigator">
-          <li className={hash === "optimpark" ? "upper active" : "upper"}><Link to="#optimpark">Optimpark</Link></li>
-          <li className={hash === "solution" ? "upper active" : "upper"}><Link to="#solution">Solution</Link></li>
-          <li className={hash === "customization" ? "upper active" : "upper"}><Link to="#customization">Customization</Link></li>
-          <li className={hash === "facade" ? "upper active" : "upper"}><Link to="#facade">Facade</Link></li>
-          <li className={hash === "implementation" ? "upper active" : "upper"}><Link to="#implementation">Implementation</Link></li>
-          <li className={hash === "advantages" ? "upper active" : "upper"}><Link to="#advantages">Advantages</Link></li>
+          <li className={hash === "optimpark" ? "upper active" : "upper"}><Link to="/#optimpark">Optimpark</Link></li>
+          <li className={hash === "solution" ? "upper active" : "upper"}><Link to="/#solution">Solution</Link></li>
+          <li className={hash === "customization" ? "upper active" : "upper"}><Link to="/#customization">Customization</Link></li>
+          <li className={hash === "facade" ? "upper active" : "upper"}><Link to="/#facade">Facade</Link></li>
+          <li className={hash === "implementation" ? "upper active" : "upper"}><Link to="/#implementation">Implementation</Link></li>
+          <li className={hash === "advantages" ? "upper active" : "upper"}><Link to="/#advantages">Advantages</Link></li>
         </ul>
 
 
-        <ul className="desktop socials upper white pathway">
+        <ul className="desktop socials upper color-white pathway">
           <li><a href="http://instagram.com" className="button"><i className="fa fa-instagram"></i></a></li>
           <li><a href="http://twitter.com" className="button"><i className="fa fa-twitter"></i></a></li>
           <li><a href="http://telegram.com" className="button"><i className="fa fa-telegram"></i></a></li>
@@ -235,7 +235,7 @@ class Home extends Component {
             <div className="logo">
               <img src={logo} alt="Logo" />
               <div className="logotype">
-                <img src={logotype} alt="Logotype" />
+                <img src={logotype} alt="optimpark" />
               </div>
             </div>
             <button className={cssMenu} onClick={this.toggleMenu.bind(this)}><span className="desktop">Menu </span><span className="bars"><img src={line} alt="" /><img src={line} alt="" /><img src={line} alt="" /></span></button>
