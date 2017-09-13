@@ -5,6 +5,7 @@ import './index.css';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
+import NotFound from './404';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
+            <Route path="*" component={NotFound} />
         </Switch>
     </BrowserRouter>
     , document.getElementById('root'));
