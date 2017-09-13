@@ -5,11 +5,15 @@
     right: 0;
     
 }
+.nav .logo{
+    background: none;
+}
 .nav .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: all 0.2s linear;
+    background: rgba(30, 36, 51, 0.9);
 }
 .nav .menu.collapsed{
     transform: translateY(-100%);
@@ -29,7 +33,7 @@
     height: 60px;
     width: 60px;
 
-    background: white;
+    /* background: white; */
     padding: 1px 16px;
 }
 
@@ -38,7 +42,7 @@
 }
 
 .nav .collapsed .bars img{
-    filter: invert(1);
+    /* filter: invert(1); */
 }
 
 footer{
@@ -79,7 +83,7 @@ footer{
     color: #1e2433 !important;
 }
 .footer-socials li{
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 @media screen and (min-width: 768px){
