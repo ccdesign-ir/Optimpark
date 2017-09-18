@@ -2,41 +2,6 @@
   width: 100%;
 }
 
-.popup{
-  font-family: 'Arvo', sans-serif;
-  transition: all 0.2s ease-in-out;
-  height: 100%;
-  overflow: hidden;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: white;
-}
-.popup ul{
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-  font-size: 5vh;
-}
-.popup ul>li{
-  margin: 1vh 0;
-}
-.popup .item{
-  text-decoration: none;
-  color: #1e2433;
-}
-.popup .item:visited{
-  color: #1e2433;
-}
-
 .popup.collapsed, .button.collapsed{
   height: 0;
 }

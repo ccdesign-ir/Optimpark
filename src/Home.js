@@ -21,6 +21,7 @@ import logotype from './assets/logotype.svg';
 
 //1080*1920
 //2560*1440
+
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -29,33 +30,40 @@ class Home extends Component {
       isTransitioning: false
     };
     this.sections = ['optimpark', 'solution', 'customization', 'facade', 'implementation', 'advantages'];
+    this.windowOnWheelBinded = this.windowOnWheel.bind(this)
   }
 
   componentDidMount() {
-    window.addEventListener('wheel', (event) => {
-      if (this.state.isTransitioning) return;
-      var hash = this.getHash();
-      var index = this.sections.indexOf(hash);
+    window.addEventListener('wheel', this.windowOnWheelBinded);
+  }
 
-      if (event.deltaY > 0) {
-        if (index > 4) return;
-        this.setState({...this.state, isTransitioning: true});
-        this.props.history.push("#".concat(this.sections[index + 1]))
-      }
-      else {
-        if (index < 1) return;
-        this.setState({...this.state, isTransitioning: true});
-        this.props.history.push("#".concat(this.sections[index - 1]))
-      }
-
-      setTimeout(()=>{
-        this.setState({...this.state, isTransitioning: false});
-      }, 300);
-    });
+  componentWillUnmount(){
+    window.removeEventListener('wheel', this.windowOnWheelBinded);
   }
 
   toggleMenu(sectionName) {
     this.setState({ ...this.state, menuCollapsed: !this.state.menuCollapsed });
+  }
+
+  windowOnWheel(event){
+    if (this.state.isTransitioning) return;
+    var hash = this.getHash();
+    var index = this.sections.indexOf(hash);
+  
+    if (event.deltaY > 0) {
+      if (index > 4) return;
+      this.setState({...this.state, isTransitioning: true});
+      this.props.history.push("#".concat(this.sections[index + 1]))
+    }
+    else {
+      if (index < 1) return;
+      this.setState({...this.state, isTransitioning: true});
+      this.props.history.push("#".concat(this.sections[index - 1]))
+    }
+  
+    setTimeout(()=>{
+      this.setState({...this.state, isTransitioning: false});
+    }, 300);
   }
 
   getHash() {

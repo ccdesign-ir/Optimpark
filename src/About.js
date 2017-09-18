@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './About.css';
 import Frame from './Components/Frame';
-import image from './temp/image-04.jpg';
+import image from './assets/new_image.jpg';
 import H2 from './Components/H2';
 //f8f8f8
 class About extends Component {
@@ -13,7 +13,9 @@ class About extends Component {
                         We build<br />
                         mechanized parking lots
                     </h1>
-                    <img className="cat-image" src={image} alt="optimpark" />
+                    <div className="cat-image">
+                        <img src={image} alt="optimpark" aria-hidden="true"/>
+                    </div>
                     <div className="sege">
                         <H2>New generation of parking</H2>
                         <p className="text">Optimpark manufactures a new generation of mechanized parking. A solution to

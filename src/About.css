@@ -26,6 +26,13 @@
     padding: 50px 32px 0 32px;
 }
 
+.aboutus>.cat-image:nth-child(2){
+    background-image: url('./assets/new_image.jpg');
+    background-size: 250%;
+}.aboutus>.cat-image:nth-child(2)>img{
+    width: 250%;
+}
+
 @media screen and (min-width: 768px){
     .iso{
         flex-direction: row;
@@ -40,5 +47,11 @@
     .iso span:first-child{
         border-top: none;
         border-left: none;
+    }
+
+    .aboutus>.cat-image:nth-child(2){
+        background-size: cover;
+    }.aboutus>.cat-image:nth-child(2)>img{
+        width: 100%;
     }
 }

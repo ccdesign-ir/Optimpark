@@ -16,6 +16,6 @@
 @media screen and (min-width: 768px){
     .sub>span::before{
         width: 100px;
-        left: -130px;
+        left: calc(50% - 50vw);
     }
 }

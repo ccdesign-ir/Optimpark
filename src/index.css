@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 *{
@@ -70,20 +71,28 @@ a.button:visited{
 }
 
 .page-inner{
-  padding: 32px;
+  padding: 60px 32px 32px 32px;
   font-family: 'Ubuntu', sans-serif;
+  max-width: 780px;
+  margin: auto;
 }
 
 .title{
   text-align: center;
-  margin: 98px 0 80px 0;
+  margin: 80px 0 80px 0;
   line-height: 33px;
   font-size: 26px;
 }
 
 .cat-image{
-  width: calc(100% + 64px);
+  display: inline-block;
+  width: 100vw;
   margin-left: -32px;
+  overflow: hidden;
+  background-position: 50% 50%;
+}
+.cat-image>img{
+  visibility: hidden;
 }
 
 .text{
@@ -104,11 +113,10 @@ a.button:visited{
   }
 
   .page-inner{
-    padding: 130px;
+    padding: 110px 130px;
   }
 
   .cat-image{
-    width: calc(100% + 260px);
-    margin-left: -130px;
+    margin-left: calc(50% - 50vw);
   }
 }
