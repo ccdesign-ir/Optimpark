@@ -34,27 +34,30 @@ a.button:visited{
   display: none;
   position: absolute;
 }
+.desktop.large{
+  visibility: hidden;
+}
 
 .color-white{
-  color: white;
+  color: white !important;
 }
 .color-gray{
-  color: gray;
+  color: gray !important;
 }
 .color-primary{
-  color: #1e2433;
+  color: #1e2433 !important;
 }
 .color-alt{
-  color: #0054E8;
+  color: #0054E8 !important;
 }
 .bg-white{
-  background: white;
+  background: white !important;
 }
 .bg-primary{
-  background: #1e2433;
+  background: #1e2433 !important;
 }
 .bg-alt{
-  background: #0054E8;
+  background: #0054E8 !important;
 }
 
 .upper{
@@ -79,7 +82,7 @@ a.button:visited{
 
 .title{
   text-align: center;
-  margin: 80px 0 80px 0;
+  margin: 80px 0;
   line-height: 33px;
   font-size: 26px;
 }
@@ -118,5 +121,22 @@ a.button:visited{
 
   .cat-image{
     margin-left: calc(50% - 50vw);
+  }
+
+  .title{
+    line-height: 68px;
+    font-size: 47px;
+    margin: 160px 0;
+  }
+
+  .text{
+    font-size: 19px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .desktop.large{
+    visibility: initial;
   }
 }
