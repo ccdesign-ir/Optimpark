@@ -36,6 +36,7 @@ a.button:visited{
 }
 .desktop.large{
   visibility: hidden;
+  overflow: hidden;
 }
 
 .color-white{
