@@ -54,13 +54,13 @@ class Frame extends Component {
                         </div>
                         <ul className="desktop large upper pathway foot-nav">
                             <li><Link to="/#optimpark" className="button color-primary">Optimpark</Link></li>
-                            <li><Link to="/#optimpark" className="button color-primary">Solution</Link></li>
-                            <li><Link to="/#optimpark" className="button color-primary">Customization</Link></li>
-                            <li><Link to="/#optimpark" className="button color-primary">Facade</Link></li>
-                            <li><Link to="/#optimpark" className="button color-primary">Implementation</Link></li>
-                            <li><Link to="/#optimpark" className="button color-primary">Advantages</Link></li>
-                            <li><Link to="/#optimpark" className="button color-primary">Contact us</Link></li>
-                            <li><Link to="/#optimpark" className="button color-primary">E-Catalog</Link></li>
+                            <li><Link to="/#solution" className="button color-primary">Solution</Link></li>
+                            <li><Link to="/#customization" className="button color-primary">Customization</Link></li>
+                            <li><Link to="/#facade" className="button color-primary">Facade</Link></li>
+                            <li><Link to="/#implementation" className="button color-primary">Implementation</Link></li>
+                            <li><Link to="/#advantages" className="button color-primary">Advantages</Link></li>
+                            <li><Link to="/contactus" className="button color-primary">Contact us</Link></li>
+                            <li><Link to="/" className="button color-primary">E-Catalog</Link></li>
                         </ul>
                         <ul className="footer-socials">
                             <li className="desktop color-primary upper pathway">Designed by CC</li>
