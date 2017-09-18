@@ -52,7 +52,18 @@ class Frame extends Component {
                         <div className="logotype">
                             <img src={logotype} alt="Logotype" />
                         </div>
+                        <ul className="desktop large upper pathway foot-nav">
+                            <li><Link to="/#optimpark" className="button color-primary">Optimpark</Link></li>
+                            <li><Link to="/#optimpark" className="button color-primary">Solution</Link></li>
+                            <li><Link to="/#optimpark" className="button color-primary">Customization</Link></li>
+                            <li><Link to="/#optimpark" className="button color-primary">Facade</Link></li>
+                            <li><Link to="/#optimpark" className="button color-primary">Implementation</Link></li>
+                            <li><Link to="/#optimpark" className="button color-primary">Advantages</Link></li>
+                            <li><Link to="/#optimpark" className="button color-primary">Contact us</Link></li>
+                            <li><Link to="/#optimpark" className="button color-primary">E-Catalog</Link></li>
+                        </ul>
                         <ul className="footer-socials">
+                            <li className="desktop color-primary upper pathway">Designed by CC</li>
                             <li><a href="http://instagram.com" className="button"><i className="fa fa-instagram"></i></a></li>
                             <li><a href="http://twitter.com" className="button"><i className="fa fa-twitter"></i></a></li>
                             <li><a href="http://telegram.com" className="button"><i className="fa fa-telegram"></i></a></li>

@@ -107,8 +107,7 @@ footer{
     align-items: center;
 }
 .footer .logotype>img{
-    width: 93px;
-    right: 21px;
+    width: 69%;
 }
 
 .footer-socials{
@@ -126,9 +125,40 @@ footer{
     margin: 0 10px;
 }
 
+.foot-nav{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: center;
+}
+.foot-nav li{
+    display: none;
+}
+
 @media screen and (min-width: 768px){
     footer{
         height: 110px;
+    }
+
+    .footer-socials{
+        flex-basis: auto;
+        padding-right: 26px;
+    }
+    .footer-socials>li:first-child{
+        width: 140px;
+        margin: 0 10px;
+        text-align: center;
+    }
+
+    .footer .logotype{
+        width: 170px;
+    }
+
+    .foot-nav li{
+        display: initial;
     }
 
     .popup{
@@ -138,6 +168,7 @@ footer{
     .nav .menu .button{
         height: 110px;
         width: 110px;
+        margin-right: 20px;
     }
 
     .nav .menu .button>span:first-child{
