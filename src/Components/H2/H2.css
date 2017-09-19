@@ -1,9 +1,10 @@
 .sub{
     line-height: 33px;
     margin: 30px 0;
+    display: inline-block;
 }
 
-.sub>span::before{
+.sub::before{
     content: "";
     width: 17px;
     border: 1px solid #0054E8;
@@ -13,15 +14,19 @@
     top: 17px;
 }
 
+.col2>.col>.sub{
+    display: block;
+}
+
 @media screen and (min-width: 768px){
     .sub{
         font-size: 36px;
     }
-    .sub>span::before{
+    .sub::before{
         width: 100px;
     }
 
-    .col2>.col:first-child>.sub>span::before{
-        left: calc(50% - 25vw);
+    .col2>.col:first-child>.sub::before{
+        left: -130px;
     }
 }

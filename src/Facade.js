@@ -33,13 +33,14 @@ class About extends Component {
                             accelerator.</p>
                         </div>
                         <div className="col">
+                            <img src={facade2} alt="facade" aria-hidden="true"/>
                         </div>
                     </div>
                     <div className="content-part">
                         <H2>Satnd out</H2>
                     </div>
                     <div className="cat-image full-width">
-                        <img src={facade3} alt="facade" aria-hidden="true"/>
+                    <img src={facade3} alt="facade" aria-hidden="true"/>
                     </div>
                 </div>
             </Frame>
