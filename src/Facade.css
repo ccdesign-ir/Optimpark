@@ -1,0 +1,13 @@
+.facade>.cat-image:nth-child(2){
+    background-image: url('./assets/facade1.jpg');
+    background-size: 250%;
+}.facade>.cat-image:nth-child(2)>img{
+    width: 250%;
+}
+
+.facade>.cat-image:last-child{
+    background-image: url('./assets/facade3.jpg');
+    background-size: 250%;
+}.facade>.cat-image:last-child>img{
+    width: 250%;
+}

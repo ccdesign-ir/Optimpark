@@ -106,7 +106,7 @@ class Home extends Component {
             <div className="desktop right">
               <img src={image1} alt="optimpark" />
             </div>
-            <button className="button explore upper oswald">Explore</button>
+            <Link to="/optimpark" className="button explore upper oswald">Explore</Link>
           </div>
         </section>
         <section className={hash === "solution" ? "home-section active" : "home-section"} id="solution">
@@ -123,7 +123,7 @@ class Home extends Component {
             <div className="desktop right">
               <img src={image2} alt="solution" />
             </div>
-            <button className="button explore upper oswald">Explore</button>
+            <Link to="/solution" className="button explore upper oswald">Explore</Link>
           </div>
         </section>
         <section className={hash === "customization" ? "home-section active" : "home-section"} id="customization">
@@ -146,7 +146,7 @@ class Home extends Component {
             <div className="desktop right">
               <img src={image3} alt="customization" />
             </div>
-            <button className="button explore upper oswald">Explore</button>
+            <Link to="/customization" className="button explore upper oswald">Explore</Link>
           </div>
         </section>
         <section className={hash === "facade" ? "home-section active" : "home-section"} id="facade">
@@ -164,7 +164,7 @@ class Home extends Component {
             <div className="desktop right">
               <img src={image4} alt="facade" />
             </div>
-            <button className="button explore upper oswald">Explore</button>
+            <Link to="/facade" className="button explore upper oswald">Explore</Link>
           </div>
         </section>
         <section className={hash === "implementation" ? "home-section active" : "home-section"} id="implementation">

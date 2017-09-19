@@ -2,6 +2,16 @@
   width: 100%;
 }
 
+a.button.explore{
+  text-align: center;
+}
+a.button.explore:link{
+  color: black;
+}
+a.button.explore:visited{
+  color: black;
+}
+
 .popup.collapsed, .button.collapsed{
   height: 0;
 }

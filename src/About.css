@@ -42,10 +42,4 @@
         border-top: none;
         border-left: none;
     }
-
-    .aboutus>.cat-image:nth-child(2){
-        background-size: cover;
-    }.aboutus>.cat-image:nth-child(2)>img{
-        width: 100%;
-    }
 }
