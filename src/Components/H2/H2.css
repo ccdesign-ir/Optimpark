@@ -9,7 +9,7 @@
     border: 1px solid #0054E8;
     display: block;
     position: relative;
-    left: -32px;
+    left: calc(50% - 50vw);
     top: 17px;
 }
 
@@ -19,6 +19,9 @@
     }
     .sub>span::before{
         width: 100px;
-        left: calc(50% - 50vw);
+    }
+
+    .col2>.col:first-child>.sub>span::before{
+        left: calc(50% - 25vw);
     }
 }

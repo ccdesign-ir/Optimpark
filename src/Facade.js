@@ -15,7 +15,7 @@ class About extends Component {
                         Design your facade<br />
                         Just the way you want it
                     </h1>
-                    <div className="cat-image">
+                    <div className="cat-image full-width">
                         <img src={facade1} alt="facade" aria-hidden="true"/>
                     </div>
                     <div className="content-part">
@@ -24,18 +24,21 @@ class About extends Component {
                         materials in the market, you can build and implement your preferred design 
                         anywhre.</p>
                     </div>
-                    <div className="full-width col2">
+                    <div className="full-width col2 reverse">
                         <div className="col">
                             <H2>Advertisement solutions</H2>
+                            <p className="text">From banners to holograms. You can place your desired
+                            advertisement on the facade for maximum profit in your business.</p>
+                            <p className="bold">It's not just a parking system, it's a business 
+                            accelerator.</p>
                         </div>
                         <div className="col">
-                            <img src={facade2} alt="facade" aria-hidden="true"/>
                         </div>
                     </div>
                     <div className="content-part">
                         <H2>Satnd out</H2>
                     </div>
-                    <div className="cat-image">
+                    <div className="cat-image full-width">
                         <img src={facade3} alt="facade" aria-hidden="true"/>
                     </div>
                 </div>

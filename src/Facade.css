@@ -11,3 +11,13 @@
 }.facade>.cat-image:last-child>img{
     width: 250%;
 }
+
+.facade .col>img{
+    width: 100%;
+    visibility: hidden;
+}
+
+.facade .col:nth-child(2){
+    background-image: url('./assets/facade2.jpg');
+    background-clip: stretch;
+}

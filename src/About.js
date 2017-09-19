@@ -13,7 +13,7 @@ class About extends Component {
                         We build<br />
                         mechanized parking lots
                     </h1>
-                    <div className="cat-image">
+                    <div className="cat-image full-width">
                         <img src={image} alt="optimpark" aria-hidden="true"/>
                     </div>
                     <div className="content-part">

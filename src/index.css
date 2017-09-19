@@ -75,18 +75,18 @@ a.button:visited{
 }
 
 .page-inner{
-  padding: 60px 32px 0 32px;
+  padding: 60px 64px 0 64px;
   font-family: 'Ubuntu', sans-serif;
   max-width: 780px;
   margin: auto;
 }
 .page-inner>.full-width{
-  margin: 0 -32px;
-  padding: 80px 0;
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
 }
 
 .content-part{
-    padding: 20px 32px;
+    padding: 20px 0;
 }
 
 .title{
@@ -94,12 +94,12 @@ a.button:visited{
   line-height: 33px;
   font-size: 26px;
   background: white;
+  padding: 80px 0;
+  margin: 0;
 }
 
 .cat-image{
   display: inline-block;
-  width: 100vw;
-  margin-left: -32px;
   overflow: hidden;
   background-position: 50% 50%;
 }
@@ -112,9 +112,20 @@ a.button:visited{
   color: #6d6e70;
   margin: 0;
 }
+.bold{
+  font-style: italic;
+  font-weight: bold;
+  line-height: 50px;
+  font-size: 30px;
+}
 
 .container{
   background: #f8f8f8;
+}
+
+.col>h2,.col>p{
+  margin-right: 64px;
+  margin-left: 64px;
 }
 
 @media screen and (min-width: 768px){
@@ -131,10 +142,6 @@ a.button:visited{
   .page-inner{
     padding: 110px 130px 0 130px;
   }
-  .page-inner>.full-width{
-    margin: 0 calc(260px - 50vw);
-    padding: 160px 0;
-  }
 
   .cat-image{
     margin-left: calc(50% - 50vw);
@@ -147,6 +154,7 @@ a.button:visited{
   .title{
     line-height: 68px;
     font-size: 47px;
+    padding: 160px 0;
   }
 
   .text{
@@ -159,6 +167,22 @@ a.button:visited{
   }
   .cat-image>img{
       width: 100% !important;
+  }
+
+  .col2{
+    display: flex;
+  }
+  .col2.reverse{
+    flex-direction: row-reverse;
+  }
+  .col2>.col{
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .col>h2,.col>p{
+    margin-right: 130px;
+    margin-left: 130px;
   }
 }
 
