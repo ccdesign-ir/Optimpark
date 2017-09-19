@@ -186,7 +186,7 @@ class Home extends Component {
             <div className="desktop right">
               <img src={image5} alt="implementation" />
             </div>
-            <button className="button explore upper oswald">Explore</button>
+            <Link to="/implementation" className="button explore upper oswald">Explore</Link>
           </div>
         </section>
         <section className={hash === "advantages" ? "home-section active" : "home-section"} id="advantages">

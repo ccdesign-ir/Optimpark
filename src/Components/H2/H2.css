@@ -1,7 +1,6 @@
 .sub{
     line-height: 33px;
     margin: 30px 0;
-    display: inline-block;
 }
 
 .sub::before{

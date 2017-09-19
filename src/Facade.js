@@ -36,7 +36,7 @@ class About extends Component {
                             <img src={facade2} alt="facade" aria-hidden="true"/>
                         </div>
                     </div>
-                    <div className="content-part">
+                    <div className="content-part just-sub">
                         <H2>Satnd out</H2>
                     </div>
                     <div className="cat-image full-width">
