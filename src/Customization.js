@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import './Customization.css';
 import Frame from './Components/Frame';
-import image from './assets/new_image.jpg';
 import H2 from './Components/H2';
 
-class About extends Component {
+class Customization extends Component {
     render() {
         return (
             <Frame>
