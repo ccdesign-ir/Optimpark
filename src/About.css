@@ -20,12 +20,6 @@
     border-top: none;
 }
 
-.sege{
-    background: #f8f8f8;
-    margin: -50px -32px 0 -32px;
-    padding: 50px 32px 0 32px;
-}
-
 .aboutus>.cat-image:nth-child(2){
     background-image: url('./assets/new_image.jpg');
     background-size: 250%;

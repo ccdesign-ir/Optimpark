@@ -75,17 +75,26 @@ a.button:visited{
 }
 
 .page-inner{
-  padding: 60px 32px 32px 32px;
+  padding: 60px 32px 0 32px;
   font-family: 'Ubuntu', sans-serif;
   max-width: 780px;
   margin: auto;
 }
+.page-inner>.full-width{
+  margin: 0 -32px;
+  padding: 80px 0;
+}
+
+/* .content-part{
+    margin: -50px -32px 0 -32px;
+    padding: 50px 32px 0 32px;
+} */
 
 .title{
   text-align: center;
-  margin: 80px 0;
   line-height: 33px;
   font-size: 26px;
+  background: white;
 }
 
 .cat-image{
@@ -103,6 +112,10 @@ a.button:visited{
   line-height: 27px;
   color: #6d6e70;
   margin: 0;
+}
+
+.container{
+  background: #f8f8f8;
 }
 
 @media screen and (min-width: 768px){
@@ -124,10 +137,14 @@ a.button:visited{
     margin-left: calc(50% - 50vw);
   }
 
+  .page-inner>.full-width{
+    margin: 0 calc(260px - 50vw);
+    padding: 160px 0;
+  }
+
   .title{
     line-height: 68px;
     font-size: 47px;
-    margin: 160px 0;
   }
 
   .text{

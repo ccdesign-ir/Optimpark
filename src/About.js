@@ -9,14 +9,14 @@ class About extends Component {
         return (
             <Frame>
                 <div className="aboutus page-inner arvo">
-                    <h1 className="title color-primary">
+                    <h1 className="title color-primary full-width">
                         We build<br />
                         mechanized parking lots
                     </h1>
                     <div className="cat-image">
                         <img src={image} alt="optimpark" aria-hidden="true"/>
                     </div>
-                    <div className="sege">
+                    <div className="content-part">
                         <H2>New generation of parking</H2>
                         <p className="text">Optimpark manufactures a new generation of mechanized parking. A solution to
                     consume minimum of resources to aquire optimum outcomes. We are experts in saving
