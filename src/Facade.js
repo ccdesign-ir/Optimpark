@@ -6,7 +6,7 @@ import facade2 from './assets/facade2.jpg';
 import facade3 from './assets/facade3.jpg';
 import H2 from './Components/H2';
 
-class About extends Component {
+class Facade extends Component {
     render() {
         return (
             <Frame>
@@ -40,7 +40,7 @@ class About extends Component {
                         <H2>Satnd out</H2>
                     </div>
                     <div className="cat-image full-width">
-                    <img src={facade3} alt="facade" aria-hidden="true"/>
+                        <img src={facade3} alt="facade" aria-hidden="true"/>
                     </div>
                 </div>
             </Frame>
@@ -48,4 +48,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default Facade;

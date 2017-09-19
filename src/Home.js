@@ -211,7 +211,7 @@ class Home extends Component {
             <div className="desktop right">
               <img src={image6} alt="advantages" />
             </div>
-            <button className="button explore upper oswald">Explore</button>
+            <Link to="/advantages" className="button explore upper oswald">Explore</Link>
           </div>
         </section>
 

@@ -75,14 +75,21 @@ a.button:visited{
 }
 
 .page-inner{
-  padding: 60px 64px 0 64px;
+  padding: 0 64px;
   font-family: 'Ubuntu', sans-serif;
   max-width: 780px;
   margin: auto;
 }
+.page-inner:first-child{
+  padding-top: 64px;
+}
 .page-inner>.full-width{
   margin-left: calc(50% - 50vw);
   width: 100vw;
+}
+.page-inner>.full-width>.content-part{
+  padding-left: 64px;
+  padding-right: 64px;
 }
 
 .content-part{
@@ -127,9 +134,43 @@ a.button:visited{
   background: #f8f8f8;
 }
 
-.col>h2,.col>p{
+col2>.col{
+  padding-bottom: 20px;
+}
+col2>.col:last-child{
+  padding-bottom: 0;
+}
+.col>h2,.col>p, .col>em,
+.col>h3{
   margin-right: 64px;
   margin-left: 64px;
+}
+.col>img{
+  width: 100%;
+}
+
+.col3{
+  display: flex;
+  justify-content: space-around;
+}
+.col3>.col{
+  padding: 0 20px;
+}
+
+em{
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+h3{
+  font-size: 1.5em;
+}
+
+.box{
+  border-bottom: 1px solid #6d6e70;
 }
 
 @media screen and (min-width: 1024px){
@@ -144,7 +185,14 @@ a.button:visited{
   }
 
   .page-inner{
-    padding: 110px 130px 0 130px;
+    padding: 0 130px;
+  }
+  .page-inner:first-child{
+    padding-top: 110px;
+  }
+  .page-inner>.full-width>.content-part{
+    padding-left: 110px;
+    padding-right: 110px;
   }
 
   .cat-image{
@@ -184,9 +232,21 @@ a.button:visited{
     flex-grow: 1;
     flex-shrink: 1;
   }
-  .col>h2,.col>p{
+  .col>h2,.col>p, .col>em,
+  .col>h3{
     margin-right: 130px;
     margin-left: 130px;
+  }
+
+  .box{
+    width: 45%;
+    display: inline-block;
+  }
+  .box:nth-child(odd){
+    float: left;
+  }
+  .box:nth-child(odd){
+    float: right;
   }
 }
 

@@ -1,0 +1,7 @@
+.advantages1>.cat-image:nth-child(4){
+    background: url('./assets/advantages2.jpg');
+    background-size: cover;
+}
+.advantages1>.cat-image:nth-child(4)>img{
+    width: 100%;
+}

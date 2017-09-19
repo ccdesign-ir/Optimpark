@@ -7,6 +7,7 @@ import About from './About';
 import Contact from './Contact';
 import Facade from './Facade';
 import Implementation from './Implementation';
+import Advantages from './Advantages';
 import NotFound from './404';
 import registerServiceWorker from './registerServiceWorker';
 
@@ -18,6 +19,7 @@ ReactDOM.render(
             <Route path="/contact" component={Contact} />
             <Route path="/facade" component={Facade} />
             <Route path="/implementation" component={Implementation} />
+            <Route path="/advantages" component={Advantages} />
             <Route path="*" component={NotFound} />
         </Switch>
     </BrowserRouter>
