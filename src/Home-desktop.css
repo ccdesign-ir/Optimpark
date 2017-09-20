@@ -55,11 +55,13 @@
         background: #0054E8;
         margin-bottom: 0;
     }
-    .home-section .left-content>*{
+    /* .home-section .left-content>*{
         margin-left: 55px;
-    }
+    } */
     .home-section .left-content>p{
-        margin-right: 11vw;
+        margin-right: 5vw;
+        font-size: 12px;
+        line-height: 20px;
     }
     .home-section .right{
         flex-basis: 50%;
@@ -163,8 +165,8 @@
     .home-section>div:first-child h1:first-child{
         margin-top: 77px;
         
-        font-size: 40px;
-        line-height: 65px;
+        font-size: 25px;
+        line-height: 43px;
     }
 
     #optimpark>div:first-child h1:first-child,
@@ -174,8 +176,8 @@
     }
 
     .home-section>div:first-child .seperator{
-        margin-top: 6vh;
-        margin-bottom: 8.5vh;
+        margin-top: 30px;
+        margin-bottom: 30px;
         float: initial;
     }
 
@@ -244,4 +246,42 @@
     }
 
     /* } */
+}
+@media screen and (min-width: 1440px){
+    .home-section .left-content>p{
+        margin-right: 11vw;
+    }
+    .home-section .left-content>*{
+        margin-left: 55px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px){
+    .home-section>div:first-child h1:first-child {
+        font-size: 30px;
+        line-height: 54px;
+    }
+    .home-section .left-content>p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .home-section>div:first-child .seperator{
+        margin-top: 56px;
+        margin-bottom: 56px;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .home-section>div:first-child h1:first-child {
+        font-size: 50px;
+        line-height: 80px;
+    }
+    .home-section .left-content>p{
+        font-size: 22px;
+        line-height: 35px;
+    }
+    .home-section>div:first-child .seperator{
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
 }
