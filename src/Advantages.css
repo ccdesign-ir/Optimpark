@@ -8,7 +8,7 @@
 .advantages .box .text{
     border-bottom: 1px solid #6d6e70;
 }
-.advantages .bullets>.box:nth-child(7) .text{
+.advantages .bullets>.box:last-child .text{
     border-bottom: none;
 }
 

@@ -16,7 +16,7 @@ class Advantages extends Component {
                     <h1 className="title color-primary full-width">
                         Few advantages of why you should go with us
                     </h1>
-                    <div className="full-width col2">
+                    <div className="half-width col2">
                         <div className="col">
                             <H2>Feel true safety</H2>
                             <em>Fire safety system</em>
@@ -42,10 +42,10 @@ class Advantages extends Component {
                     <div className="content-part just-sub">
                         <H2>Turntable functionality</H2>
                     </div>
-                    <div className="cat-image">
+                    <div className="half-width cat-image">
                         <img src={adv2} alt="advantages" aria-hidden="true" />
                     </div>
-                    <div className="full-width col2">
+                    <div className="half-width col2">
                         <div className="col">
                             <h3 className="color-alt">In-place spinning vehicle system</h3>
                         </div>
@@ -55,7 +55,7 @@ class Advantages extends Component {
                             scratched.</p>
                         </div>
                     </div>
-                    <div className="col3">
+                    <div className="half-width col3">
                         <div className="col">
                             <img src={adv31} alt="" />
                         </div>
@@ -83,8 +83,7 @@ class Advantages extends Component {
                                 <div className="box">
                                     <em className="color-white">2. Minimum space consumption</em>
                                     <p className="text">Using only a '32 sq m' space for a vertical parking.
-                        The ability to contain 16 cars in a 5.8m <i className="fa fa-times"></i>
-                                        5.5m space vertically, whereas a normal parking lot is only capable of
+                        The ability to contain 16 cars in a 5.8m x 5.5m space vertically, whereas a normal parking lot is only capable of
                         holding maximum 2 cars. Optimpark's Turn-Table system allows for cars
                         to spin in the smallest areas.</p>
                                 </div>
