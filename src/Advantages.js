@@ -12,7 +12,7 @@ class Advantages extends Component {
     render() {
         return (
             <Frame>
-                <div className="advantages1 page-inner arvo">
+                <div className="advantages page-inner arvo">
                     <h1 className="title color-primary full-width">
                         Few advantages of why you should go with us
                     </h1>
@@ -69,55 +69,57 @@ class Advantages extends Component {
                     <div className="full-width arvo bg-primary">
                         <div className="content-part">
                             <H2>Feel true safety</H2>
-                            <div className="box">
-                                <em className="color-white">1. Easy installation, quick set-up, easy to move
+                            <div className="bullets">
+                                <div className="box">
+                                    <em className="color-white">1. Easy installation, quick set-up, easy to move
                             and a 10 year guarantee</em>
-                                <p className="text">Optimpark's mechanized parking is set-up within 10
+                                    <p className="text">Optimpark's mechanized parking is set-up within 10
                             days; 7 days to biold the foundation, and another 3 days to install
                             the structure, run the building's electricity, and program the computer
                             system, moving it from one location to another within a very short period
                             of time. The ferris wheel system used in the parking, makes it a very
                             low cost parking structure.</p>
-                            </div>
-                            <div className="box">
-                                <em className="color-white">2. Minimum space consumption</em>
-                                <p className="text">Using only a '32 sq m' space for a vertical parking.
+                                </div>
+                                <div className="box">
+                                    <em className="color-white">2. Minimum space consumption</em>
+                                    <p className="text">Using only a '32 sq m' space for a vertical parking.
                         The ability to contain 16 cars in a 5.8m <i className="fa fa-times"></i>
-                                    5.5m space vertically, whereas a normal parking lot is only capable of
+                                        5.5m space vertically, whereas a normal parking lot is only capable of
                         holding maximum 2 cars. Optimpark's Turn-Table system allows for cars
                         to spin in the smallest areas.</p>
-                            </div>
-                            <div className="box">
-                                <em className="color-white">3. Saving space</em>
-                                <p className="text">There is no need for ramps or inefficient space
+                                </div>
+                                <div className="box">
+                                    <em className="color-white">3. Saving space</em>
+                                    <p className="text">There is no need for ramps or inefficient space
                                 for cars to move around. Drivers no longer need to walk from their
                                 cars to the elevator. this makes some extra free space for other
                                 construction needs.</p>
-                            </div>
-                            <div className="box">
-                                <em className="color-white">4. High safety</em>
-                                <p className="text">A car that doesn't move, can't harm or scratch
+                                </div>
+                                <div className="box">
+                                    <em className="color-white">4. High safety</em>
+                                    <p className="text">A car that doesn't move, can't harm or scratch
                                 another car. Anti-theft parking system. The ferris wheel system makes
                                 it impossible for a parked car to fall down.</p>
-                            </div>
-                            <div className="box">
-                                <em className="color-white">5. Saving energy</em>
-                                <p className="text">No ventilation system required. Decreased usage of
+                                </div>
+                                <div className="box">
+                                    <em className="color-white">5. Saving energy</em>
+                                    <p className="text">No ventilation system required. Decreased usage of
                                 gas and fuel during moving in or out. Minimum time needed for finding
                                 parking spots. Zero sound pollution. Using minimum lighting to save energy.</p>
-                            </div>
-                            <div className="box">
-                                <em className="color-white">6. Flexibility in design and implementation</em>
-                                <p className="text">The ability to build the parking underground.
+                                </div>
+                                <div className="box">
+                                    <em className="color-white">6. Flexibility in design and implementation</em>
+                                    <p className="text">The ability to build the parking underground.
                                 Cost-effective operation in deeper ground constructions. Ease of construction
                                 and operation. Low cost soil stabilization and wall retaining.</p>
-                            </div>
-                            <div className="box">
-                                <em className="color-white">7. Customize your facade</em>
-                                <p className="text">The structure of Optimpark's parking system is easily
+                                </div>
+                                <div className="box">
+                                    <em className="color-white">7. Customize your facade</em>
+                                    <p className="text">The structure of Optimpark's parking system is easily
                                 presentable anywhere. Designing your own facade for your parking is an easy
                                 job to do considering your location. Advertising is also possible for those
                                 who are willing to make more profit.</p>
+                                </div>
                             </div>
                         </div>
                     </div>

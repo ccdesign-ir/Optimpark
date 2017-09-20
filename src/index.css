@@ -169,10 +169,6 @@ h3{
   font-size: 1.5em;
 }
 
-.box{
-  border-bottom: 1px solid #6d6e70;
-}
-
 @media screen and (min-width: 1024px){
   .desktop{
     display: initial;
@@ -236,17 +232,6 @@ h3{
   .col>h3{
     margin-right: 130px;
     margin-left: 130px;
-  }
-
-  .box{
-    width: 45%;
-    display: inline-block;
-  }
-  .box:nth-child(odd){
-    float: left;
-  }
-  .box:nth-child(odd){
-    float: right;
   }
 }
 
