@@ -113,7 +113,8 @@
         letter-spacing: 4px;
     }
     .navigator>li{
-        margin-top: 10px;
+        margin-top: 2px;
+        font-size: 12px;
     }
     .navigator a:link{
         color: #1e2433;
@@ -163,7 +164,7 @@
     }
 
     .home-section>div:first-child h1:first-child{
-        margin-top: 77px;
+        margin-top: 15px;
         
         font-size: 25px;
         line-height: 43px;
@@ -228,7 +229,7 @@
         position: absolute;
         bottom: 0;
         right: 40px;
-        height: 204px;
+        height: 132px;
 
         transition: all 0.2s ease-in-out;
         opacity: 0;
@@ -253,6 +254,16 @@
     }
     .home-section .left-content>*{
         margin-left: 55px;
+    }
+    .home-section>div:first-child h1:first-child{
+        margin-top: 77px;
+    }
+    .navigator>li{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .number>img{
+        height: 204px;
     }
 }
 

@@ -16,31 +16,33 @@ class Facade extends Component {
                         Just the way you want it
                     </h1>
                     <div className="cat-image full-width">
-                        <img src={facade1} alt="facade" aria-hidden="true"/>
+                        <img src={facade1} alt="facade" aria-hidden="true" />
                     </div>
                     <div className="content-part">
                         <H2>Implementation of different designs and materials for your facade</H2>
                         <p className="text">Build your dream facade. Considering the availability of
-                        materials in the market, you can build and implement your preferred design 
+                        materials in the market, you can build and implement your preferred design
                         anywhre.</p>
                     </div>
-                    <div className="full-width col2 reverse">
+                    <div className="full-width col2">
                         <div className="col">
+                            <img src={facade2} alt="facade" aria-hidden="true" />
+                        </div>
+                        <div className="col content-part vert-center">
                             <H2>Advertisement solutions</H2>
                             <p className="text">From banners to holograms. You can place your desired
                             advertisement on the facade for maximum profit in your business.</p>
-                            <p className="bold">It's not just a parking system, it's a business 
-                            accelerator.</p>
-                        </div>
-                        <div className="col">
-                            <img src={facade2} alt="facade" aria-hidden="true"/>
+                            <p className="bold">It's not just <br className="desktop" />
+                                a parking system, <br className="desktop" />
+                                it's a business <br className="desktop" />
+                                accelerator.</p>
                         </div>
                     </div>
                     <div className="content-part just-sub">
                         <H2>Satnd out</H2>
                     </div>
                     <div className="cat-image full-width">
-                        <img src={facade3} alt="facade" aria-hidden="true"/>
+                        <img src={facade3} alt="facade" aria-hidden="true" />
                     </div>
                 </div>
             </Frame>

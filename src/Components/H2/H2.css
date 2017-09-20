@@ -1,6 +1,7 @@
 .sub{
     line-height: 33px;
-    margin: 30px 0;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .sub::before{
@@ -17,15 +18,32 @@
     display: block;
 }
 
+.just-sub .sub{
+    margin-bottom: 0;
+}
+
 @media screen and (min-width: 1024px){
     .sub{
-        font-size: 36px;
+        font-size: 30px;
+        line-height: 48px;
+    }
+    .sub::before{
+        width: 53px;
+        top: 24px;
+    }
+
+    .col2>.col>.sub::before{
+        left: calc(50% - 25vw);
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .sub{
+        font-size: 47px;
+        line-height: 70px;
+        margin-bottom: 40px;
     }
     .sub::before{
         width: 100px;
-    }
-
-    .col2>.col:first-child>.sub::before{
-        left: -130px;
     }
 }

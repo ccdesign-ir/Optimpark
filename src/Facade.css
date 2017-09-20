@@ -11,3 +11,29 @@
 }.facade>.cat-image:last-child>img{
     width: 250%;
 }
+
+.vert-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bold{
+    font-style: italic;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 1024px){
+    .bold{
+        margin-top: 30px; 
+    }
+}
+@media screen and (min-width: 1440px){
+    .bold{
+        margin-top: 100px; 
+    }
+}
