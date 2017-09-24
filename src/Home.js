@@ -47,7 +47,7 @@ class Home extends Component {
   }
 
   windowOnWheel(event){
-    if (this.state.isTransitioning) return;
+    if (this.state.isTransitioning || window.innerWidth < 1024) return;
     var hash = this.getHash();
     var index = this.sections.indexOf(hash);
   
