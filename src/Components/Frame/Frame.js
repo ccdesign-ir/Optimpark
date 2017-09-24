@@ -6,6 +6,7 @@ import './Frame.css';
 import logo from '../../logo.svg';
 import line from '../../assets/line.svg';
 import logotype from '../../assets/logotype.svg';
+import Popup from '../Popup';
 
 class Frame extends Component {
     static propTypes = {
@@ -39,7 +40,6 @@ class Frame extends Component {
 
     render() {
         var state = this.state;
-        var cssPopup = "popup".concat(state.isMenuCollapsed ? " collapsed" : "");
         var cssMenu = "button upper pathway".concat(state.isMenuCollapsed ? " collapsed" : "");
         var cssNav = "menu".concat(state.isNavbarCollapsed ? " collapsed" : "");
         return (
@@ -54,9 +54,9 @@ class Frame extends Component {
                             <img src={logotype} alt="Logotype" />
                         </div>
                         <ul className="desktop large upper pathway foot-nav">
-                            <li><Link to="/#optimpark" className="button color-primary">Optimpark</Link></li>
-                            <li><Link to="/#solution" className="button color-primary">Solution</Link></li>
-                            <li><Link to="/#customization" className="button color-primary">Customization</Link></li>
+                            <li><HashLink to="/#optimpark" className="button color-primary">Optimpark</HashLink></li>
+                            <li><HashLink to="/#solution" className="button color-primary">Solution</HashLink></li>
+                            <li><Link to="/customization" className="button color-primary">Customization</Link></li>
                             <li><Link to="/facade" className="button color-primary">Facade</Link></li>
                             <li><Link to="/implementation" className="button color-primary">Implementation</Link></li>
                             <li><Link to="/advantages" className="button color-primary">Advantages</Link></li>
@@ -80,20 +80,7 @@ class Frame extends Component {
                         </div>
                         <button className={cssMenu} onClick={this.toggleMenu.bind(this)}><span className="desktop">Menu </span><span className="bars"><img src={line} alt="" /><img src={line} alt="" /><img src={line} alt="" /></span></button>
                     </div>
-                    <div className={cssPopup}>
-                        <ul>
-                            <li><HashLink onClick={this.toggleMenu.bind(this)} to="/#optimpark" className="item">Optimpark</HashLink></li>
-                            <li><HashLink onClick={this.toggleMenu.bind(this)} to="/#solution" className="item">Solution</HashLink></li>
-                            <li><Link onClick={this.toggleMenu.bind(this)} to="/customization" className="item">Customization</Link></li>
-                            <li><Link onClick={this.toggleMenu.bind(this)} to="/facade" className="item">Facade</Link></li>
-                            <li><Link onClick={this.toggleMenu.bind(this)} to="/implementation" className="item">Implementation</Link></li>
-                            <li><Link onClick={this.toggleMenu.bind(this)} to="/advantages" className="item">Advantages</Link></li>
-                            <li><hr /></li>
-                            <li><Link onClick={this.toggleMenu.bind(this)} to="/e-catalog" className="item">E-Catalog</Link></li>
-                            <li><Link onClick={this.toggleMenu.bind(this)} to="/about" className="item">About us</Link></li>
-                            <li><Link onClick={this.toggleMenu.bind(this)} to="/contact" className="item">Contact us</Link></li>
-                        </ul>
-                    </div>
+                    <Popup collapsed={state.isMenuCollapsed}/>
                 </nav>
             </div>
         )

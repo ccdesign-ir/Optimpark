@@ -12,10 +12,6 @@ a.button.explore:visited{
   color: black;
 }
 
-.popup.collapsed{
-  height: 0;
-}
-
 .home-nav{
   position: fixed;
   top: 0;
