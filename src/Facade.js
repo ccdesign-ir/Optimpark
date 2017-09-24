@@ -28,7 +28,7 @@ class Facade extends Component {
                         <div className="col">
                             <img src={facade2} alt="facade" aria-hidden="true" />
                         </div>
-                        <div className="col content-part vert-center">
+                        <div className="col content-part vert-center bg-white">
                             <H2>Advertisement solutions</H2>
                             <p className="text">From banners to holograms. You can place your desired
                             advertisement on the facade for maximum profit in your business.</p>
