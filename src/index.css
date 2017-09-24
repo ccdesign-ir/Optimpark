@@ -91,6 +91,10 @@ a.button:visited{
   margin-top: -60px;
   padding-top: 60px;
 }
+.page-inner>.title.full-width:first-child{
+  margin-top: -60px;
+  padding-top: 140px;
+}
 .page-inner>.half-width{
   margin-left: calc(50% - 40vw);
   width: 80vw;

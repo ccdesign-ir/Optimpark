@@ -51,7 +51,11 @@ a.button.explore:visited{
   justify-content: center;
   position: relative;
 }
-.logo>img{
+.logo>a{
+  display: flex;
+  justify-content: center;
+}
+.logo img{
   width: 45%;
 }
 .logo .logotype{

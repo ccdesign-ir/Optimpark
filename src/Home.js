@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import './Home.css';
 import './Home-desktop.css';
 import 'font-awesome/css/font-awesome.css';
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import one from './assets/1.svg';
 import two from './assets/2.svg';
 import three from './assets/3.svg';
@@ -241,22 +242,25 @@ class Home extends Component {
         <nav className="home-nav">
           <div className="menu">
             <div className="logo">
-              <img src={logo} alt="Logo" />
-              <div className="logotype">
-                <img src={logotype} alt="optimpark" />
-              </div>
+              <Link to="/">
+                <img src={logo} alt="Logo" />
+                <div className="logotype">
+                  <img src={logotype} alt="optimpark" />
+                </div>
+              </Link>
             </div>
             <button className={cssMenu} onClick={this.toggleMenu.bind(this)}><span className="desktop">Menu </span><span className="bars"><img src={line} alt="" /><img src={line} alt="" /><img src={line} alt="" /></span></button>
           </div>
           <div className={cssPopup}>
             <ul>
-              <li><Link onClick={this.toggleMenu.bind(this)} to="#optimpark" className="item">Optimpark</Link></li>
-              <li><Link onClick={this.toggleMenu.bind(this)} to="#solution" className="item">Solution</Link></li>
-              <li><Link onClick={this.toggleMenu.bind(this)} to="#customization" className="item">Customization</Link></li>
-              <li><Link onClick={this.toggleMenu.bind(this)} to="#facade" className="item">Facade</Link></li>
-              <li><Link onClick={this.toggleMenu.bind(this)} to="#implementation" className="item">Implementation</Link></li>
-              <li><Link onClick={this.toggleMenu.bind(this)} to="#advantages" className="item">Advantages</Link></li>
+              <li><HashLink onClick={this.toggleMenu.bind(this)} to="/#optimpark" className="item">Optimpark</HashLink></li>
+              <li><HashLink onClick={this.toggleMenu.bind(this)} to="/#solution" className="item">Solution</HashLink></li>
+              <li><Link onClick={this.toggleMenu.bind(this)} to="/customization" className="item">Customization</Link></li>
+              <li><Link onClick={this.toggleMenu.bind(this)} to="/facade" className="item">Facade</Link></li>
+              <li><Link onClick={this.toggleMenu.bind(this)} to="/implementation" className="item">Implementation</Link></li>
+              <li><Link onClick={this.toggleMenu.bind(this)} to="/advantages" className="item">Advantages</Link></li>
               <li><hr /></li>
+              <li><Link onClick={this.toggleMenu.bind(this)} to="/e-catalog" className="item">E-Catalog</Link></li>
               <li><Link to="/about" onClick={this.toggleMenu.bind(this)} className="item">About us</Link></li>
               <li><Link to="/contact" onClick={this.toggleMenu.bind(this)} className="item">Contact us</Link></li>
             </ul>
