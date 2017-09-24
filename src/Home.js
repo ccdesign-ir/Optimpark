@@ -251,7 +251,7 @@ class Home extends Component {
             </div>
             <button className={cssMenu} onClick={this.toggleMenu.bind(this)}><span className="desktop">Menu </span><span className="bars"><img src={line} alt="" /><img src={line} alt="" /><img src={line} alt="" /></span></button>
           </div>
-          <Popup collapsed={state.menuCollapsed} />
+          <Popup onToggle={this.toggleMenu.bind(this)} collapsed={state.menuCollapsed} />
         </nav>
       </div>
     );

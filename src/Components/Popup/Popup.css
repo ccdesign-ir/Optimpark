@@ -29,7 +29,6 @@
 }
 .popup ul>li:hover .item{
     color: #0054E8;
-    transform: translateX(20px);
 }
 .popup ul>li:nth-child(1){
     transition-delay: 0.50s;
@@ -62,8 +61,8 @@
     transition-delay: 1.4s;
 }
 .popup .item{
-    display: inline-block;
     transition: all 0.2s ease-in-out;
+    display: inline-block;
     text-decoration: none;
     color: #1e2433;
 }

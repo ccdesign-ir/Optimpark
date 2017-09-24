@@ -35,6 +35,7 @@ class Frame extends Component {
     }
 
     toggleMenu() {
+        console.log('sege')
         this.setState({ ...this.state, isMenuCollapsed: !this.state.isMenuCollapsed });
     }
 
@@ -80,7 +81,7 @@ class Frame extends Component {
                         </div>
                         <button className={cssMenu} onClick={this.toggleMenu.bind(this)}><span className="desktop">Menu </span><span className="bars"><img src={line} alt="" /><img src={line} alt="" /><img src={line} alt="" /></span></button>
                     </div>
-                    <Popup collapsed={state.isMenuCollapsed}/>
+                    <Popup onToggle={() => {}} collapsed={state.isMenuCollapsed}/>
                 </nav>
             </div>
         )
