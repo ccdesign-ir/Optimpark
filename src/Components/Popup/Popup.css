@@ -1,5 +1,4 @@
 .popup{
-    font-family: 'Arvo', sans-serif;
     transition: opacity 0.5s ease-in-out, transform 0.5s step-start;
     height: 100%;
     overflow: hidden;
@@ -20,7 +19,7 @@
     list-style: none;
     padding: 10px;
     margin: 0;
-    font-size: 5vh;
+    font-size: 28px;
 }
 .popup ul>li{
     transition: all 0.2s ease-in-out;
@@ -28,11 +27,9 @@
     transform: none;
     opacity: 1;
 }
-.popup ul>li{
-    transition: all 0.4s ease-in-out;
-    margin: 1vh 0;
-    transform: none;
-    opacity: 1;
+.popup ul>li:hover .item{
+    color: #0054E8;
+    transform: translateX(20px);
 }
 .popup ul>li:nth-child(1){
     transition-delay: 0.50s;
@@ -65,6 +62,8 @@
     transition-delay: 1.4s;
 }
 .popup .item{
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
     text-decoration: none;
     color: #1e2433;
 }

@@ -14,7 +14,7 @@ export default class Popup extends Component {
     }
 
     render() {
-        var cssPopup = "popup".concat(this.props.collapsed ? " collapsed" : "");
+        var cssPopup = "popup arvo ".concat(this.props.collapsed ? " collapsed" : "");
         return (
             <div className={cssPopup}>
                 <ul>
