@@ -81,11 +81,15 @@ a.button:visited{
   margin: auto;
 }
 .page-inner:first-child{
-  padding-top: 64px;
+  padding-top: 60px;
 }
 .page-inner>.full-width{
   margin-left: calc(50% - 50vw);
   width: 100vw;
+}
+.page-inner>.full-width:first-child{
+  margin-top: -60px;
+  padding-top: 60px;
 }
 .page-inner>.half-width{
   margin-left: calc(50% - 40vw);
@@ -94,6 +98,8 @@ a.button:visited{
 .page-inner>.full-width>.content-part{
   padding-left: 64px;
   padding-right: 64px;
+  margin: 0 auto;
+  max-width: 780px;
 }
 
 .content-part{

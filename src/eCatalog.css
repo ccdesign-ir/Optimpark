@@ -1,0 +1,20 @@
+.e-catalog>.full-width{
+    background: url('./assets/bg_cata.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.e-catalog .content-part:first-child{
+    height: calc(100vh - 60px);
+}
+
+.e-catalog .download{
+    display: inline-block;
+    padding: 20px 50px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 1920px){
+    .e-catalog .download{
+        font-size: 32px;
+    }
+}

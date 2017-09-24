@@ -8,6 +8,7 @@ import Contact from './Contact';
 import Facade from './Facade';
 import Implementation from './Implementation';
 import Advantages from './Advantages';
+import eCatalog from './eCatalog';
 import NotFound from './404';
 import registerServiceWorker from './registerServiceWorker';
 
@@ -20,6 +21,7 @@ ReactDOM.render(
             <Route path="/facade" component={Facade} />
             <Route path="/implementation" component={Implementation} />
             <Route path="/advantages" component={Advantages} />
+            <Route path="/e-catalog" component={eCatalog} />
             <Route path="*" component={NotFound} />
         </Switch>
     </BrowserRouter>
