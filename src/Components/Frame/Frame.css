@@ -133,8 +133,7 @@ footer{
         width: 110px;
         margin-right: 20px;
     }
-
-    .nav .menu .button>span:first-child{
+    .nav .menu .button.collapsed>span:first-child{
         color: white;
     }
 }
