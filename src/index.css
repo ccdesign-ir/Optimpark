@@ -135,7 +135,7 @@ a.button:visited{
 }
 
 .container{
-  background: #f8f8f8;
+  background: #f7f7f7;
 }
 
 col2>.col{
@@ -191,6 +191,9 @@ h3{
   .page-inner>.full-width>.content-part{
     padding-left: 110px;
     padding-right: 110px;
+  }
+  .page-inner>.title.full-width:first-child{
+    margin-top: -110px;
   }
 
   .content-part{
