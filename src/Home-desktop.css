@@ -246,9 +246,8 @@
         right: 50vw;
     }
     .circle-adv{
-        transform: scale(0.9);
-        width: 40vw;
-        height: 40vw;
+        width: 36vw;
+        height: 36vw;
     
         pointer-events: auto;
     }
@@ -268,50 +267,34 @@
     }
     .circle-adv:hover>.circle{
         transform: translate(-50%, -50%) scale(1.1);
-    }
-    .circle-adv>.circle:last-child{
-        width: 5vw;
-        height: 5vw;
+        width: 0;
+        height: 0;
     }
     .circle-adv>.circle:nth-last-child(2){
-        width: 10vw;
-        height: 10vw;
         background: #ffffff;
         transition-delay: 25ms;
     }
     .circle-adv>.circle:nth-last-child(3){
-        width: 15vw;
-        height: 15vw;
         background: #dcdddf;
         transition-delay: 50ms;
     }
     .circle-adv>.circle:nth-last-child(4){
-        width: 20vw;
-        height: 20vw;
         background: #bcbdc2;
         transition-delay: 75ms;
     }
     .circle-adv>.circle:nth-last-child(5){
-        width: 25vw;
-        height: 25vw;
         background: #9c9ea5;
         transition-delay: 100ms;
     }
     .circle-adv>.circle:nth-last-child(6){
-        width: 30vw;
-        height: 30vw;
         background: #7e8087;
         transition-delay: 125ms;
     }
     .circle-adv>.circle:nth-last-child(7){
-        width: 35vw;
-        height: 35vw;
         background: #5e636d;
         transition-delay: 150ms;
     }
     .circle-adv>.circle:nth-last-child(8){
-        width: 40vw;
-        height: 40vw;
         background: #3e4350;
         transition-delay: 200ms;
     }
@@ -322,6 +305,160 @@
         left: 50%;
         height: 100%;
         line-height: 2.5vw;
+        opacity: 0;
+    }
+
+    #advantages.active .circle-adv>.circle:last-child{
+        animation: first-circle 4s ease-in-out 0s 1 normal forwards;
+    }
+    #advantages.active .circle-adv>.circle:nth-last-child(2){
+        animation: second-circle 1s ease-in 0.5s 1 normal forwards;
+    }
+    #advantages.active .circle-adv>.circle:nth-last-child(3){
+        animation: third-circle 1s ease-in 0.525s 1 normal forwards;
+    }
+    #advantages.active .circle-adv>.circle:nth-last-child(4){
+        animation: fourth-circle 1s ease-in 0.55s 1 normal forwards;
+    }
+    #advantages.active .circle-adv>.circle:nth-last-child(5){
+        animation: fifth-circle 1s ease-in 0.575s 1 normal forwards;
+    }
+    #advantages.active .circle-adv>.circle:nth-last-child(6){
+        animation: sixth-circle 1s ease-in 0.6s 1 normal forwards;
+    }
+    #advantages.active .circle-adv>.circle:nth-last-child(7){
+        animation: seventh-circle 1s ease-in 0.625s 1 normal forwards;
+    }
+    #advantages.active .circle-adv>.circle:nth-last-child(8){
+        animation: eighth-circle 1s ease-in 0.65s 1 normal forwards;
+    }
+    #advantages.active .circle-adv>.circle>*{
+        animation: inner-text 1s linear forwards;
+    }
+    #advantages.active .circle-adv>.circle:last-child>*{
+        animation-delay: 1.7s;
+    }
+    #advantages.active .circle-adv>.circle:nth-last-child(2)>*{
+        animation-delay: 1.8s;
+    }
+    #advantages.active .circle-adv>.circle:nth-last-child(3)>*{
+        animation-delay: 1.9s;
+    }
+    #advantages.active .circle-adv>.circle:nth-last-child(4)>*{
+        animation-delay: 2.0s;
+    }
+    #advantages.active .circle-adv>.circle:nth-last-child(5)>*{
+        animation-delay: 2.1s;
+    }
+    #advantages.active .circle-adv>.circle:nth-last-child(6)>*{
+        animation-delay: 2.2s;
+    }
+    #advantages.active .circle-adv>.circle:nth-last-child(7)>*{
+        animation-delay: 2.3s;
+    }
+    #advantages.active .circle-adv>.circle:nth-last-child(8)>*{
+        animation-delay: 2.4s;
+    }
+
+    @keyframes first-circle {
+        0%{
+            width: 0;
+            height: 0;
+            background: white;
+        }
+        25%{
+            width: 5.4vw;
+            height: 5.4vw;
+            background: white;
+        }
+        30%{
+            width: 4.5vw;
+            height: 4.5vw;
+            background: rgb(30, 36, 51);
+        }
+        100%{
+            width: 4.5vw;
+            height: 4.5vw;
+            background: rgb(30, 36, 51);
+        }
+    }
+    @keyframes second-circle {
+        0%{
+            width: 0;
+            height: 0;
+        }
+        100%{
+            width: 9vw;
+            height: 9vw;
+        }
+    }
+    @keyframes third-circle {
+        0%{
+            width: 0;
+            height: 0;
+        }
+        100%{
+            width: 13.5vw;
+            height: 13.5vw;
+        }
+    }
+    @keyframes fourth-circle {
+        0%{
+            width: 0;
+            height: 0;
+        }
+        100%{
+            width: 18vw;
+            height: 18vw;
+        }
+    }
+    @keyframes fifth-circle {
+        0%{
+            width: 0;
+            height: 0;
+        }
+        100%{
+            width: 22.5vw;
+            height: 22.5vw;
+        }
+    }
+    @keyframes sixth-circle {
+        0%{
+            width: 0;
+            height: 0;
+        }
+        100%{
+            width: 27vw;
+            height: 27vw;
+        }
+    }
+    @keyframes seventh-circle {
+        0%{
+            width: 0;
+            height: 0;
+        }
+        100%{
+            width: 31.5vw;
+            height: 31.5vw;
+        }
+    }
+    @keyframes eighth-circle {
+        0%{
+            width: 0;
+            height: 0;
+        }
+        100%{
+            width: 36vw;
+            height: 36vw;
+        }
+    }
+    @keyframes inner-text {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
     }
 
     /* } */
