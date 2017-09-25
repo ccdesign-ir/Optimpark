@@ -4,7 +4,7 @@ import './Home.css';
 import './Home-desktop.css';
 import 'font-awesome/css/font-awesome.css';
 import { Link } from 'react-router-dom';
-import {Popup} from './Components';
+import { Popup } from './Components';
 
 import one from './assets/1.svg';
 import two from './assets/2.svg';
@@ -17,7 +17,7 @@ import image2 from './temp/image-02.jpg';
 import image3 from './temp/image-03.jpg';
 import image4 from './temp/image-04.jpg';
 import image5 from './temp/image-05.jpg';
-import image6 from './temp/image-06.jpg';
+// import image6 from './temp/image-06.jpg';
 import line from './assets/line.svg';
 import logotype from './assets/logotype.svg';
 
@@ -39,7 +39,7 @@ class Home extends Component {
     window.addEventListener('wheel', this.windowOnWheelBinded);
   }
 
-  componentWillUnmount(){
+  componentWillUnmount() {
     window.removeEventListener('wheel', this.windowOnWheelBinded);
   }
 
@@ -47,24 +47,24 @@ class Home extends Component {
     this.setState({ ...this.state, menuCollapsed: !this.state.menuCollapsed });
   }
 
-  windowOnWheel(event){
+  windowOnWheel(event) {
     if (this.state.isTransitioning || window.innerWidth < 1024) return;
     var hash = this.getHash();
     var index = this.sections.indexOf(hash);
-  
+
     if (event.deltaY > 0) {
       if (index > 4) return;
-      this.setState({...this.state, isTransitioning: true});
+      this.setState({ ...this.state, isTransitioning: true });
       this.props.history.push("#".concat(this.sections[index + 1]))
     }
     else {
       if (index < 1) return;
-      this.setState({...this.state, isTransitioning: true});
+      this.setState({ ...this.state, isTransitioning: true });
       this.props.history.push("#".concat(this.sections[index - 1]))
     }
-  
-    setTimeout(()=>{
-      this.setState({...this.state, isTransitioning: false});
+
+    setTimeout(() => {
+      this.setState({ ...this.state, isTransitioning: false });
     }, 300);
   }
 
@@ -85,6 +85,16 @@ class Home extends Component {
       default:
         return "optimpark";
     }
+  }
+
+  lettering(str, space) {
+    var l = (str.length - 1) * space / 2.0;
+    return Array.prototype.map.call(str, (char, i) => {
+      var style = {
+        transform: 'translateX(-50%) rotate('.concat(i * space - l).concat('deg)')
+      }
+      return (<span key={i} style={style}>{char}</span>);
+    });
   }
 
   render() {
@@ -210,7 +220,31 @@ class Home extends Component {
               </div>
             </div>
             <div className="desktop right">
-              <img src={image6} alt="advantages" />
+              <div className="circle-adv">
+
+                <div className="circle">
+                  {this.lettering('7. Customize your facade', 2)}
+                </div>
+                <div className="circle">
+                  {this.lettering('6. Flexibility in design and implementation', 2.5)}
+                </div>
+                <div className="circle">
+                  {this.lettering('5. Saving energy', 3)}
+                </div>
+                <div className="circle">
+                  {this.lettering('4. High safety', 4)}
+                </div>
+                <div className="circle">
+                  {this.lettering('3. Saving space', 5)}
+                </div>
+                <div className="circle">
+                  {this.lettering('2. Minimum space consumption', 8)}
+                </div>
+                <div className="circle color-primary">
+                  {this.lettering('1. Quick installation', 12)}
+                </div>
+                <div className="circle bg-primary"></div>
+              </div>
             </div>
             <Link to="/advantages" className="button explore upper oswald">Explore</Link>
           </div>
