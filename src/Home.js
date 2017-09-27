@@ -12,12 +12,19 @@ import three from './assets/3.svg';
 import four from './assets/4.svg';
 import five from './assets/5.svg';
 import six from './assets/6.svg';
+import solution1 from './assets/solution1.png';
+import solution2 from './assets/solution2.png';
+import solution3 from './assets/solution3.png';
+import solution4 from './assets/solution4.png';
+import solution5 from './assets/solution5.png';
+import solution6 from './assets/solution6.png';
+import solution7 from './assets/solution7.png';
+import solution8 from './assets/solution8.png';
+import solution9 from './assets/solution9.png';
 import image1 from './temp/image-01.jpg';
-import image2 from './temp/image-02.jpg';
 import image3 from './temp/image-03.jpg';
 import image4 from './temp/image-04.jpg';
 import image5 from './temp/image-05.jpg';
-// import image6 from './temp/image-06.jpg';
 import line from './assets/line.svg';
 import logotype from './assets/logotype.svg';
 
@@ -32,6 +39,7 @@ class Home extends Component {
       isTransitioning: false
     };
     this.sections = ['optimpark', 'solution', 'customization', 'facade', 'implementation', 'advantages'];
+    this.explode_images = [solution1, solution2, solution3, solution4, solution5, solution6, solution7, solution8, solution9];
     this.windowOnWheelBinded = this.windowOnWheel.bind(this)
   }
 
@@ -97,6 +105,18 @@ class Home extends Component {
     });
   }
 
+  explode(scale){
+    var l = this.explode_images.length - 1;
+
+    return this.explode_images.map((img, i) => {
+      var offset = scale * (i - l/2.0);
+      var css = {
+        transform: 'translate(calc('.concat(offset).concat('vw - 50%), calc(').concat(offset).concat('vh - 50%))')
+      }
+      return ( <img key={i} src={img} alt="optimpark" aria-hidden="true" /> );
+    });
+  }
+
   render() {
     var state = this.state;
     var hash = this.getHash();
@@ -132,7 +152,9 @@ class Home extends Component {
               </div>
             </div>
             <div className="desktop right">
-              <img src={image2} alt="solution" />
+              <div className="explode">
+                {this.explode(3)}
+              </div>
             </div>
             <Link to="/solution" className="button explore upper oswald">Explore</Link>
           </div>
@@ -223,19 +245,19 @@ class Home extends Component {
               <div className="circle-adv">
 
                 <div className="circle">
-                  {this.lettering('7. Customize your facade', 2)}
+                  {this.lettering('7. Customize your facade', 3)}
                 </div>
                 <div className="circle">
-                  {this.lettering('6. Flexibility in design and implementation', 2.5)}
+                  {this.lettering('6. Flexibility in design and implementation', 3.43)}
                 </div>
                 <div className="circle">
-                  {this.lettering('5. Saving energy', 3)}
+                  {this.lettering('5. Saving energy', 4)}
                 </div>
                 <div className="circle">
-                  {this.lettering('4. High safety', 4)}
+                  {this.lettering('4. High safety', 4.8)}
                 </div>
                 <div className="circle">
-                  {this.lettering('3. Saving space', 5)}
+                  {this.lettering('3. Saving space', 6)}
                 </div>
                 <div className="circle">
                   {this.lettering('2. Minimum space consumption', 8)}
