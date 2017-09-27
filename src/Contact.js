@@ -17,6 +17,7 @@ export default class Contact extends Component {
                         Your browser does not support the video tag.
                     </video>
                     <img className="mobile" width="80%" src={imgMobile} alt="mobile" />
+                    <div className="desktop vsep"></div>
                     <div className="contact">
                         <span>Contact us:</span>
                         <span>+98 313 468 7965</span>
