@@ -14,7 +14,7 @@
     top: 17px;
 }
 
-.col2>.col>.sub{
+.col2>.col .sub{
     display: block;
 }
 
@@ -32,10 +32,10 @@
         top: 24px;
     }
 
-    .full-width.col2>.col>.sub::before{
+    .full-width.col2>.col .sub::before{
         left: calc(50% - 25vw);
     }
-    .half-width.col2>.col>.sub::before{
+    .half-width.col2>.col .sub::before{
         left: calc(50% - 30vw);
     }
 

@@ -1,5 +1,6 @@
+@supports(display: grid){
 @media screen and (min-width: 1024px){
-    /* @supports(display: grid){ */
+    /*  */
     .home-section.active{
         opacity: 1;
         z-index: 1;
@@ -576,4 +577,5 @@
         margin-top: 70px;
         margin-bottom: 70px;
     }
+}
 }

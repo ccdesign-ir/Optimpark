@@ -1,0 +1,12 @@
+.come-in{
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.come-in.rolled{
+    transform: none;
+    opacity: 1;
+}
+.come-in>img:only-child{
+    width: 100%;
+}

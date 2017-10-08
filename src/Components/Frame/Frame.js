@@ -16,22 +16,31 @@ class Frame extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            lastScrollTop: null,
             isMenuCollapsed: true,
             isNavbarCollapsed: false
         }
+        this.windowOnScrollBinded = this.windowOnScroll.bind(this)
     }
 
     componentDidMount() {
         var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        window.addEventListener('scroll', (event) => {
-            var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-            if (st > lastScrollTop) {
-                if (this.state.isMenuCollapsed) this.setState({ ...this.state, isNavbarCollapsed: true });
-            } else {
-                if (this.state.isMenuCollapsed) this.setState({ ...this.state, isNavbarCollapsed: false });
-            }
-            lastScrollTop = st;
-        }, false);
+        this.setState({lastScrollTop});
+        window.addEventListener('scroll', this.windowOnScrollBinded, false);
+    }
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.windowOnScrollBinded, false);
+    }
+
+    windowOnScroll(event){
+        var lastScrollTop = this.state.lastScrollTop
+        var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+        if (st > lastScrollTop) {
+            if (this.state.isMenuCollapsed) this.setState({ isNavbarCollapsed: true});
+        } else {
+            if (this.state.isMenuCollapsed) this.setState({ isNavbarCollapsed: false});
+        }
+        this.setState({lastScrollTop: st});
     }
 
     toggleMenu() {
@@ -42,9 +51,9 @@ class Frame extends Component {
     render() {
         var state = this.state;
         var cssMenu = "button upper pathway".concat(state.isMenuCollapsed ? " collapsed" : "");
-        var cssNav = "menu".concat(state.isNavbarCollapsed ? " collapsed" : "");
+        var cssCollapsed = "container".concat(state.isNavbarCollapsed ? " collapsed" : "");
         return (
-            <div className="container">
+            <div ref="container" className={cssCollapsed}>
                 {this.props.children}
                 <footer>
                     <div className="footer">
@@ -73,7 +82,7 @@ class Frame extends Component {
                     </div>
                 </footer>
                 <nav className="nav">
-                    <div className={cssNav}>
+                    <div className="menu">
                         <div className="logo">
                             <Link to="/">
                                 <img src={logo} alt="Logo" />

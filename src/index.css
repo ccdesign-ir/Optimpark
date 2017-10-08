@@ -115,7 +115,7 @@ a.button:visited{
   line-height: 33px;
   font-size: 26px;
   background: white;
-  padding: 80px 0;
+  padding: 110px 0;
   margin: 0;
 }
 
@@ -194,6 +194,7 @@ h3{
   }
   .page-inner>.title.full-width:first-child{
     margin-top: -110px;
+    padding-top: 250px;
   }
 
   .content-part{
@@ -207,7 +208,7 @@ h3{
   .title{
     line-height: 68px;
     font-size: 47px;
-    padding: 160px 0;
+    padding: 250px 0;
   }
 
   .text{
