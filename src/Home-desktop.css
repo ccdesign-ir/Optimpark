@@ -201,6 +201,8 @@
         font-size: 20px;
 
         height: 110px;
+
+        z-index: 2;
     }
     .socials>li{
         margin: 0 15px; 
