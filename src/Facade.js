@@ -23,11 +23,11 @@ class Facade extends Component {
                         materials in the market, you can build and implement your preferred design
                         anywhre.</p></Comein>
                     </div>
-                    <div className="full-width col2">
+                    <div className="full-width col2 bg-white">
                         <div className="col">
                             <Comein><img src={facade2} alt="facade" aria-hidden="true" /></Comein>
                         </div>
-                        <div className="col content-part vert-center bg-white">
+                        <div className="col content-part vert-center">
                             <Comein><H2>Advertisement solutions</H2></Comein>
                             <Comein><p className="text">From banners to holograms. You can place your desired
                             advertisement on the facade for maximum profit in your business.</p></Comein>

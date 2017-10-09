@@ -14,11 +14,12 @@ class Advantages extends Component {
             <Frame>
                 <div className="advantages page-inner arvo">
                     <h1 className="title color-primary full-width">
-                        Few advantages of why you should go with us
+                        Few advantages <br/>of why you should go with us
                     </h1>
-                    <div className="half-width col2">
+                    <div className="third-width col2">
                         <div className="col">
                             <H2>Feel true safety</H2>
+                            <div className="desktop"></div>
                             <em>Fire safety system</em>
                             <p className="text">Notifying firebreak system. Optimpark is the first
                         mechanized parking in Iran to notify the nearest fire station in case

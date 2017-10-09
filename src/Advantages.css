@@ -11,7 +11,46 @@
 .advantages .bullets>.box:last-child .text{
     border-bottom: none;
 }
+.advantages .third-width em{
+    padding-top: 50px;
+}
+.advantages .third-width{
+    padding: 60px 0 0 0;
+}
 
+@media screen and (min-width: 1024px){
+    .advantages .third-width{
+        padding: 220px 0;
+    }
+    .advantages .third-width .col:nth-of-type(2){
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .advantages .third-width .col:nth-of-type(2) img{
+        max-width: 540px;
+    }
+    .advantages .third-width .desktop{
+        flex-grow: 1;
+    }
+    .advantages .third-width.col2>.col:nth-of-type(1){
+        display: flex;
+        flex-direction: column;
+    }
+    .advantages .third-width.col2>.col:nth-of-type(1)>*{
+        padding-right: 130px;
+    }
+    .advantages .third-width.col2>.col .sub::before{
+        left: calc(50% - 35vw + 65px);
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+    .advantages .third-width.col2>.col .sub::before{
+        left: calc(50% - 30vw + 65px);
+    }
+  }
+
+@supports(display: grid){
 @media screen and (min-width: 1024px){
     .advantages .bullets{
         display: grid;
@@ -61,4 +100,5 @@
     .advantages .bullets>.box:nth-child(5) .text{
         border-bottom: none;
     }
+}
 }

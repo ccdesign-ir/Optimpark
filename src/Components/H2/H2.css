@@ -38,7 +38,16 @@
     .half-width.col2>.col .sub::before{
         left: calc(50% - 30vw);
     }
+    .third-width.col2>.col .sub::before{
+        left: calc(50% - 35vw);
+    }
 
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+    .third-width.col2>.col .sub::before{
+        left: calc(50% - 30vw);
+    }
 }
 
 @media screen and (min-width: 1920px){

@@ -99,6 +99,10 @@ a.button:visited{
   margin-left: calc(50% - 40vw);
   width: 80vw;
 }
+.page-inner>.third-width{
+  margin-left: calc(50% - 30vw);
+  width: 60vw;
+}
 .page-inner>.full-width>.content-part{
   padding-left: 64px;
   padding-right: 64px;
@@ -165,6 +169,8 @@ em{
   margin-top: 20px;
   margin-bottom: 10px;
   display: block;
+  font-size: 28px;
+  line-height: 48px;
 }
 
 h3{
@@ -245,9 +251,21 @@ h3{
   } */
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+  .page-inner>.third-width{
+    margin-left: calc(50% - 40vw);
+    width: 80vw;
+  }
+}
+
 @media screen and (min-width: 1440px){
   .desktop.large{
     visibility: initial;
+  }
+
+  em{
+    font-size: 42px;
+    line-height: 70px;
   }
 }
 

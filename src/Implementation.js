@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './Implementation.css';
-import Frame from './Components/Frame';
+import {Frame, H2, Comein} from './Components';
 import imp from './assets/implementation.jpg';
 import cross from './assets/cross.svg';
-import H2 from './Components/H2';
 
 class About extends Component {
     render() {
@@ -17,17 +16,17 @@ class About extends Component {
                         <img src={imp} alt="implementation" aria-hidden="true"/>
                     </div>
                     <div className="content-part">
-                        <H2>On the ground, in the ground and underground</H2>
-                        <p className="text">The ability to build on any surface. Optimpark gives 
-                        the ability to be built on the ground, underground and in the ground.</p>
+                        <Comein><H2>On the ground, in the ground and underground</H2></Comein>
+                        <Comein><p className="text">The ability to build on any surface. Optimpark gives 
+                        the ability to be built on the ground, underground and in the ground.</p></Comein>
                     </div>
                     <div className="full-width cross">
                         <img src={cross} alt="implementation" aria-hidden="true" />
                     </div>
                     <div className="content-part">
-                        <H2>Minimum<br/>cost of consolidation</H2>
-                        <p className="text">Minimum cost of the soil and the wall. Build the most
-                        cost efficient parking with Optimpark's technology.</p>
+                        <Comein><H2>Minimum<br/>cost of consolidation</H2></Comein>
+                        <Comein><p className="text">Minimum cost of the soil and the wall. Build the most
+                        cost efficient parking with Optimpark's technology.</p></Comein>
                     </div>
                 </div>
             </Frame>
