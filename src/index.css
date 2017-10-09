@@ -124,7 +124,6 @@ a.button:visited{
 }
 
 .cat-image{
-  display: inline-block;
   overflow: hidden;
   background-position: 50% 50%;
 }
@@ -142,10 +141,10 @@ a.button:visited{
   background: #f7f7f7;
 }
 
-col2>.col{
+.col2>.col{
   padding-bottom: 20px;
 }
-col2>.col:last-child{
+.col2>.col:last-child{
   padding-bottom: 0;
 }
 .col>img{
@@ -161,20 +160,6 @@ col2>.col:last-child{
 }
 .col3>.col{
   padding: 0 20px;
-}
-
-em{
-  font-weight: bold;
-  font-style: normal;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  display: block;
-  font-size: 28px;
-  line-height: 48px;
-}
-
-h3{
-  font-size: 1.5em;
 }
 
 @media screen and (min-width: 1024px){
@@ -244,11 +229,6 @@ h3{
     flex-grow: 1;
     flex-shrink: 1;
   }
-  /* .col>h2,.col>p, .col>em,
-  .col>h3{
-    margin-right: 100px;
-    margin-left: 150px;
-  } */
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px){
@@ -261,11 +241,6 @@ h3{
 @media screen and (min-width: 1440px){
   .desktop.large{
     visibility: initial;
-  }
-
-  em{
-    font-size: 42px;
-    line-height: 70px;
   }
 }
 

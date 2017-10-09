@@ -40,35 +40,37 @@ class Advantages extends Component {
                             <img src={adv1} alt="advantages" aria-hidden="true" />
                         </div>
                     </div>
-                    <div className="content-part just-sub">
-                        <H2>Turntable functionality</H2>
+                    <div className="full-width bg-white framed">
+                        <div className="just-sub">
+                            <H2>Turntable functionality</H2>
+                        </div>
+                        <div className="cat-image">
+                            <img src={adv2} alt="advantages" aria-hidden="true" />
+                        </div>
+                        <div className="col2">
+                            <div className="col">
+                                <h2 className="sub color-alt">In-place spinning vehicle system</h2>
+                            </div>
+                            <div className="col">
+                                <p className="text">With this advanced technology cars are free to
+                                spin around in their spots without losing balance and getting
+                                scratched.</p>
+                            </div>
+                        </div>
+                        <div className="col3">
+                            <div className="col">
+                                <img src={adv31} alt="" />
+                            </div>
+                            <div className="col">
+                                <img src={adv32} alt="" />
+                            </div>
+                            <div className="col">
+                                <img src={adv33} alt="" />
+                            </div>
+                        </div>
                     </div>
-                    <div className="half-width cat-image">
-                        <img src={adv2} alt="advantages" aria-hidden="true" />
-                    </div>
-                    <div className="half-width col2">
-                        <div className="col">
-                            <h3 className="color-alt">In-place spinning vehicle system</h3>
-                        </div>
-                        <div className="col">
-                            <p className="text">With this advanced technology cars are free to
-                            spin around in their spots without losing balance and getting
-                            scratched.</p>
-                        </div>
-                    </div>
-                    <div className="half-width col3">
-                        <div className="col">
-                            <img src={adv31} alt="" />
-                        </div>
-                        <div className="col">
-                            <img src={adv32} alt="" />
-                        </div>
-                        <div className="col">
-                            <img src={adv33} alt="" />
-                        </div>
-                    </div>
-                    <div className="full-width arvo bg-primary">
-                        <div className="content-part">
+                    <div className="full-width arvo bg-primary framed">
+                        <div className="">
                             <H2>Feel true safety</H2>
                             <div className="bullets">
                                 <div className="box">

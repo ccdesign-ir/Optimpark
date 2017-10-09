@@ -1,10 +1,11 @@
 .sub{
+    font-size: 1.5em;
     line-height: 33px;
     margin-top: 0;
     margin-bottom: 20px;
 }
 
-.sub::before{
+.dashed::before{
     content: "";
     width: 17px;
     border: 1px solid #0054E8;
@@ -27,25 +28,25 @@
         font-size: 30px;
         line-height: 48px;
     }
-    .sub::before{
+    .dashed::before{
         width: 53px;
         top: 24px;
     }
 
-    .full-width.col2>.col .sub::before{
+    .full-width.col2>.col .dashed::before{
         left: calc(50% - 25vw);
     }
-    .half-width.col2>.col .sub::before{
+    .half-width.col2>.col .dashed::before{
         left: calc(50% - 30vw);
     }
-    .third-width.col2>.col .sub::before{
+    .third-width.col2>.col .dashed::before{
         left: calc(50% - 35vw);
     }
 
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px){
-    .third-width.col2>.col .sub::before{
+    .third-width.col2>.col .dashed::before{
         left: calc(50% - 30vw);
     }
 }
@@ -56,7 +57,7 @@
         line-height: 70px;
         margin-bottom: 40px;
     }
-    .sub::before{
+    .dashed::before{
         width: 100px;
         top: 36px;
     }

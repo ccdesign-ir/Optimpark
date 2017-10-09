@@ -9,7 +9,7 @@ export default class H2 extends Component {
   }
 
   render() {
-    var css = "sub ".concat(this.props.className ? this.props.className : "color-alt"); 
+    var css = "sub dashed ".concat(this.props.className ? this.props.className : "color-alt"); 
     return (
       <h2 className={css}><span>{this.props.children}</span></h2>
     )

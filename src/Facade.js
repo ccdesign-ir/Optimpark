@@ -25,7 +25,7 @@ class Facade extends Component {
                     </div>
                     <div className="full-width col2 bg-white">
                         <div className="col">
-                            <Comein><img src={facade2} alt="facade" aria-hidden="true" /></Comein>
+                            <Comein animation="fade-in"><img src={facade2} alt="facade" aria-hidden="true" /></Comein>
                         </div>
                         <div className="col content-part vert-center">
                             <Comein><H2>Advertisement solutions</H2></Comein>

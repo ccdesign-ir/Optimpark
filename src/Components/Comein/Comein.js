@@ -5,7 +5,11 @@ import './Comein.css';
 
 export default class Comein extends Component {
   static propTypes = {
-    children: PropTypes.node
+    children: PropTypes.node,
+    animation: PropTypes.string
+  }
+  static defaultProps = {
+    animation: 'come-in'
   }
 
   constructor(props){
@@ -34,7 +38,7 @@ export default class Comein extends Component {
   }
 
   render() {
-    var css = classNames("come-in", {rolled: this.state.isRolled});  
+    var css = classNames('comein', {rolled: this.state.isRolled, [this.props.animation]: true});
     return (
       <div ref="container" className={css}>
         {this.props.children}
