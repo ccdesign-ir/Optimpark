@@ -1,16 +1,26 @@
-.e-catalog>.full-width{
+.e-catalog.page-inner>.full-width:first-child{
     background: url('./assets/bg_cata.jpg');
     background-size: cover;
     background-position: 50% 50%;
+    padding-top: 0;
 }
 .e-catalog .content-part:first-child{
     height: calc(100vh - 60px);
+    margin: 0;
+    max-width: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .e-catalog .download{
     display: inline-block;
     padding: 20px 50px;
     border-radius: 5px;
+}
+.e-catalog .page-inner>.full-width:first-child{
+    padding-top: 0;
 }
 
 @media screen and (min-width: 1920px){

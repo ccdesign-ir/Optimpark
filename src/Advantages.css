@@ -1,19 +1,20 @@
 .advantages>.full-width:nth-child(3)>.cat-image{
     background: url('./assets/advantages2.jpg');
     background-size: cover;
+    margin: 100px 0;
 }
 .advantages>.full-width:nth-child(3)>.cat-image>img{
     width: 100%;
 }
-.advantages .box .text{
-    border-bottom: 1px solid #6d6e70;
-}
+/* .advantages .box .text{
+    margin-bottom: 10px;
+} */
 .advantages .bullets>.box:last-child .text{
     border-bottom: none;
 }
-.advantages .third-width em{
-    padding-top: 50px;
-}
+/* .advantages .third-width em{
+    margin-bottom: 0;
+} */
 .advantages .third-width{
     padding: 60px 0;
 }
@@ -24,6 +25,9 @@
 .advantages>.framed>*{
     margin-bottom: 60px; 
 }
+.advantages>.framed>*:last-child{
+    margin-bottom: 0; 
+}
 .advantages>.framed{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -31,11 +35,18 @@
 .advantages em{
     font-weight: bold;
     font-style: normal;
-    margin-top: 20px;
+    margin-top: 70px;
     margin-bottom: 10px;
     display: block;
     font-size: 1em;
-    line-height: 48px;
+    line-height: 26px;
+}
+.advantages>.framed:nth-child(3)>*:first-child{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.advantages .col p:last-child{
+    margin-bottom: 50px;
 }
 
 @media screen and (min-width: 1024px){
