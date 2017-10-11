@@ -80,7 +80,7 @@
     }
     .advantages>.framed{
         padding-top: 130px;
-        padding-bottom: 50px;
+        padding-bottom: 130px;
     }
     .advantages .col:first-child .comein:last-child p:last-child{
         margin-bottom: 0;
@@ -90,6 +90,9 @@
     }
     .advantages .col3{
         margin-bottom: 120px !important;
+    }
+    .advantages .box em{
+        margin-bottom: 15px;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px){
@@ -104,10 +107,6 @@
 @media screen and (min-width: 1440px){
 .advantages em{
     font-size: 30px;
-    line-height: 70px;
-}
-.box>em{
-    font-size: 30px;
     line-height: 48px;
 }
 }
@@ -116,7 +115,7 @@
 @media screen and (min-width: 1024px){
     .advantages .bullets{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 50% auto 50%;
         grid-template-rows: auto auto auto auto auto auto;
     }
 
@@ -124,13 +123,18 @@
         padding: 20px 0;
     }
 
+    .advantages .bullets>.v-sep{
+        grid-row: 1/7;
+        grid-column: 2/3;
+        border: 1px solid #6d6e70;
+        margin: 30px 0;
+    }
     .advantages .bullets>.box:nth-child(odd){
         grid-column: 1/2;
-        border-right: 1px solid #6d6e70;
         padding-right: 40px; 
     }
     .advantages .bullets>.box:nth-child(even){
-        grid-column: 2/3;
+        grid-column: 3/4;
         padding-left: 40px;
     }
     .advantages .bullets>.box:first-child{
@@ -153,7 +157,7 @@
         grid-row: 4/6;
     }
     .advantages .bullets>.box:nth-child(7){
-        grid-column: 2/3;
+        grid-column: 3/4;
         grid-row: 6/7;
         border: none;
         padding-right: 0;

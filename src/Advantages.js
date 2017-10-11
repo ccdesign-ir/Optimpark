@@ -128,6 +128,8 @@ class Advantages extends Component {
                                 job to do considering your location. Advertising is also possible for those
                                 who are willing to make more profit.</p></Comein>
                                 </div>
+
+                                <div className="desktop v-sep"></div>
                             </div>
                         </div>
                     </div>
