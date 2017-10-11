@@ -106,13 +106,13 @@ class Home extends Component {
   }
 
   explode(scale){
-    var l = this.explode_images.length - 1;
+    // var l = this.explode_images.length - 1;
 
     return this.explode_images.map((img, i) => {
-      var offset = scale * (i - l/2.0);
-      var css = {
-        transform: 'translate(calc('.concat(offset).concat('vw - 50%), calc(').concat(offset).concat('vh - 50%))')
-      }
+      // var offset = scale * (i - l/2.0);
+      // var css = {
+      //   transform: 'translate(calc('.concat(offset).concat('vw - 50%), calc(').concat(offset).concat('vh - 50%))')
+      // }
       return ( <img key={i} src={img} alt="optimpark" aria-hidden="true" /> );
     });
   }
