@@ -22,6 +22,7 @@ export default class Comein extends Component {
   }
 
   componentDidMount(){
+    this.windowOnScroll();
     window.addEventListener('scroll', this.windowOnScrollBinded, false);
   }
   componentWillUnmount(){
