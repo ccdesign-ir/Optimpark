@@ -9,7 +9,8 @@ export default class eCatalog extends Component {
                 <div className="e-catalog page-inner arvo">
                     <div className="full-width">
                         <div className="content-part">
-                            <H2 className="color-primary">Download our <br />E-catalog by clicking <br />the button bellow.</H2>
+                            <h2 className="sub color-primary">Download our <br />E-catalog by clicking <br />the button bellow.</h2>
+                            <div className="mobile"></div>
                             <a href="#" className="button bg-alt download">Download</a>
                         </div>
                     </div>
