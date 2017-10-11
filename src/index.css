@@ -197,6 +197,10 @@ a.button:visited{
     justify-content: center;
   }
 
+  .just-sub{
+    text-align: center;
+  }
+
   .title{
     line-height: 68px;
     font-size: 47px;
@@ -229,6 +233,13 @@ a.button:visited{
     flex-basis: 50%;
     flex-grow: 1;
     flex-shrink: 1;
+  }
+
+  .col3{
+    flex-direction: row;
+  }
+  .col3>.col{
+    padding: 0 40px;
   }
 }
 
