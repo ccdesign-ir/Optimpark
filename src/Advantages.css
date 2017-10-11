@@ -1,9 +1,9 @@
-.advantages>.full-width:nth-child(3)>.cat-image{
+.advantages>.full-width:nth-child(3) .cat-image{
     background: url('./assets/advantages2.jpg');
     background-size: cover;
     margin: 100px 0;
 }
-.advantages>.full-width:nth-child(3)>.cat-image>img{
+.advantages>.full-width:nth-child(3) .cat-image>img{
     width: 100%;
 }
 /* .advantages .box .text{

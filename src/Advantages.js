@@ -43,9 +43,9 @@ class Advantages extends Component {
                         <div className="just-sub">
                         <Comein><H2>Turntable functionality</H2></Comein>
                         </div>
-                        <div className="cat-image">
-                        <Comein animation="fade-in"><img src={adv2} alt="advantages" aria-hidden="true" /></Comein>
-                        </div>
+                        <Comein animation="fade-in"><div className="cat-image">
+                            <img src={adv2} alt="advantages" aria-hidden="true" />
+                        </div></Comein>
                         <div className="col2">
                             <div className="col">
                             <Comein><h2 className="sub color-alt">In-place spinning vehicle system</h2></Comein>
