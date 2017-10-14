@@ -5,6 +5,7 @@ import './index.css';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
+import Customization from './Customization';
 import Facade from './Facade';
 import Implementation from './Implementation';
 import Advantages from './Advantages';
@@ -22,6 +23,7 @@ ReactDOM.render(
             <Route path="/implementation" component={Implementation} />
             <Route path="/advantages" component={Advantages} />
             <Route path="/e-catalog" component={eCatalog} />
+            <Route path="/customization" component={Customization} />
             <Route path="*" component={NotFound} />
         </Switch>
     </BrowserRouter>

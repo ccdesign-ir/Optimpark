@@ -11,7 +11,7 @@ class Advantages extends Component {
     render() {
         return (
             <Frame>
-                <div className="advantages page-inner arvo">
+                <div className="advantages page-inner ubuntu">
                     <h1 className="title color-primary full-width">
                         Few advantages <br />of why you should go with us
                     </h1>
@@ -75,7 +75,7 @@ class Advantages extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="full-width arvo bg-primary framed">
+                    <div className="full-width ubuntu bg-primary framed">
                         <div className="">
                             <Comein><H2>Feel true safety</H2></Comein>
                             <div className="bullets">

@@ -9,6 +9,20 @@ body {
   box-sizing: border-box;
 }
 
+.vert-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bold{
+  font-style: italic;
+  font-weight: bold;
+  line-height: 50px;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
 .button{
   background: transparent;
   border: none;
@@ -70,7 +84,7 @@ a.button:visited{
 .pathway{
   font-family: 'Pathway Gothic One', sans-serif;
 }
-.arvo{
+.ubuntu{
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -95,11 +109,11 @@ a.button:visited{
   margin-top: -60px;
   padding-top: 140px;
 }
-.page-inner>.half-width{
+.page-inner>.half-width,.page-inner>.full-width>.half-width{
   margin-left: calc(50% - 40vw);
   width: 80vw;
 }
-.page-inner>.third-width{
+.page-inner>.third-width,.page-inner>.full-width>.third-width{
   margin-left: calc(50% - 30vw);
   width: 60vw;
 }
@@ -109,7 +123,6 @@ a.button:visited{
   margin: 0 auto;
   max-width: 780px;
 }
-
 .content-part{
   padding: 60px 0;
 }
@@ -244,7 +257,7 @@ a.button:visited{
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px){
-  .page-inner>.third-width{
+  .page-inner>.third-width,.page-inner>.full-width>.third-width{
     margin-left: calc(50% - 40vw);
     width: 80vw;
   }

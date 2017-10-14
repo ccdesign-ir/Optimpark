@@ -7,7 +7,7 @@ export default class NotFound extends Component {
   render() {
     return (
       <Frame>
-        <div className="page404 arvo">
+        <div className="page404 ubuntu">
             <i className="fa fa-ban"></i>
             <span>Noooooo!</span>
             <span>The page you are looking for doesn't exist.</span>

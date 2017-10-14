@@ -11,7 +11,7 @@ export default class Contact extends Component {
     render() {
         return (
             <Frame>
-                <div className="contacts arvo">
+                <div className="contacts ubuntu">
                     <video className="desktop" ref="video" width="100%">
                         <source src={vidMobile} type="video/mp4" />
                         Your browser does not support the video tag.

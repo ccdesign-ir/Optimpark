@@ -8,7 +8,7 @@ class About extends Component {
     render() {
         return (
             <Frame>
-                <div className="implementation page-inner arvo">
+                <div className="implementation page-inner ubuntu">
                     <h1 className="title color-primary full-width">
                         Anywhere is your space
                     </h1>

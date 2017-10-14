@@ -9,7 +9,7 @@ class Facade extends Component {
     render() {
         return (
             <Frame>
-                <div className="facade page-inner arvo">
+                <div className="facade page-inner ubuntu">
                     <h1 className="title color-primary full-width">
                         Design your facade<br />
                         Just the way you want it

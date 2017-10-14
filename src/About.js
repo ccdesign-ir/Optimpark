@@ -7,7 +7,7 @@ class About extends Component {
     render() {
         return (
             <Frame>
-                <div className="aboutus page-inner arvo">
+                <div className="aboutus page-inner ubuntu">
                     <h1 className="title color-primary full-width">
                         We build<br />
                         mechanized parking lots

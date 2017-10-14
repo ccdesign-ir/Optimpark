@@ -1,0 +1,12 @@
+.customization>.cat-image:last-child{
+    background: url('./assets/poster.jpg');
+}
+.customization .bold{
+    margin: 0;
+}
+
+@media screen and (min-width: 1024px){
+.customization>div:nth-child(2)>div:nth-child(2){
+    align-items: flex-end;
+}
+}

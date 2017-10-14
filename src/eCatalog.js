@@ -6,7 +6,7 @@ export default class eCatalog extends Component {
     render() {
         return (
             <Frame>
-                <div className="e-catalog page-inner arvo">
+                <div className="e-catalog page-inner ubuntu">
                     <div className="full-width">
                         <div className="content-part">
                             <h2 className="sub color-primary">Download our <br />E-catalog by clicking <br />the button bellow.</h2>
