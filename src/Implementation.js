@@ -4,7 +4,7 @@ import { Frame, H2, Comein } from './Components';
 import imp from './assets/implementation.jpg';
 import imp2 from './assets/implementation2.jpg';
 
-class About extends Component {
+class Implementation extends Component {
     render() {
         return (
             <Frame>
@@ -40,4 +40,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default Implementation;
