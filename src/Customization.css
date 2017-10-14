@@ -4,9 +4,105 @@
 .customization .bold{
     margin: 0;
 }
+.customization .text-points{
+    position: relative;
+}
+.customization .point em{
+    position: relative;
+}
+
+.customization em{
+    font-style: normal;
+    font-weight: bold;
+}
+
+.customization .point{
+    margin: 30px 0;
+}
 
 @media screen and (min-width: 1024px){
 .customization>div:nth-child(2)>div:nth-child(2){
     align-items: flex-end;
+}
+.customization .point{
+    position: absolute;
+    left: 50%;
+    margin: 0;
+}
+.customization .point.connected em:first-child::before{
+    content: "";
+    display: inline-block;
+    width: 50px;
+    border: 1px solid black;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: calc(100% + 5px);
+}
+.customization .point.connected em:first-child>span{
+    display: inline-block;
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 100%;
+    position: absolute;
+    top: calc(50% - 5px);
+}
+
+.customization .point:first-child{
+    top: 20%;
+}
+.customization .point.connected:first-child em:first-child::before{
+    width: 21vw;
+}
+.customization .point.connected:first-child em:first-child>span{
+    left: calc(-21vw - 10px);
+}
+
+.customization .point:nth-child(2){
+    top: 45%;
+}
+.customization .point.connected:nth-child(2) em:first-child::before{
+    width: 30vw;
+}
+.customization .point.connected:nth-child(2) em:first-child>span{
+    left: calc(-30vw - 10px);
+}
+
+.customization .point:nth-child(3){
+    top: 60%;
+}
+
+.customization .point:nth-child(4){
+    top: 85%;
+}
+.customization .point.connected:nth-child(4) em:first-child::before{
+    width: 50vw;
+}
+.customization .point.connected:nth-child(4) em:first-child>span{
+    left: calc(-50vw - 10px);
+}
+}
+
+@media screen and (min-width: 1441px){
+.customization .point.connected:first-child em:first-child::before{
+    width: 16vw;
+}
+.customization .point.connected:first-child em:first-child>span{
+    left: calc(-16vw - 10px);
+}
+
+.customization .point.connected:nth-child(2) em:first-child::before{
+    width: 23vw;
+}
+.customization .point.connected:nth-child(2) em:first-child>span{
+    left: calc(-23vw - 10px);
+}
+
+.customization .point.connected:nth-child(4) em:first-child::before{
+    width: 37vw;
+}
+.customization .point.connected:nth-child(4) em:first-child>span{
+    left: calc(-37vw - 10px);
 }
 }
