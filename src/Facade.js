@@ -6,6 +6,9 @@ import facade2 from './assets/facade2.jpg';
 import facade3 from './assets/facade3.jpg';
 
 class Facade extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <Frame>

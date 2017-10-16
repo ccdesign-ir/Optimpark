@@ -8,6 +8,10 @@ import adv32 from './assets/advantages32.jpg';
 import adv33 from './assets/advantages33.jpg';
 
 class Advantages extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <Frame>

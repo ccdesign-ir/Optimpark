@@ -75,6 +75,9 @@ a.button:visited{
   background: #0054E8 !important;
 }
 
+.text-center{
+  text-align: center;
+}
 .upper{
   text-transform: uppercase;
 }

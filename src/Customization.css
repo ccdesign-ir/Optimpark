@@ -1,6 +1,13 @@
 .customization>.cat-image:last-child{
     background: url('./assets/poster.jpg');
+    background-position: 97% 50%;
+    background-size: 200%;
+    background-repeat: no-repeat;
 }
+.customization>.cat-image:last-child>img{
+    width: 200%;
+}
+
 .customization .bold{
     margin: 0;
 }

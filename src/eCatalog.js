@@ -3,6 +3,9 @@ import {Frame, H2} from './Components';
 import './eCatalog.css';
 
 export default class eCatalog extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <Frame>

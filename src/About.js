@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import './About.css';
-import {Frame, H2, Comein} from './Components';
+import { Frame, H2, Comein } from './Components';
 import image from './assets/new_image.jpg';
 //f8f8f8
 class About extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+    
     render() {
         return (
             <Frame>
@@ -13,7 +17,7 @@ class About extends Component {
                         mechanized parking lots
                     </h1>
                     <div className="cat-image full-width">
-                        <img src={image} alt="optimpark" aria-hidden="true"/>
+                        <img src={image} alt="optimpark" aria-hidden="true" />
                     </div>
                     <div className="content-part">
                         <Comein><H2>New generation of parking</H2></Comein>

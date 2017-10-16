@@ -24,7 +24,7 @@ import solution9 from './assets/solution9.png';
 import image1 from './temp/image-01.jpg';
 import image3 from './temp/image-03.jpg';
 import image4 from './temp/image-04.jpg';
-import image5 from './temp/image-05.jpg';
+import imple from './assets/implementation2.jpg';
 import line from './assets/line.svg';
 import logotype from './assets/logotype.svg';
 
@@ -217,7 +217,7 @@ class Home extends Component {
               </div>
             </div>
             <div className="desktop right">
-              <img src={image5} alt="implementation" />
+              <img src={imple} alt="implementation" />
             </div>
             <Link to="/implementation" className="button explore upper oswald">Explore</Link>
           </div>

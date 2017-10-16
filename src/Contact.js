@@ -6,8 +6,10 @@ import imgMobile from './assets/mobile.svg';
 
 export default class Contact extends Component {
     componentDidMount() {
+        window.scrollTo(0, 0);
         this.refs.video.play();
     }
+
     render() {
         return (
             <Frame>
