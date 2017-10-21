@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Frame, H2} from './Components';
+import {Frame} from './Components';
 import './eCatalog.css';
 
 export default class eCatalog extends Component {

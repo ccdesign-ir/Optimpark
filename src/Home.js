@@ -23,7 +23,7 @@ import solution7 from './assets/solution7.png';
 import solution8 from './assets/solution8.png';
 import solution9 from './assets/solution9.png';
 import image1 from './temp/image-01.jpg';
-import image3 from './temp/image-03.jpg';
+// import image3 from './temp/image-03.jpg';
 import image4 from './temp/image-04.jpg';
 import imple from './assets/implementation2.jpg';
 import temp1 from './temp/stroke-blue.png';
@@ -128,9 +128,9 @@ class Home extends Component {
     var state = this.state;
     var hash = this.getHash();
     var cssMenu = classNames('button upper pathway', {'collapsed': state.menuCollapsed});
-    var cssFloor8 = classNames('floor', {invisible: state.visibleFloor != 0});
-    var cssFloor18 = classNames('floor', {invisible: state.visibleFloor != 1});
-    var cssFloor32 = classNames('floor', {invisible: state.visibleFloor != 2});
+    var cssFloor8 = classNames('floor', {invisible: state.visibleFloor !== 0});
+    var cssFloor18 = classNames('floor', {invisible: state.visibleFloor !== 1});
+    var cssFloor32 = classNames('floor', {invisible: state.visibleFloor !== 2});
     return (
       <div className="app">
         <section className={hash === "optimpark" ? "home-section active" : "home-section"} id="optimpark">
