@@ -74,6 +74,12 @@ a.button:visited{
 .bg-alt{
   background: #0054E8 !important;
 }
+.border-primary{
+  border-color: #1e2433 !important;
+}
+.border-alt{
+  border-color: #0054E8 !important;
+}
 
 .text-center{
   text-align: center;
@@ -89,6 +95,10 @@ a.button:visited{
 }
 .ubuntu{
   font-family: 'Ubuntu', sans-serif;
+}
+
+.invisible{
+  visibility: hidden;
 }
 
 .page-inner{

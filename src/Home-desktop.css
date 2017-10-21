@@ -77,7 +77,7 @@
     .app{
         display: grid;
 
-        grid-auto-columns: 1fr 50px 50px 1fr;
+        grid-template-columns: 1fr 50px 50px 1fr;
         grid-template-rows: 6vw 1fr 5.5vh;
 
         height: 100vh;
@@ -530,7 +530,46 @@
     .explode:hover>img:nth-child(9){
         transform: translate(calc(12vw - 50%), calc(12vw - 50%));
     }
-    /* } */
+
+    .floors{
+        width: 40vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto calc(5.5vw - 18px);
+        justify-items: center;
+    }
+    .floors .floor-bar{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        width: 20vw;
+        position: relative;
+    }
+    .floors .floor{
+        grid-row: 1/3;
+        grid-column: 1/2;
+        text-align: center;
+        align-self: center;
+    }
+    .floors .circle{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        padding: 0;
+
+        position: absolute;
+        top: calc(50% - 5px);
+    }
+    .floors .circle:nth-child(2){
+        left: 0;
+    }
+    .floors .circle:nth-child(3){
+        left: calc(50% - 5px);
+    }
+    .floors .circle:nth-child(4){
+        right: 0;
+    }
 }
 @media screen and (min-width: 1440px){
     .home-section .left-content>p{

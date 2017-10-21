@@ -5,6 +5,7 @@ import './Home-desktop.css';
 import 'font-awesome/css/font-awesome.css';
 import { Link } from 'react-router-dom';
 import { Popup } from './Components';
+import classNames from 'classnames';
 
 import one from './assets/1.svg';
 import two from './assets/2.svg';
@@ -25,6 +26,7 @@ import image1 from './temp/image-01.jpg';
 import image3 from './temp/image-03.jpg';
 import image4 from './temp/image-04.jpg';
 import imple from './assets/implementation2.jpg';
+import temp1 from './temp/stroke-blue.png';
 import line from './assets/line.svg';
 import logotype from './assets/logotype.svg';
 
@@ -36,7 +38,8 @@ class Home extends Component {
     super(props);
     this.state = {
       menuCollapsed: true,
-      isTransitioning: false
+      isTransitioning: false,
+      visibleFloor: 0
     };
     this.sections = ['optimpark', 'solution', 'customization', 'facade', 'implementation', 'advantages'];
     this.explode_images = [solution1, solution2, solution3, solution4, solution5, solution6, solution7, solution8, solution9];
@@ -52,7 +55,7 @@ class Home extends Component {
   }
 
   toggleMenu(sectionName) {
-    this.setState({ ...this.state, menuCollapsed: !this.state.menuCollapsed });
+    this.setState({ menuCollapsed: !this.state.menuCollapsed });
   }
 
   windowOnWheel(event) {
@@ -62,17 +65,17 @@ class Home extends Component {
 
     if (event.deltaY > 0) {
       if (index > 4) return;
-      this.setState({ ...this.state, isTransitioning: true });
+      this.setState({ isTransitioning: true });
       this.props.history.push("#".concat(this.sections[index + 1]))
     }
     else {
       if (index < 1) return;
-      this.setState({ ...this.state, isTransitioning: true });
+      this.setState({ isTransitioning: true });
       this.props.history.push("#".concat(this.sections[index - 1]))
     }
 
     setTimeout(() => {
-      this.setState({ ...this.state, isTransitioning: false });
+      this.setState({ isTransitioning: false });
     }, 300);
   }
 
@@ -117,10 +120,17 @@ class Home extends Component {
     });
   }
 
+  changeFloorTo(index){
+    this.setState({visibleFloor: index});
+  }
+
   render() {
     var state = this.state;
     var hash = this.getHash();
-    var cssMenu = "button upper pathway".concat(state.menuCollapsed ? " collapsed" : "")
+    var cssMenu = classNames('button upper pathway', {'collapsed': state.menuCollapsed});
+    var cssFloor8 = classNames('floor', {invisible: state.visibleFloor != 0});
+    var cssFloor18 = classNames('floor', {invisible: state.visibleFloor != 1});
+    var cssFloor32 = classNames('floor', {invisible: state.visibleFloor != 2});
     return (
       <div className="app">
         <section className={hash === "optimpark" ? "home-section active" : "home-section"} id="optimpark">
@@ -177,7 +187,27 @@ class Home extends Component {
               </div>
             </div>
             <div className="desktop right">
-              <img src={image3} alt="customization" />
+              {/* <img src={image3} alt="customization" /> */}
+              <div className="floors">
+                <div className={cssFloor8}>
+                  <img src={temp1} alt=""/>
+                  <div className="color-alt">08 car capacity</div>
+                </div>
+                <div className={cssFloor18}>
+                  <img src={temp1} alt=""/>
+                  <div className="color-alt">18 car capacity</div>
+                </div>
+                <div className={cssFloor32}>
+                  <img src={temp1} alt=""/>
+                  <div className="color-alt">32 car capacity</div>
+                </div>
+                <div className="floor-bar">
+                  <hr className="border-alt"/>
+                  <button onClick={this.changeFloorTo.bind(this, 0)} className="circle bg-alt button"></button>
+                  <button onClick={this.changeFloorTo.bind(this, 1)} className="circle bg-alt button"></button>
+                  <button onClick={this.changeFloorTo.bind(this, 2)} className="circle bg-alt button"></button>
+                </div>
+              </div>
             </div>
             <Link to="/customization" className="button explore upper oswald">Explore</Link>
           </div>
