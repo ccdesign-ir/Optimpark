@@ -40,7 +40,7 @@
     content: "";
     display: inline-block;
     width: 50px;
-    border: 1px solid black;
+    border-top: 1px solid black;
     position: absolute;
     top: calc(50% - 1px);
     right: calc(100% + 5px);
@@ -48,12 +48,12 @@
 .customization .point.connected em:first-child>span{
     display: inline-block;
     border: 1px solid black;
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
     background: black;
     border-radius: 100%;
     position: absolute;
-    top: calc(50% - 5px);
+    top: calc(50% - 3px);
 }
 
 .customization .point:first-child{
