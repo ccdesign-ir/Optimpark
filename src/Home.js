@@ -13,6 +13,7 @@ import three from './assets/3.svg';
 import four from './assets/4.svg';
 import five from './assets/5.svg';
 import six from './assets/6.svg';
+import optimpark1 from './assets/new_image.jpg';
 import solution1 from './assets/solution1.png';
 import solution2 from './assets/solution2.png';
 import solution3 from './assets/solution3.png';
@@ -22,11 +23,15 @@ import solution6 from './assets/solution6.png';
 import solution7 from './assets/solution7.png';
 import solution8 from './assets/solution8.png';
 import solution9 from './assets/solution9.png';
-import image1 from './temp/image-01.jpg';
+// import image1 from './temp/image-01.jpg';
 // import image3 from './temp/image-03.jpg';
 import image4 from './temp/image-04.jpg';
 import imple from './assets/implementation2.jpg';
-import temp1 from './temp/stroke-blue.png';
+
+import wire_small from './assets/wireframe_small.png';
+import wire_medium from './assets/wireframe_medium.png';
+import wire_large from './assets/wireframe_large.png';
+
 import line from './assets/line.svg';
 import logotype from './assets/logotype.svg';
 
@@ -131,6 +136,9 @@ class Home extends Component {
     var cssFloor8 = classNames('floor', {invisible: state.visibleFloor !== 0});
     var cssFloor18 = classNames('floor', {invisible: state.visibleFloor !== 1});
     var cssFloor32 = classNames('floor', {invisible: state.visibleFloor !== 2});
+    var cssFloorbar8 = classNames('circle button', {"bg-alt": state.visibleFloor === 0});
+    var cssFloorbar18 = classNames('circle button', {"bg-alt": state.visibleFloor === 1});
+    var cssFloorbar32 = classNames('circle button', {"bg-alt": state.visibleFloor === 2});
     return (
       <div className="app">
         <section className={hash === "optimpark" ? "home-section active" : "home-section"} id="optimpark">
@@ -145,7 +153,7 @@ class Home extends Component {
               </div>
             </div>
             <div className="desktop right">
-              <img src={image1} alt="optimpark" />
+              <img src={optimpark1} alt="optimpark" />
             </div>
             <Link to="/optimpark" className="button explore upper oswald">Explore</Link>
           </div>
@@ -190,22 +198,21 @@ class Home extends Component {
               {/* <img src={image3} alt="customization" /> */}
               <div className="floors">
                 <div className={cssFloor8}>
-                  <img src={temp1} alt=""/>
-                  <div className="color-alt">08 car capacity</div>
+                  <img src={wire_small} alt="wireframe" aria-hidden="true"/>
+                  {/* <div className="color-alt">08 car capacity</div> */}
                 </div>
                 <div className={cssFloor18}>
-                  <img src={temp1} alt=""/>
-                  <div className="color-alt">18 car capacity</div>
+                  <img src={wire_medium} alt="wireframe" aria-hidden="true"/>
+                  {/* <div className="color-alt">18 car capacity</div> */}
                 </div>
                 <div className={cssFloor32}>
-                  <img src={temp1} alt=""/>
-                  <div className="color-alt">32 car capacity</div>
+                  <img src={wire_large} alt="wireframe" aria-hidden="true"/>
+                  {/* <div className="color-alt">32 car capacity</div> */}
                 </div>
                 <div className="floor-bar">
-                  <hr className="border-alt"/>
-                  <button onClick={this.changeFloorTo.bind(this, 0)} className="circle bg-alt button"></button>
-                  <button onClick={this.changeFloorTo.bind(this, 1)} className="circle bg-alt button"></button>
-                  <button onClick={this.changeFloorTo.bind(this, 2)} className="circle bg-alt button"></button>
+                  <button onClick={this.changeFloorTo.bind(this, 0)} className={cssFloorbar8}></button>
+                  <button onClick={this.changeFloorTo.bind(this, 1)} className={cssFloorbar18}></button>
+                  <button onClick={this.changeFloorTo.bind(this, 2)} className={cssFloorbar32}></button>
                 </div>
               </div>
             </div>

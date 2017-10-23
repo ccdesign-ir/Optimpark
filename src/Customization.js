@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import './Customization.css';
 import { Frame, H2, Comein } from './Components';
 import cust1 from './temp/stroke-grey.png';
-import cust2 from './temp/stroke-blue.png';
+import cust21 from './assets/wireframe_small.png';
+import cust22 from './assets/wireframe_medium.png';
+import cust23 from './assets/wireframe_large.png';
 import cust5 from './assets/poster.jpg';
 
 class Customization extends Component {
@@ -74,24 +76,34 @@ class Customization extends Component {
                         </div>
                         <div className="third-width col3">
                             <div className="col">
-                                <img src={cust2} alt="wireframe" aria-hidden="true" />
-                                <p className="text-center color-alt">
+                                <img src={cust21} alt="wireframe" aria-hidden="true" />
+                            </div>
+                            <div className="col">
+                                <img src={cust22} alt="wireframe" aria-hidden="true" />
+                                
+                            </div>
+                            <div className="col">
+                                <img src={cust23} alt="wireframe" aria-hidden="true" />
+                                
+                            </div>
+                        </div>
+                        {/* <div className="third-width col3">
+                            <div className="col">
+                            <p className="text-center color-alt">
                                     08 car capacity
                                 </p>
                             </div>
                             <div className="col">
-                                <img src={cust2} alt="wireframe" aria-hidden="true" />
-                                <p className="text-center color-alt">
+                            <p className="text-center color-alt">
                                     18 car capacity
                                 </p>
                             </div>
                             <div className="col">
-                                <img src={cust2} alt="wireframe" aria-hidden="true" />
-                                <p className="text-center color-alt">
+                            <p className="text-center color-alt">
                                     32 car capacity
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="full-width bg-white">
                         <div className="just-sub third-width">

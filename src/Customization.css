@@ -8,6 +8,16 @@
     width: 200%;
 }
 
+.customization>div:nth-child(2),
+.customization .just-sub
+{
+    padding: 130px 0;
+}
+.customization>div:nth-child(3),
+.customization>div:nth-child(4){
+    padding-bottom: 130px;
+}
+
 .customization .bold{
     margin: 0;
 }
@@ -88,6 +98,14 @@
 }
 .customization .point.connected:nth-child(4) em:first-child>span{
     left: calc(-50vw - 10px);
+}
+
+.customization .col3 .col{
+    display: flex;
+    align-items: flex-end;
+}
+.customization .col3 .col img{
+    width: 80%;
 }
 }
 
