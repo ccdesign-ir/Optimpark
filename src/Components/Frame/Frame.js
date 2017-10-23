@@ -70,8 +70,8 @@ class Frame extends Component {
                             <li><Link to="/facade" className="button color-primary">Facade</Link></li>
                             <li><Link to="/implementation" className="button color-primary">Implementation</Link></li>
                             <li><Link to="/advantages" className="button color-primary">Advantages</Link></li>
-                            <li><Link to="/contactus" className="button color-primary">Contact us</Link></li>
-                            <li><Link to="/" className="button color-primary">E-Catalog</Link></li>
+                            <li><Link to="/contact" className="button color-primary">Contact us</Link></li>
+                            <li><Link to="/e-catalog" className="button color-primary">E-Catalog</Link></li>
                         </ul>
                         <ul className="footer-socials">
                             <li className="desktop color-primary upper pathway">Designed by CC</li>

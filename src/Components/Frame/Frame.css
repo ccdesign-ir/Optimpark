@@ -72,6 +72,9 @@ footer{
 .footer .logotype>img{
     width: 69%;
 }
+.footer a:hover{
+    color: white !important;
+}
 
 .footer-socials{
     list-style: none;

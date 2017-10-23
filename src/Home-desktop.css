@@ -503,31 +503,31 @@
         transform: translate(calc(2.4vw - 50%), calc(2.4vw - 50%));
     }
 
-    .explode:hover>img:nth-child(1){
+    #solution .right:hover .explode>img:nth-child(1){
         transform: translate(calc(-12vw - 50%), calc(-12vw - 50%));
     }
-    .explode:hover>img:nth-child(2){
+    #solution .right:hover .explode>img:nth-child(2){
         transform: translate(calc(-9vw - 50%), calc(-9vw - 50%));
     }
-    .explode:hover>img:nth-child(3){
+    #solution .right:hover .explode>img:nth-child(3){
         transform: translate(calc(-6vw - 50%), calc(-6vw - 50%));
     }
-    .explode:hover>img:nth-child(4){
+    #solution .right:hover .explode>img:nth-child(4){
         transform: translate(calc(-3vw - 50%), calc(-3vw - 50%));
     }
-    .explode:hover>img:nth-child(5){
+    #solution .right:hover .explode>img:nth-child(5){
         transform: translate(calc(0vw - 50%), calc(0vw - 50%));
     }
-    .explode:hover>img:nth-child(6){
+    #solution .right:hover .explode>img:nth-child(6){
         transform: translate(calc(3vw - 50%), calc(3vw - 50%));
     }
-    .explode:hover>img:nth-child(7){
+    #solution .right:hover .explode>img:nth-child(7){
         transform: translate(calc(6vw - 50%), calc(6vw - 50%));
     }
-    .explode:hover>img:nth-child(8){
+    #solution .right:hover .explode>img:nth-child(8){
         transform: translate(calc(9vw - 50%), calc(9vw - 50%));
     }
-    .explode:hover>img:nth-child(9){
+    #solution .right:hover .explode>img:nth-child(9){
         transform: translate(calc(12vw - 50%), calc(12vw - 50%));
     }
 

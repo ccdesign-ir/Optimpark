@@ -126,7 +126,7 @@
     .advantages .bullets>.v-sep{
         grid-row: 1/7;
         grid-column: 2/3;
-        border: 1px solid #6d6e70;
+        border-right: 1px solid #5d5e60;
         margin: 30px 0;
     }
     .advantages .bullets>.box:nth-child(odd){

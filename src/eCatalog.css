@@ -5,7 +5,6 @@
     background: url('./assets/bg_cata.jpg');
     background-size: cover;
     background-position: 50% 50%;
-    padding-top: 0;
 }
 .e-catalog .content-part:only-child{
     height: 100vh;
@@ -14,6 +13,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
 
 .e-catalog .download{
@@ -29,6 +30,12 @@
 @media screen and (min-width: 768px){
     .e-catalog .content-part:only-child{
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .e-catalog .content-part:only-child{
+        padding-left: 250px;
     }
 }
 

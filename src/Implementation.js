@@ -5,6 +5,9 @@ import imp from './assets/implementation.jpg';
 import imp2 from './assets/implementation2.jpg';
 
 class Implementation extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <Frame>
